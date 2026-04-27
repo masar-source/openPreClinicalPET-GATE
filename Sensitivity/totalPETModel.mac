@@ -1,0 +1,595 @@
+
+########################## SCANNER ##########################
+#//////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\#
+#							    					#
+# Bruker PET Insert		  			    				#
+# 						            				#
+# Axial FOV: 150 mm									#
+# Detector (ring) inner diameter: 114 mm				#
+# Detector material: (LYSO)       			    			#
+# Crystal dimensions: trapezoidal (50 mm 50 mm exit face,   #
+#               48 mm 48 mm entrance face, 10 mm thickness) #
+# Number of detector per ring: 8			    			#
+# Number of detector rings: 3			    	    			#
+# Resulting pixel size: (0.48 x 0.48) mm		    		#
+#							  				     #
+#//////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\#
+
+#    exit face
+# ---------------- 
+# \			  /   Trapezoidal shape of the crystal
+#  --------------  
+#   entrance face
+
+
+
+########################## MATERILAS ########################
+#///////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\#
+#the command calls the materials database found in folder Material
+
+/gate/geometry/setMaterialDatabase Material/GateMaterials.db
+
+
+
+########################## VERBOSITY ########################
+#//////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\#
+# Verbosity is the logging level: it controls how much detail the simulation prints to the console while running (0 = minimal, higher numbers = more detailed messages).
+
+/gate/verbose Physic    5
+/gate/verbose Cuts      0
+/gate/verbose SD        0
+/gate/verbose Actions   0
+/gate/verbose Actor     0
+/gate/verbose Step      0
+/gate/verbose Error     0
+/gate/verbose Warning   0
+/gate/verbose Output    0
+/gate/verbose Volume    0
+/gate/verbose Image     0
+/gate/verbose Geometry  0
+/gate/verbose Core      0
+
+/run/verbose 0
+/event/verbose 0 
+/tracking/verbose 0
+
+
+
+########################## WORLD ########################
+#////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\#
+
+# Defention of the dimensions of the world (space) in which the scanner and all other volumes will be placed
+#consider it as the scanner room or any space thtat is big enough for the scanner to fit inside.
+
+/gate/world/geometry/setXLength 100 cm
+/gate/world/geometry/setYLength 100 cm
+/gate/world/geometry/setZLength 100 cm
+/gate/world/vis/setVisible 1
+
+
+
+########################## PET MODEL ########################
+#///////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\#
+
+### PET SYSTEM ###
+# PET system is a daughter fo the world. world is the parent!
+# PETscanner used because it can adapt different crystal geometries (e.g. trapezoidal shape). Here you shuld write the exact name of the system provided by Gate documntations. 
+
+/gate/world/daughters/name                 PETscanner	# System name from Gate documntation
+/gate/world/daughters/insert               cylinder	# it is a cylinderical detector
+/gate/PETscanner/setMaterial               Air		# 
+/gate/PETscanner/geometry/setRmin          57  mm		# min inner radius of the system 
+/gate/PETscanner/geometry/setRmax          99  mm 	# arbitrary outer diameter (can host any crystal thickness)
+/gate/PETscanner/geometry/setHeight        155 mm		# detector axial FOV
+/gate/PETscanner/placement/setTranslation  0 0 0 cm	# placed at the center of the world
+/gate/PETscanner/vis/setColor              red		# color when visualised
+/gate/PETscanner/vis/setVisible            0			# 0 = do not visualise. 1 = visualise. 
+#/gate/PETscanner/vis/forceWireframe
+
+
+### HEAD ###
+# Scanner head is the part in which the other components will be inserted/defined. It should have dinesions equal to or larger than the components grouped to host the modules. it is a daughter of the PETscanner system.
+
+/gate/PETscanner/daughters/name      head		# the name is arbitrary in PETscanner system 
+/gate/PETscanner/daughters/insert    box		# geometry is a box, should be written as defined in Gate documentation.
+/gate/head/setMaterial               Air		# Air is the default material used when defining empty space. defined in GateMaterials.db
+/gate/head/geometry/setXLength	  50 mm		# 50mm is the X dimension length of the real crystal
+/gate/head/geometry/setYLength       20 mm		# 20mm is arbitrarily set big enough to host the 10 mm thikness of the crystal
+/gate/head/geometry/setZLength	  155 mm		# 155mm is arbitrarily set long enough to host the 150 mm length of the 3 crystals
+/gate/head/placement/setTranslation  0 63 0 mm	# move the head up in the Y-direction to sit into the inner radius (57 mm radius + 5 mm hlaf thickness + 1 mm physical displacement = 63 mm)
+/gate/head/vis/setVisible            0			# 0 = do not visualise. 1 = visualise.
+#/gate/head/vis/forceWireframe
+
+
+### MODULE ###
+# modules that will host each individual crystal unit. It should have dinesions equal to or larger than the crystal unit.
+
+/gate/head/daughters/name                module	# the name is arbitrary in PETscanner system
+/gate/head/daughters/insert              box		
+/gate/module/setMaterial                 Air
+/gate/module/geometry/setXLength         50 mm	# X-dimension of the crsytal
+/gate/module/geometry/setYLength         50 mm	# X-dimension of the crsytal
+/gate/module/geometry/setZLength         10 mm	# thickness of the crsytal
+/gate/module/placement/setTranslation    0 0 0 mm	# placed in the center of the head
+/gate/module/placement/setRotationAxis   1 0 0	# rotate around the x axis only
+/gate/module/placement/setRotationAngle  90 deg	# rotate by 90 degrees
+/gate/module/vis/setVisible              0		# 0 = do not visualise. 1 = visualise.
+/gate/module/vis/forceWireframe
+
+
+### CRYSTAL ###
+# it is the scintilation block that will collect the annihilated photons. it has a trapezoidal shape and the dimensions are defined in the attached reference by Han Gyu Kang
+
+/gate/module/daughters/name             crystal	# the name is arbitrary in PETscanner system
+/gate/module/daughters/insert           trap		# Trapezoidal geometry. unlike the box, trap has 6 degrees of freedom
+/gate/crystal/setMaterial               LYSO 	# the scintilator material defined in GateMaterials.db
+/gate/crystal/geometry/setDx1           25 mm	# diemsion X1 in the exit face (half the length of the block which is 50mm)
+/gate/crystal/geometry/setDx2           25 mm	# diemsion X2 in the exit face (half the length of the block which is 50mm)
+/gate/crystal/geometry/setDx3           24 mm	# diemsion X3 in the entrance face (half the length of the block which is 48mm)
+/gate/crystal/geometry/setDx4           24 mm	# diemsion X4 in the entrance face (half the length of the block which is 50mm)
+/gate/crystal/geometry/setDy1           25 mm	# diemsion Y1 in the exit face (half the length of the block which is 50mm)
+/gate/crystal/geometry/setDy2           24 mm	# diemsion Y2 in the entrance face (half the length of the block which is 50mm)
+/gate/crystal/geometry/setDz            5 mm		# thickness (half the thickness of the block which is 10mm)
+/gate/crystal/geometry/setTheta         0 deg	
+/gate/crystal/geometry/setAlp1          0 deg	
+/gate/crystal/geometry/setAlp2          0 deg	
+/gate/crystal/placement/setTranslation  0 0 0 mm	# set in thec enter of the module
+/gate/crystal/vis/setColor              white	# color of the LYSO block (crystal) when visualised
+/gate/crystal/vis/setVisible            1		# 0 = do not visualise. 1 = visualise.
+/gate/crystal/vis/forceSolid					# force visualisation
+
+
+### COPPER SHIELDING ###
+# shielding of the crystals and the electronics from the MR field. it is placed on the entrance face, and covering the full block, because it is the only region that will interact with the upcoming photons.
+
+/gate/head/daughters/name                   shielding			# arbitrary name
+/gate/head/daughters/insert                 box				# good choice to make a sheet
+/gate/shielding/setMaterial                 Copper			# see Thiessen et al https://doi.org/10.1088/0031-9155/61/22/7934
+/gate/shielding/geometry/setXLength         48 mm				# X diemsion in the entrance face
+/gate/shielding/geometry/setYLength         48 mm				# Y diemsion in the entrance face
+/gate/shielding/geometry/setZLength         0.0351 mm			# thickness of the copper sheet. see Thiessen et al https://doi.org/10.1088/0031-9155/61/22/7934
+/gate/shielding/placement/setTranslation    0. -5.01755 0 mm	# the sheet should be placed (moved down in the Y-direction) at a distance equals half the crystal thickness (5mm) + half of the sheet thickness (0.01755) to avoid the overlapping.
+/gate/shielding/placement/setRotationAxis   1 0 0				# rotate around the x axis only, becasue the module is rotated and hence the crystal
+/gate/shielding/placement/setRotationAngle  90 deg			# rotate by 90 degrees
+/gate/shielding/vis/setColor                red				# color of the sheet when visualised
+/gate/shielding/vis/setVisible              1 				# 0 = do not visualise. 1 = visualise.
+/gate/shielding/vis/forceSolid							# force visualisation
+
+
+### FrontPad ###
+# the front pad is the protecting material that is fixed on the entrance face of the whole detector where the inserted RF coils sit without touching the crystals. it has a hexagonal shape, but we used simple rectangular (sheet-like) shape and repeated it over space.
+
+/gate/head/daughters/name                  FrontPad		# arbitrary name
+/gate/head/daughters/insert                box			
+/gate/FrontPad/setMaterial                 Nylon			# real material from the system
+/gate/FrontPad/geometry/setXLength         47.00 mm		# X dimesion, smaller than the X diemsion in the entrance face to make a hexagonal. 
+/gate/FrontPad/geometry/setYLength         150 mm			# length of the pad
+/gate/FrontPad/geometry/setZLength         1 mm			# layer thickness
+/gate/FrontPad/placement/setTranslation    0. -5.5 0. mm	# placed down in the Y-direction infront of the entrance face (5mm crystal thickness + 5.5mm space)
+/gate/FrontPad/placement/setRotationAxis   1 0 0			# rotate around the x axis only, becasue the module is rotated and hence the crystal
+/gate/FrontPad/placement/setRotationAngle  90 deg			# rotate by 90 degrees
+/gate/FrontPad/vis/setColor                blue			# color of the layer when visualised
+/gate/FrontPad/vis/setVisible              1				# 0 = do not visualise. 1 = visualise.
+/gate/FrontPad/vis/forceSolid							# force visualisation
+
+
+
+########################## VOLUMES REPETITION ########################
+# Above, we created only 1 version of the defined crystal, shielding and front pad. we need to repeat these volumes in order to get the exact detector and material configurations.
+
+
+### REPEAT CRYSTAL ###
+# repeat once in all (X,Y,Z) directions.
+
+/gate/crystal/repeaters/insert             cubicArray		# repeat rectangularly
+/gate/crystal/cubicArray/setRepeatNumberX  1				# repeat in the X direction
+/gate/crystal/cubicArray/setRepeatNumberY  1				# repeat in the Y direction
+/gate/crystal/cubicArray/setRepeatNumberZ  1				# repeat in the Z direction
+/gate/crystal/cubicArray/setRepeatVector   0.0 0 0.0 mm	# set no distance between the volumes (done later)
+
+
+### REPEAT MODULE ###
+# repeat once in X,Y directions and 3 times in the Z direction to make 3 rings later (module is daughter of the head).
+
+/gate/module/repeaters/insert             cubicArray		# repeat rectangularly
+/gate/module/cubicArray/setRepeatNumberX  1				# repeat in the X direction
+/gate/module/cubicArray/setRepeatNumberY  1				# repeat in the Y direction
+/gate/module/cubicArray/setRepeatNumberZ  3				# repeat 3 times in the Z direction
+/gate/module/cubicArray/setRepeatVector   0. 0. 50 mm		# set 50 mm distance between the volumes (equals to the crystal length)
+
+
+### REPEAT SHIELDING ###
+# repeate once in X,Y directions and 3 times in the Z direction to make 3 rings later (shielding is daughter of the head).
+
+/gate/shielding/repeaters/insert             cubicArray	# repeat rectangularly
+/gate/shielding/cubicArray/setRepeatNumberX  1			# repeat in the X direction
+/gate/shielding/cubicArray/setRepeatNumberY  1			# repeat in the Y direction
+/gate/shielding/cubicArray/setRepeatNumberZ  3			# repeat 3 times in the Z direction
+/gate/shielding/cubicArray/setRepeatVector   0. 0. 50 mm	# set 50 mm distance between the volumes (equals to the crystal length)
+
+
+### REPEAT HEAD ###
+# make 1 ring of 8 volumes. the volumes are the the modules that contain the crystals. so we will have 1 ring with 8 crystal. this ring is repeated in the Z direction and only 3 rings will be created because we specified the the module to be repeated 3 times on the Z direction.
+
+/gate/head/repeaters/insert      ring		# repeat in a ring
+/gate/head/ring/setRepeatNumber  8			# the ring have 8 volumes
+/gate/head/ring/setPoint1        0. 0. 1.	# repeat in the Z direction
+/gate/head/ring/setPoint2        0. 0. 0.
+
+
+### REPEAT FRONTPAD ###
+# repeat once in all (X,Y,Z) directions. (FrontPad is daughter of the world).
+
+/gate/FrontPad/repeaters/insert             cubicArray		# repeat rectangularly
+/gate/FrontPad/cubicArray/setRepeatNumberX  1			# repeat in the X direction
+/gate/FrontPad/cubicArray/setRepeatNumberY  1			# repeat in the Y direction
+/gate/FrontPad/cubicArray/setRepeatNumberZ  1			# repeat in the Z direction
+/gate/FrontPad/cubicArray/setRepeatVector   0. 0. 0. mm	# set no distance between the volumes
+
+
+### ATTACH SYSTEM ###
+# the volume hierarchy is defined by volumes for PETscanner system. level1, level2, level3, and ......., leveln depending on the configuration you set.
+# these volumes should be attached to the PETscanner system according to their ordering.
+
+/gate/systems/PETscanner/level1/attach  head
+/gate/systems/PETscanner/level2/attach  module
+/gate/systems/PETscanner/level3/attach  crystal
+
+
+### ATTACH CRYSTALSD ###
+# to define in which volume the detection process is happeining, attach the Crystal Sensitive Detector (CrystalSD) to the corresponding volume. in our case it is the crystal.
+
+/gate/crystal/attachCrystalSD
+
+
+### DESCRIBE SYSTEM ###
+
+/gate/systems/PETscanner/describe
+
+
+
+##################### Coil Configuration ####################
+#///////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\#
+
+### RF Coil (86 mm inner diameter) ###
+# the RF coil used in the sensitivty measurements is composed of 2 cylinders (layers) with 1.5 mm thickness each. their density is equivalent to that of the fiberglass/glass material.
+# the inner layer size corresponds to the inner diameter of the coil (86 mm) and it is closer to the test object (phantom, animal, etc.). The outer layer is adjacent to the PET detector and always touching the front pad when inserted inside the PET detector bore. The outr layer is covered by a thin layer of plastic (0.5mm).
+
+### LAYER 1 ###
+
+/gate/world/daughters/name             rfCoil1	# arbitrary name for the inner layer
+/gate/world/daughters/insert           cylinder	# geometry
+/gate/rfCoil1/setMaterial              Glass		# material type
+/gate/rfCoil1/geometry/setRmin         43.00 mm	# inner radius (86mm inner diameter)
+/gate/rfCoil1/geometry/setRmax         44.50 mm	# outer radius (inner radius + 1.5mm thickness)
+/gate/rfCoil1/geometry/setHeight       155 mm	# length of the cylinder, longer than the FOV
+/gate/rfCoil1/placement/setTranslation 0 0 0 cm	# placed in the center of the world, and hence, in the center of the detector
+/gate/rfCoil1/vis/setColor             magenta	# color when visualised
+/gate/rfCoil1/vis/setVisible           1		
+/gate/rfCoil1/vis/forceSolid
+
+
+### LAYER 2 ###
+
+/gate/world/daughters/name             rfCoil2 	# arbitrary name for the outer layer
+/gate/world/daughters/insert           cylinder	# geometry
+/gate/rfCoil2/setMaterial              Glass		# material type
+/gate/rfCoil2/geometry/setRmin         54.00 mm	# inner radius of the outer layer (108mm inner diameter)
+/gate/rfCoil2/geometry/setRmax         55.50 mm	# outer radius of the outer layer (inner radius + 1.5mm thickness), outer diameter is 111mm
+/gate/rfCoil2/geometry/setHeight       155 mm	# length of the cylinder, longer than the FOV
+/gate/rfCoil2/placement/setTranslation 0 0 0 cm	# placed in the center of the world, and hence, in the center of the detector
+/gate/rfCoil2/vis/setColor             magenta	# color when visualised
+/gate/rfCoil2/vis/setVisible           1		
+/gate/rfCoil2/vis/forceSolid
+
+
+### COIL PLASTIC COVER ###
+
+/gate/world/daughters/name              plastic2	# arbitrary name for the outer layer
+/gate/world/daughters/insert            cylinder	# geometry
+/gate/plastic2/setMaterial              Plastic	# material type
+/gate/plastic2/geometry/setRmin         55.50 mm	# inner radius of the plastic cover (111mm inner diameter)
+/gate/plastic2/geometry/setRmax         56.00 mm	# outer radius of the plastic cover (112mm outer diameter)
+/gate/plastic2/geometry/setHeight       155 mm	# # length of the cylinder, longer than the FOV
+/gate/plastic2/placement/setTranslation 0 0 0 cm
+/gate/plastic2/vis/setVisible           1
+/gate/plastic2/vis/setColor             white
+/gate/plastic2/vis/forceSolid
+
+
+
+####################### Magnetic Field ######################
+#///////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\#
+# Magnetic field strength B configuration
+
+/gate/geometry/setMagField  0  0  9.4 T
+
+
+
+###################### MOUSE TABLE (BED) ####################
+#//////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\#
+# The animal table (bed or cradle) where the object is placed for imaging.. In the experimental settings, the source was placed on the edge of the table for better fixation. the edge is a cylinderical polyethelene and is named as tabelTip below.
+
+### MOUSE TABLE ###
+/gate/world/daughters/name 			  mouseTable		# arbitrary name
+/gate/world/daughters/insert 			  cylinder		# geometry
+/gate/mouseTable/setMaterial 			  Polyethylene		# material
+/gate/mouseTable/geometry/setRmin 		  14 mm			# inner radius
+/gate/mouseTable/geometry/setRmax 		  17 mm			# thickness
+/gate/mouseTable/geometry/setHeight 	  150 mm			# table length
+/gate/mouseTable/geometry/setPhiStart 	  180 deg			# rotation to cut cylinder in half
+/gate/mouseTable/geometry/setDeltaPhi 	  180 deg	
+/gate/mouseTable/placement/setTranslation 0. -20. 0. mm	# the table is set at -20mm radially below the center of the FOV (corresponds to the tip height) 
+/gate/mouseTable/vis/setColor 		  white
+/gate/mouseTable/vis/setVisible		  1
+/gate/mouseTable/vis/forceSolid
+
+### TABLE EDGE ###
+/gate/world/daughters/name			tableTip  
+/gate/world/daughters/insert			cylinder
+/gate/tableTip/setMaterial			Polyethylene
+/gate/tableTip/geometry/setRmin		0. mm
+/gate/tableTip/geometry/setRmax		15 mm
+/gate/tableTip/geometry/setHeight		15. mm
+/gate/tableTip/placement/setTranslation 0. -20. 0. mm		# the tip cylinder is set -20mm below the center of the FOV so that the source box sits on it
+/gate/tableTip/vis/setColor 			white
+/gate/tableTip/vis/setVisible 		1
+/gate/tableTip/vis/forceWireframe
+/gate/tableTip/vis/forceSolid
+
+
+# the tip has a hole defined below
+/gate/tableTip/daughters/name			tipHole
+/gate/tableTip/daughters/insert		cylinder
+/gate/tipHole/setMaterial			Air
+/gate/tipHole/geometry/setRmin		0. mm
+/gate/tipHole/geometry/setRmax		3 mm
+/gate/tipHole/geometry/setHeight		15. mm
+/gate/tipHole/placement/setTranslation	0. 0. 0. mm
+/gate/tipHole/vis/setColor			black
+/gate/tipHole/vis/setVisible			1
+/gate/tipHole/vis/forceSolid
+
+
+
+########################### PHANTOM #########################
+#///////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\#
+# The sensitivty phantom is an Acrylic Cube (box) containning the radioactive source Na22.
+# Below is the definition of the source box (the sensitivty phantom) as specified by NEMA
+# Always keep in mind that phantom definition must be before Initialization, and source definition (not the source box) is after Initialization
+
+/gate/world/daughters/name 			 sourceBox	# arbitrary name
+/gate/world/daughters/insert 			 box
+/gate/sourceBox/setMaterial 			 Plastic
+/gate/sourceBox/geometry/setXLength 	 10. mm
+/gate/sourceBox/geometry/setYLength 	 10. mm
+/gate/sourceBox/geometry/setZLength 	 10. mm
+/gate/sourceBox/placement/setTranslation 0. 0. 0. mm	# will be changed according to the listed positions in the xlsx file. NEMA test: 0 radial offset, step through z axis
+/gate/sourceBox/vis/setColor 			 white
+/gate/sourceBox/vis/setVisible 		 1
+/gate/sourceBox/vis/forceSolid
+
+# define the hole that will contain the radioactive source
+
+/gate/sourceBox/daughters/name 		sourceHole	# arbitrary name
+/gate/sourceBox/daughters/insert 		box
+/gate/sourceHole/setMaterial 			Water
+/gate/sourceHole/geometry/setXLength 	0.3 mm
+/gate/sourceHole/geometry/setYLength 	0.3 mm
+/gate/sourceHole/geometry/setZLength 	0.3 mm
+
+
+
+####################### ATTACH PhantomSD ####################
+#////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\#
+# now attach to the sensitive detector each volume that contribute to the Copmton scatter. All of the attached volumes will contribute to the calculated/simulated scatter fraction. commenting any volume will results in discarding this volume from the scatter contribution and all the events passing through it will be regarded as True events.
+
+/gate/FrontPad/attachPhantomSD
+/gate/shielding/attachPhantomSD
+
+/gate/mouseTable/attachPhantomSD
+/gate/tableTip/attachPhantomSD
+
+/gate/sourceBox/attachPhantomSD
+/gate/sourceHole/attachPhantomSD
+
+#/gate/rfCoil1/attachPhantomSD
+#/gate/rfCoil2/attachPhantomSD
+#/gate/plastic2/attachPhantomSD
+
+
+
+########################### PHYSICS #########################
+#///////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\#
+# definition of the physics lists that carry out the interaction between the positrons/photons and the materials in the scanner.
+
+/gate/physics/addPhysicsList 	empenelope
+
+/gate/physics/addProcess 	RadioactiveDecay
+/gate/physics/addProcess 	PositronAnnihilation
+/gate/physics/addAtomDeexcitation
+
+
+
+####################### INITIALIZATION ######################
+#//////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\#
+# KEEP IN MIND: any phantom definition must be before initialization, the radioactive source (not the box containing the source, this is a phantom) is defined after the initialization
+
+/gate/run/initialize
+
+
+
+########################## SOURCE ##########################
+#/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\#
+# definition of the radioactive source used in the sensitivity measurments/simulations. the source commands are taken from the Gate documentation
+
+/gate/source/addSource 				Na22						# Na22 source specified by NEMA for sensitivity measurements
+/gate/source/Na22/setActivity 		127074.84316444 becquerel	# initial activity when the measurements started
+/gate/source/Na22/gps/particle 		ion
+/gate/source/Na22/gps/ion 			11 22 0 0
+/gate/source/Na22/setForcedUnstableFlag true
+/gate/source/Na22/setForcedHalfLife 	82056672 s				# half-life of Na22
+/gate/source/Na22/gps/energytype 		Mono 
+/gate/source/Na22/gps/monoenergy 		511. keV					# energy of a single annihilated photon
+/gate/source/Na22/gps/pos/type 		Volume
+
+/gate/source/Na22/gps/shape 			Sphere					# shape of the sources
+/gate/source/Na22/gps/radius 			0.15 mm					# radius is half the dimension of the sourceHole (3mm)
+
+/gate/source/Na22/gps/ang/type iso
+
+/gate/source/Na22/attachTo sourceBox							# attache it to the source box with no translation to be inside the sourceHole
+
+
+
+####################### VISUALIZATION ######################
+#/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\#
+# uncomment when you need to visualise the scanner. not recomended if you run a full simulation. only do it when disabling the digiitizer and the data aquisition
+
+#/vis/open 					OGLI		# uncomment and visualise using the command Gate --qt totalModelPET.mac
+/vis/viewer/zoom 				18		# zoom in/out
+/vis/viewer/set/viewpointThetaPhi 	60 60	# rotate
+/vis/drawVolume                        
+/vis/viewer/update
+/gate/geometry/rebuild
+
+
+
+######################## DIGITIZER #########################
+#/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\#
+# The purpose of the digitizer module is to simulate the behaviour of the scanner detectors and signal processing chain.
+# The digitization consists of a series of signal processors. The output at each step along the series is defined as a pulse. At the end of the chain, the output pulses are named singles. These Singles realistically simulate the physical observables of a detector response to a particle interacting with it.
+# The Digitizer module (electronic read-out simulator) can be used to transform Hits to Digis.	
+
+#    insert adder before readout
+#    insert readout before thresholder/upholder
+#    insert blurring before thresholder/upholder
+
+
+### ADDER ####
+# The first step of the digitizer is to sum all the hits that occur within the same crystal (i.e. the same volume)
+# The adder module transforms the hits into a pulse in each individual volume
+
+/gate/digitizer/Singles/insert adder
+
+
+### READOUT ###
+# the readout module sums a group of these pulses into a single pulse at the level of depth as defined by the user for the winner-takes-all policy
+
+/gate/digitizer/Singles/insert 		  readout
+/gate/digitizer/Singles/readout/setPolicy TakeEnergyWinner  # for APD (TakeEnergyCentroid for PMT, but it doesn't work with PETScanner system)
+/gate/digitizer/Singles/readout/setDepth  3 
+
+# If the winner-takes-all (TakeEnergyWinner) policy is used, then the user must choose the depth (level) at which the readout process takes place.
+
+
+### ENERGY RESOLUTION ###
+# energy resolution of most of the LSO/LYSO crystals is around 15%.
+
+/gate/digitizer/Singles/insert 				    blurring
+/gate/digitizer/Singles/blurring/setResolution	    0.15
+/gate/digitizer/Singles/blurring/setEnergyOfReference 511. keV
+
+
+### CRYSTAL RESOLUTION ###
+# Taken from Gate documentation. a random blurring of all the crystals between 15% and 35% at a reference energy of 511 keV, and with a quantum efficiency of 90%. for each interaction the program randomly chooses a crystal resolution between 0.15 and 0.35.
+
+/gate/digitizer/Singles/insert							   crystalblurring
+/gate/digitizer/Singles/crystalblurring/setCrystalResolutionMin 	   0.15
+/gate/digitizer/Singles/crystalblurring/setCrystalResolutionMax	   0.35
+/gate/digitizer/Singles/crystalblurring/setCrystalQE 			   0.90
+/gate/digitizer/Singles/crystalblurring/setCrystalEnergyOfReference 511. keV
+
+
+### THRESHOLDER ###
+# The Thresholder/Upholder modules allow to apply an energy window to discard low and high energy photons. The Thresholder/Upholder linits follow the system measurements
+
+/gate/digitizer/Singles/insert 				thresholder
+/gate/digitizer/Singles/thresholder/setThreshold  255.55 keV
+/gate/digitizer/Singles/insert 				upholder
+/gate/digitizer/Singles/upholder/setUphold 		766.5 keV
+
+
+### PILE-UP ###
+# characteristic of a detector is its response time, which is the time that the detector takes to form the signal after the arrival of the radiation.
+
+/gate/digitizer/Singles/insert		 pileup
+/gate/digitizer/Singles/pileup/setDepth  3
+/gate/digitizer/Singles/pileup/setPileup 100 ns
+
+
+### DEAD-TIME ###
+# Two models of the dead-time have been implemented in the digitizer: paralysable and nonparalysable response.
+
+/gate/digitizer/Singles/insert 				deadtime
+/gate/digitizer/Singles/deadtime/setDeadTime 	200. ns
+/gate/digitizer/Singles/deadtime/setMode 		paralysable
+/gate/digitizer/Singles/deadtime/chooseDTVolume	crystal
+
+/gate/digitizer/Singles/name 					deadtime2
+/gate/digitizer/Singles/insert 				deadtime
+/gate/digitizer/Singles/deadtime2/setDeadTime 	600. ns
+/gate/digitizer/Singles/deadtime2/setMode 		nonparalysable
+/gate/digitizer/Singles/deadtime2/chooseDTVolume 	crystal
+
+
+### COINCIDENCE SORTER ###
+
+/gate/digitizer/Coincidences/setWindow          3.5 ns				# should be half of the system's coincidence window, Bruker has 7 ns 
+/gate/digitizer/Coincidences/MultiplesPolicy    takeWinnerOfGoods	# chosen becasue it gace the best results/match with the experiment
+#killAll: lowered the randoms   
+#takeWinnerIfIsGood: raised the trues and the randoms but slightly changed the scattered
+
+/gate/digitizer/name                            delay
+/gate/digitizer/insert                          coincidenceSorter
+/gate/digitizer/delay/setOffset                 200. ns
+/gate/digitizer/delay/setWindow                 3.5 ns				# must be same as coincidence window
+
+
+
+######################### OUTPUT ###########################
+#////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\#
+# The output here is a root file that will be saved in the folder named output under names 1-n (eg 3.root)
+
+/gate/output/root/enable
+/gate/output/root/setFileName 			output/1	# folder/fileName. you can add any name, it will be changed in 1-createMacForEachZ.py 
+/gate/output/root/setRootHitFlag 			0		# should always = 1
+/gate/output/root/setRootSinglesFlag 		0		# 0 = do not store the Singles, 1 = store them
+/gate/output/root/setRootCoincidencesFlag 	1		# 0 = do not store the Coincidences, 1 = store them
+/gate/output/root/setRootdelayFlag 		0		# 0 = do not store the Delays, 1 = store them
+
+
+
+################ RANDOM NUMBER GENERATOR ###################
+#////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\#
+
+# JamesRandom Ranlux64 MersenneTwister
+/gate/random/setEngineName JamesRandom
+/gate/random/setEngineSeed 123456789
+/gate/random/verbose 1
+
+#/gate/random/setEngineSeed default
+#/gate/random/resetEngineFrom fileName
+#/gate/random/setEngineSeed default
+#/gate/random/setEngineSeed auto
+
+
+
+#################### SIMULATION TIME #######################
+#////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\#
+
+/gate/application/setTimeSlice 0.0 s  
+/gate/application/setTimeStart 0.0 s
+/gate/application/setTimeStop  1.0 s	
+
+# for small activities, 1 s is good to give an idea how the model behaves. 10s is better, less statistical noise, and use it only when your model is behaving well.
+
+
+
+####################
+# Start simulation #
+####################
+
+/gate/application/startDAQ
+
+#
