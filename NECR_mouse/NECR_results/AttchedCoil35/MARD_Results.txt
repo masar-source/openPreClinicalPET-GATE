@@ -1,0 +1,7 @@
+Metric	MARD (%)
+Trues	10.103850581861865
+Randoms	inf
+Scattered	49.75119712578308
+Totals	10.595797512638473
+NECR	inf
+Scatter Fraction	39.5770021019462
