@@ -1,0 +1,29 @@
+# Quad86 coil, UNIFORM walls (user, 5 Nov 2026: "make the tube walls uniform thickness all round"). Replaces the
+# CT-derived STL tubes (walls 1.03-1.52 and 1.40-2.00 mm around the tube). Two exact G10
+# cylinders on the scanner axis (the CT tubes are centred on it), z -80 ... +80 mm, material AC_G10 (1.79 g/cm3):
+#   inner tube r 43.000-44.800 mm (1.8 mm), as specified;
+#   outer tube r 54.690-56.890 mm (2.2 mm): specified 55-57.2 mm, but the PET system envelope (front pad
+#     inside it) starts at r 56.9 mm (113.8 mm bore), so the tube is moved in, keeping its 2.2 mm, to end 0.01 mm
+#     inside the bore. The nylon front pad (8 flat 1 mm plates) has its inner
+#     faces at r 56.963 mm (closest point, mid-face), so the tube also clears it by 0.073 mm; at 57.2 mm it would
+#     have cut 0.24 mm into the pads. TO CONFIRM with the user: if the real coil's outer diameter is 114.4 mm, the bore in the
+#     scanner model is too small instead.
+# Used by Sens_main_real.mac, setups q86 and q86rat.
+/gate/world/daughters/name q86_inner_tube
+/gate/world/daughters/insert cylinder
+/gate/q86_inner_tube/setMaterial AC_G10
+/gate/q86_inner_tube/geometry/setRmin 43.000 mm
+/gate/q86_inner_tube/geometry/setRmax 44.800 mm
+/gate/q86_inner_tube/geometry/setHeight 160.000 mm
+/gate/q86_inner_tube/placement/setTranslation 0 0 0.000 mm
+/gate/q86_inner_tube/vis/setColor red
+/gate/q86_inner_tube/attachPhantomSD
+/gate/world/daughters/name q86_outer_tube
+/gate/world/daughters/insert cylinder
+/gate/q86_outer_tube/setMaterial AC_G10
+/gate/q86_outer_tube/geometry/setRmin 54.690 mm
+/gate/q86_outer_tube/geometry/setRmax 56.890 mm
+/gate/q86_outer_tube/geometry/setHeight 160.000 mm
+/gate/q86_outer_tube/placement/setTranslation 0 0 0.000 mm
+/gate/q86_outer_tube/vis/setColor red
+/gate/q86_outer_tube/attachPhantomSD

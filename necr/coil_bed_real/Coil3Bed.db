@@ -1,0 +1,46 @@
+[Materials]
+
+AC_Plastic_0744: d=0.7994 g/cm3 ; n=3 ; state=solid
+        +el: name=Carbon     ; n=5
+        +el: name=Hydrogen   ; n=8
+        +el: name=Oxygen     ; n=2
+
+AC_Titanium: d=4.51 g/cm3 ; n=1 ; state=solid
+        +el: name=Titanium   ; n=1
+
+AC_Plastic_1180: d=1.2680 g/cm3 ; n=3 ; state=solid
+        +el: name=Carbon     ; n=5
+        +el: name=Hydrogen   ; n=8
+        +el: name=Oxygen     ; n=2
+
+AC_G10: d=1.7915 g/cm3 ; n=4 ; state=solid
+        +el: name=Silicon    ; n=1
+        +el: name=Oxygen     ; n=2
+        +el: name=Carbon     ; n=3
+        +el: name=Hydrogen   ; n=3
+
+AC_Plastic_1276: d=1.3711 g/cm3 ; n=3 ; state=solid
+        +el: name=Carbon     ; n=5
+        +el: name=Hydrogen   ; n=8
+        +el: name=Oxygen     ; n=2
+
+AC_Plastic_0923: d=0.9919 g/cm3 ; n=3 ; state=solid
+        +el: name=Carbon     ; n=5
+        +el: name=Hydrogen   ; n=8
+        +el: name=Oxygen     ; n=2
+
+AC_Brass: d=8.50 g/cm3 ; n=2 ; state=solid
+        +el: name=Copper     ; f=0.70
+        +el: name=Zinc       ; f=0.30
+
+AC_Aluminium: d=2.70 g/cm3 ; n=1 ; state=solid
+        +el: name=Aluminium  ; n=1
+
+Bed_HDPE: d=0.95 g/cm3 ; n=2 ; state=solid
+        +el: name=Carbon     ; n=2
+        +el: name=Hydrogen   ; n=4
+
+Phantom_HDPE: d=0.96 g/cm3 ; n=2 ; state=solid
+        +el: name=Carbon     ; n=2
+        +el: name=Hydrogen   ; n=4
+

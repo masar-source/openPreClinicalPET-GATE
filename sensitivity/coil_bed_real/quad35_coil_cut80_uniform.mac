@@ -1,0 +1,58 @@
+# Quad35 coil, cut at z = -80 ... +80 mm.
+# There is no attenuation map (mu-map) of the Quad35 coil. I model it as three coaxial G10 walls and two
+# discs, exact cylinders on the scanner axis, material AC_G10 (1.79 g/cm3, defined in Coil3Bed.db).
+# The radii come from the published image of its attenuation map (Kuntner et al. 2025, Fig. 6A). I adjusted
+# the wall thicknesses by a common factor to the measured Quad35 sensitivity and count rates. These data only
+# fix the total amount of G10, so the walls keep the thickness ratio 1.8 : 2.0 : 2.2.
+#   inner wall   r 17.500-18.940 mm (1.44 mm). The inner radius leaves room for the mouse cradle.
+#   middle wall  r 29.000-30.600 mm (1.60 mm). The discs end on its inner surface.
+#   outer shell  r 55.130-56.890 mm (1.76 mm). It ends 0.01 mm inside the PET bore of the model (r 56.9 mm),
+#                clear of the nylon front pad (inner faces at r 56.963 mm).
+#   two discs    at z 51 and 69.35 mm, 1.20 mm thick, between the inner and the middle wall
+#                (r 18.940-29.000 mm).
+# Every part attaches its own PhantomSD, so scatter in the coil is labelled in the ROOT output.
+/gate/world/daughters/name q35_inner_wall
+/gate/world/daughters/insert cylinder
+/gate/q35_inner_wall/setMaterial AC_G10
+/gate/q35_inner_wall/geometry/setRmin 17.500 mm
+/gate/q35_inner_wall/geometry/setRmax 18.940 mm
+/gate/q35_inner_wall/geometry/setHeight 160.000 mm
+/gate/q35_inner_wall/placement/setTranslation 0 0 0.000 mm
+/gate/q35_inner_wall/vis/setColor red
+/gate/q35_inner_wall/attachPhantomSD
+/gate/world/daughters/name q35_middle_wall
+/gate/world/daughters/insert cylinder
+/gate/q35_middle_wall/setMaterial AC_G10
+/gate/q35_middle_wall/geometry/setRmin 29.000 mm
+/gate/q35_middle_wall/geometry/setRmax 30.600 mm
+/gate/q35_middle_wall/geometry/setHeight 160.000 mm
+/gate/q35_middle_wall/placement/setTranslation 0 0 0.000 mm
+/gate/q35_middle_wall/vis/setColor red
+/gate/q35_middle_wall/attachPhantomSD
+/gate/world/daughters/name q35_outer_shell
+/gate/world/daughters/insert cylinder
+/gate/q35_outer_shell/setMaterial AC_G10
+/gate/q35_outer_shell/geometry/setRmin 55.130 mm
+/gate/q35_outer_shell/geometry/setRmax 56.890 mm
+/gate/q35_outer_shell/geometry/setHeight 160.000 mm
+/gate/q35_outer_shell/placement/setTranslation 0 0 0.000 mm
+/gate/q35_outer_shell/vis/setColor red
+/gate/q35_outer_shell/attachPhantomSD
+/gate/world/daughters/name q35_disc_z51
+/gate/world/daughters/insert cylinder
+/gate/q35_disc_z51/setMaterial AC_G10
+/gate/q35_disc_z51/geometry/setRmin 18.940 mm
+/gate/q35_disc_z51/geometry/setRmax 29.000 mm
+/gate/q35_disc_z51/geometry/setHeight 1.200 mm
+/gate/q35_disc_z51/placement/setTranslation 0 0 51.000 mm
+/gate/q35_disc_z51/vis/setColor red
+/gate/q35_disc_z51/attachPhantomSD
+/gate/world/daughters/name q35_disc_z69
+/gate/world/daughters/insert cylinder
+/gate/q35_disc_z69/setMaterial AC_G10
+/gate/q35_disc_z69/geometry/setRmin 18.940 mm
+/gate/q35_disc_z69/geometry/setRmax 29.000 mm
+/gate/q35_disc_z69/geometry/setHeight 1.200 mm
+/gate/q35_disc_z69/placement/setTranslation 0 0 69.350 mm
+/gate/q35_disc_z69/vis/setColor red
+/gate/q35_disc_z69/attachPhantomSD

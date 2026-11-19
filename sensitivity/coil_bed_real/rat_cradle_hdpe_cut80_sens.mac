@@ -1,0 +1,94 @@
+# Rat cradle, cut at z = -80 ... +80 mm, in polyethylene.
+# The shape comes from the 511 keV attenuation map (mu-map) of the Quad86 coil with the rat cradle: I turned
+# the cradle into STL surfaces and import them as tessellated volumes, 10 parts in real size, notches
+# included (stl/ and stl80/). Axial details shorter than 2 mm were averaged.
+# Material: Bed_HDPE (polyethylene C2H4, 0.95 g/cm3, defined in Coil3Bed.db), the same as the mouse cradle.
+# It is an assumption: the real cradles are white and opaque, probably polyethylene. I do not use the
+# value of the map (mu 0.0744 /cm at 511 keV, 0.80 g/cm3 as C5H8O2), because it is lower than that of any
+# solid plastic. The STL file names carry the label of that map value (Plastic_0744).
+# This assumes that the wall thicknesses of the map are right (rim: 6.0-6.2 mm in the map, 5 +- 1 mm with
+# a caliper). If the walls of the map are about 20 % too thick, its attenuation is right and 0.80 g/cm3
+# would be the better choice.
+# Every part is placed at (0, {cradleY}, {sourceZ}); both aliases are set in the main macro, so the cradle
+# moves with the source along z. Every part attaches its own PhantomSD.
+
+/gate/world/daughters/name ratbed_s0087
+/gate/world/daughters/insert tessellated
+/gate/ratbed_s0087/geometry/setPathToSTLFile coil_bed_real/stl80/bed_s0087_Plastic_0744.stl
+/gate/ratbed_s0087/setMaterial Bed_HDPE
+/gate/ratbed_s0087/placement/setTranslation 0 {cradleY} {sourceZ} mm
+/gate/ratbed_s0087/vis/setColor white
+/gate/ratbed_s0087/attachPhantomSD
+
+/gate/world/daughters/name ratbed_s0088
+/gate/world/daughters/insert tessellated
+/gate/ratbed_s0088/geometry/setPathToSTLFile coil_bed_real/stl/bed_s0088_Plastic_0744.stl
+/gate/ratbed_s0088/setMaterial Bed_HDPE
+/gate/ratbed_s0088/placement/setTranslation 0 {cradleY} {sourceZ} mm
+/gate/ratbed_s0088/vis/setColor white
+/gate/ratbed_s0088/attachPhantomSD
+
+/gate/world/daughters/name ratbed_s0089
+/gate/world/daughters/insert tessellated
+/gate/ratbed_s0089/geometry/setPathToSTLFile coil_bed_real/stl/bed_s0089_Plastic_0744.stl
+/gate/ratbed_s0089/setMaterial Bed_HDPE
+/gate/ratbed_s0089/placement/setTranslation 0 {cradleY} {sourceZ} mm
+/gate/ratbed_s0089/vis/setColor white
+/gate/ratbed_s0089/attachPhantomSD
+
+/gate/world/daughters/name ratbed_s0090
+/gate/world/daughters/insert tessellated
+/gate/ratbed_s0090/geometry/setPathToSTLFile coil_bed_real/stl/bed_s0090_Plastic_0744.stl
+/gate/ratbed_s0090/setMaterial Bed_HDPE
+/gate/ratbed_s0090/placement/setTranslation 0 {cradleY} {sourceZ} mm
+/gate/ratbed_s0090/vis/setColor white
+/gate/ratbed_s0090/attachPhantomSD
+
+/gate/world/daughters/name ratbed_s0091
+/gate/world/daughters/insert tessellated
+/gate/ratbed_s0091/geometry/setPathToSTLFile coil_bed_real/stl/bed_s0091_Plastic_0744.stl
+/gate/ratbed_s0091/setMaterial Bed_HDPE
+/gate/ratbed_s0091/placement/setTranslation 0 {cradleY} {sourceZ} mm
+/gate/ratbed_s0091/vis/setColor white
+/gate/ratbed_s0091/attachPhantomSD
+
+/gate/world/daughters/name ratbed_s0092
+/gate/world/daughters/insert tessellated
+/gate/ratbed_s0092/geometry/setPathToSTLFile coil_bed_real/stl/bed_s0092_Plastic_0744.stl
+/gate/ratbed_s0092/setMaterial Bed_HDPE
+/gate/ratbed_s0092/placement/setTranslation 0 {cradleY} {sourceZ} mm
+/gate/ratbed_s0092/vis/setColor white
+/gate/ratbed_s0092/attachPhantomSD
+
+/gate/world/daughters/name ratbed_s0093
+/gate/world/daughters/insert tessellated
+/gate/ratbed_s0093/geometry/setPathToSTLFile coil_bed_real/stl/bed_s0093_Plastic_0744.stl
+/gate/ratbed_s0093/setMaterial Bed_HDPE
+/gate/ratbed_s0093/placement/setTranslation 0 {cradleY} {sourceZ} mm
+/gate/ratbed_s0093/vis/setColor white
+/gate/ratbed_s0093/attachPhantomSD
+
+/gate/world/daughters/name ratbed_s0094
+/gate/world/daughters/insert tessellated
+/gate/ratbed_s0094/geometry/setPathToSTLFile coil_bed_real/stl/bed_s0094_Plastic_0744.stl
+/gate/ratbed_s0094/setMaterial Bed_HDPE
+/gate/ratbed_s0094/placement/setTranslation 0 {cradleY} {sourceZ} mm
+/gate/ratbed_s0094/vis/setColor white
+/gate/ratbed_s0094/attachPhantomSD
+
+/gate/world/daughters/name ratbed_s0095
+/gate/world/daughters/insert tessellated
+/gate/ratbed_s0095/geometry/setPathToSTLFile coil_bed_real/stl/bed_s0095_Plastic_0744.stl
+/gate/ratbed_s0095/setMaterial Bed_HDPE
+/gate/ratbed_s0095/placement/setTranslation 0 {cradleY} {sourceZ} mm
+/gate/ratbed_s0095/vis/setColor white
+/gate/ratbed_s0095/attachPhantomSD
+
+/gate/world/daughters/name ratbed_s0096
+/gate/world/daughters/insert tessellated
+/gate/ratbed_s0096/geometry/setPathToSTLFile coil_bed_real/stl80/bed_s0096_Plastic_0744.stl
+/gate/ratbed_s0096/setMaterial Bed_HDPE
+/gate/ratbed_s0096/placement/setTranslation 0 {cradleY} {sourceZ} mm
+/gate/ratbed_s0096/vis/setColor white
+/gate/ratbed_s0096/attachPhantomSD
+
