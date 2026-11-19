@@ -1,0 +1,47 @@
+#####################################################################################
+# Visualisation of the coil and bed only: no sources, no acquisition (no startDAQ).
+# Do not run this file directly: run vis_bore.mac, vis_all.mac, vis_bore_file.mac or
+# vis_all_file.mac, which set the two aliases used here:
+#   coilParts : bore (the parts that reach into the PET bore +-5 mm) or all (every part)
+#   visDriver : OGLSQt (window, with Gate --qt) or VRML2FILE (writes g4_00.wrl, no screen needed)
+# Run from a GATE project folder that holds Material/GateMaterials.db and coil3_bed/.
+#####################################################################################
+
+/gate/geometry/setMaterialDatabase Material/GateMaterials.db
+
+/gate/world/geometry/setXLength 100 cm
+/gate/world/geometry/setYLength 100 cm
+/gate/world/geometry/setZLength 100 cm
+/gate/world/setMaterial Air
+/gate/world/vis/setVisible 0
+
+# Outline of the PET system volume (PETscanner in the test macros: r 56.9-99 mm, 155 mm long), air,
+# drawn as a wireframe only to show where the bore is. The detector itself is not built here.
+/gate/world/daughters/name   PETboreOutline
+/gate/world/daughters/insert cylinder
+/gate/PETboreOutline/setMaterial         Air
+/gate/PETboreOutline/geometry/setRmin    56.9 mm
+/gate/PETboreOutline/geometry/setRmax    99 mm
+/gate/PETboreOutline/geometry/setHeight  155 mm
+/gate/PETboreOutline/vis/setColor        green
+/gate/PETboreOutline/vis/forceWireframe
+
+# The coil and the bed (loads coil3_bed/Coil3Bed.db itself)
+/control/execute coil3_bed/coil3_bed_{coilParts}.mac
+
+# Some physics list is needed to initialise; it does nothing here (no source, no run).
+/gate/physics/addPhysicsList empenelope
+/gate/run/initialize
+
+# No overlap check here (it takes minutes for the 539 tessellated volumes of the "all" set): use
+# check_bore.mac or check_all.mac for that.
+
+/vis/open {visDriver}
+/vis/viewer/set/autoRefresh false
+/vis/drawVolume
+/vis/viewer/set/style surface
+/vis/viewer/set/hiddenMarker true
+/vis/viewer/set/viewpointThetaPhi 60 60
+/vis/viewer/zoom 1.5
+/vis/viewer/set/autoRefresh true
+/vis/viewer/flush

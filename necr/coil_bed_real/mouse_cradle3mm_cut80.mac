@@ -1,0 +1,96 @@
+# Mouse cradle for the count-rate runs (setups q35 and q86 of NECR_main_std.mac). It does not move in this test:
+# all 10 parts are placed at (0, {cradleY}, 0), with cradleY from the SETUP block of NECR_main_std.mac.
+# There is no mu-map of the mouse cradle. I derived it from the rat cradle (taken from the Quad86 mu-map) by
+# scaling its cross-section by 0.487 (outer radius about 17 mm), with the axial dimensions unchanged. The real
+# mouse cradle has solid side walls about 3 mm thick, so the notches of the outer surface are closed and the
+# steep drop to the floor (below y = -8 mm in the cradle's own frame) is rounded so that the wall is at least
+# 3 mm thick there; the largest radius is unchanged. The floor with its channels is that of the scaled cradle
+# (floor top at y = -12.055 mm in the cradle's own frame). The STL files in stl_mbed3mm/ were made with a script
+# that is not included.
+# Material Bed_HDPE (polyethylene C2H4, 0.95 g/cm3, coil_bed_real/Coil3Bed.db), the same as the rat cradle: both
+# real cradles are made of the same white, opaque plastic, which I modelled as polyethylene.
+# With cradleY = -0.455 mm the centred phantom rests on the floor with a 0.01 mm gap, and the rounded walls stay
+# at least 0.96 mm from the phantom and the tube ends.
+# Cut at z = -80 ... +80 mm (beyond the detectors) to save time. The parts (mbed3mm_s00NN) are attached to the
+# PhantomSD; necr_analysis.py counts scatter in them as 'object' scatter.
+
+/gate/world/daughters/name mbed3mm_s0087
+/gate/world/daughters/insert tessellated
+/gate/mbed3mm_s0087/geometry/setPathToSTLFile coil_bed_real/stl_mbed3mm/mbed3mm_s0087.stl
+/gate/mbed3mm_s0087/setMaterial Bed_HDPE
+/gate/mbed3mm_s0087/placement/setTranslation 0 {cradleY} 0 mm
+/gate/mbed3mm_s0087/vis/setColor white
+/gate/mbed3mm_s0087/attachPhantomSD
+
+/gate/world/daughters/name mbed3mm_s0088
+/gate/world/daughters/insert tessellated
+/gate/mbed3mm_s0088/geometry/setPathToSTLFile coil_bed_real/stl_mbed3mm/mbed3mm_s0088.stl
+/gate/mbed3mm_s0088/setMaterial Bed_HDPE
+/gate/mbed3mm_s0088/placement/setTranslation 0 {cradleY} 0 mm
+/gate/mbed3mm_s0088/vis/setColor white
+/gate/mbed3mm_s0088/attachPhantomSD
+
+/gate/world/daughters/name mbed3mm_s0089
+/gate/world/daughters/insert tessellated
+/gate/mbed3mm_s0089/geometry/setPathToSTLFile coil_bed_real/stl_mbed3mm/mbed3mm_s0089.stl
+/gate/mbed3mm_s0089/setMaterial Bed_HDPE
+/gate/mbed3mm_s0089/placement/setTranslation 0 {cradleY} 0 mm
+/gate/mbed3mm_s0089/vis/setColor white
+/gate/mbed3mm_s0089/attachPhantomSD
+
+/gate/world/daughters/name mbed3mm_s0090
+/gate/world/daughters/insert tessellated
+/gate/mbed3mm_s0090/geometry/setPathToSTLFile coil_bed_real/stl_mbed3mm/mbed3mm_s0090.stl
+/gate/mbed3mm_s0090/setMaterial Bed_HDPE
+/gate/mbed3mm_s0090/placement/setTranslation 0 {cradleY} 0 mm
+/gate/mbed3mm_s0090/vis/setColor white
+/gate/mbed3mm_s0090/attachPhantomSD
+
+/gate/world/daughters/name mbed3mm_s0091
+/gate/world/daughters/insert tessellated
+/gate/mbed3mm_s0091/geometry/setPathToSTLFile coil_bed_real/stl_mbed3mm/mbed3mm_s0091.stl
+/gate/mbed3mm_s0091/setMaterial Bed_HDPE
+/gate/mbed3mm_s0091/placement/setTranslation 0 {cradleY} 0 mm
+/gate/mbed3mm_s0091/vis/setColor white
+/gate/mbed3mm_s0091/attachPhantomSD
+
+/gate/world/daughters/name mbed3mm_s0092
+/gate/world/daughters/insert tessellated
+/gate/mbed3mm_s0092/geometry/setPathToSTLFile coil_bed_real/stl_mbed3mm/mbed3mm_s0092.stl
+/gate/mbed3mm_s0092/setMaterial Bed_HDPE
+/gate/mbed3mm_s0092/placement/setTranslation 0 {cradleY} 0 mm
+/gate/mbed3mm_s0092/vis/setColor white
+/gate/mbed3mm_s0092/attachPhantomSD
+
+/gate/world/daughters/name mbed3mm_s0093
+/gate/world/daughters/insert tessellated
+/gate/mbed3mm_s0093/geometry/setPathToSTLFile coil_bed_real/stl_mbed3mm/mbed3mm_s0093.stl
+/gate/mbed3mm_s0093/setMaterial Bed_HDPE
+/gate/mbed3mm_s0093/placement/setTranslation 0 {cradleY} 0 mm
+/gate/mbed3mm_s0093/vis/setColor white
+/gate/mbed3mm_s0093/attachPhantomSD
+
+/gate/world/daughters/name mbed3mm_s0094
+/gate/world/daughters/insert tessellated
+/gate/mbed3mm_s0094/geometry/setPathToSTLFile coil_bed_real/stl_mbed3mm/mbed3mm_s0094.stl
+/gate/mbed3mm_s0094/setMaterial Bed_HDPE
+/gate/mbed3mm_s0094/placement/setTranslation 0 {cradleY} 0 mm
+/gate/mbed3mm_s0094/vis/setColor white
+/gate/mbed3mm_s0094/attachPhantomSD
+
+/gate/world/daughters/name mbed3mm_s0095
+/gate/world/daughters/insert tessellated
+/gate/mbed3mm_s0095/geometry/setPathToSTLFile coil_bed_real/stl_mbed3mm/mbed3mm_s0095.stl
+/gate/mbed3mm_s0095/setMaterial Bed_HDPE
+/gate/mbed3mm_s0095/placement/setTranslation 0 {cradleY} 0 mm
+/gate/mbed3mm_s0095/vis/setColor white
+/gate/mbed3mm_s0095/attachPhantomSD
+
+/gate/world/daughters/name mbed3mm_s0096
+/gate/world/daughters/insert tessellated
+/gate/mbed3mm_s0096/geometry/setPathToSTLFile coil_bed_real/stl_mbed3mm/mbed3mm_s0096.stl
+/gate/mbed3mm_s0096/setMaterial Bed_HDPE
+/gate/mbed3mm_s0096/placement/setTranslation 0 {cradleY} 0 mm
+/gate/mbed3mm_s0096/vis/setColor white
+/gate/mbed3mm_s0096/attachPhantomSD
+

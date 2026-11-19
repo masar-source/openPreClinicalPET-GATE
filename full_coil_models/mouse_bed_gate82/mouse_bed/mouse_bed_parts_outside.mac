@@ -1,0 +1,1362 @@
+# Mouse bed parts for visualisation only: the rest of the bed (head holder, far end), 194 volumes, 193540 facets.
+# Executed by mouse_bed_all.mac / mouse_bed_bore.mac (which load MouseBed.db and define mouseCradle first).
+
+/gate/world/daughters/name mbed_s0001_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0001_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0001_Plastic_0744.stl
+/gate/mbed_s0001_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0001_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0002_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0002_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0002_Plastic_0744.stl
+/gate/mbed_s0002_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0002_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0003_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0003_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0003_Plastic_0744.stl
+/gate/mbed_s0003_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0003_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0003_Titanium
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0003_Titanium/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0003_Titanium.stl
+/gate/mbed_s0003_Titanium/setMaterial AC_Titanium
+/gate/mbed_s0003_Titanium/vis/setColor grey
+
+/gate/world/daughters/name mbed_s0004_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0004_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0004_Plastic_0744.stl
+/gate/mbed_s0004_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0004_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0004_Titanium
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0004_Titanium/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0004_Titanium.stl
+/gate/mbed_s0004_Titanium/setMaterial AC_Titanium
+/gate/mbed_s0004_Titanium/vis/setColor grey
+
+/gate/world/daughters/name mbed_s0005_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0005_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0005_Plastic_0744.stl
+/gate/mbed_s0005_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0005_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0005_Titanium
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0005_Titanium/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0005_Titanium.stl
+/gate/mbed_s0005_Titanium/setMaterial AC_Titanium
+/gate/mbed_s0005_Titanium/vis/setColor grey
+
+/gate/world/daughters/name mbed_s0006_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0006_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0006_Plastic_0744.stl
+/gate/mbed_s0006_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0006_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0006_Titanium
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0006_Titanium/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0006_Titanium.stl
+/gate/mbed_s0006_Titanium/setMaterial AC_Titanium
+/gate/mbed_s0006_Titanium/vis/setColor grey
+
+/gate/world/daughters/name mbed_s0007_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0007_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0007_Plastic_0744.stl
+/gate/mbed_s0007_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0007_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0007_Titanium
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0007_Titanium/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0007_Titanium.stl
+/gate/mbed_s0007_Titanium/setMaterial AC_Titanium
+/gate/mbed_s0007_Titanium/vis/setColor grey
+
+/gate/world/daughters/name mbed_s0008_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0008_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0008_Plastic_0744.stl
+/gate/mbed_s0008_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0008_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0008_Plastic_1180
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0008_Plastic_1180/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0008_Plastic_1180.stl
+/gate/mbed_s0008_Plastic_1180/setMaterial AC_Plastic_1180
+/gate/mbed_s0008_Plastic_1180/vis/setColor yellow
+
+/gate/world/daughters/name mbed_s0008_Titanium
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0008_Titanium/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0008_Titanium.stl
+/gate/mbed_s0008_Titanium/setMaterial AC_Titanium
+/gate/mbed_s0008_Titanium/vis/setColor grey
+
+/gate/world/daughters/name mbed_s0009_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0009_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0009_Plastic_0744.stl
+/gate/mbed_s0009_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0009_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0009_Plastic_1180
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0009_Plastic_1180/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0009_Plastic_1180.stl
+/gate/mbed_s0009_Plastic_1180/setMaterial AC_Plastic_1180
+/gate/mbed_s0009_Plastic_1180/vis/setColor yellow
+
+/gate/world/daughters/name mbed_s0009_Titanium
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0009_Titanium/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0009_Titanium.stl
+/gate/mbed_s0009_Titanium/setMaterial AC_Titanium
+/gate/mbed_s0009_Titanium/vis/setColor grey
+
+/gate/world/daughters/name mbed_s0010_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0010_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0010_Plastic_0744.stl
+/gate/mbed_s0010_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0010_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0010_Plastic_1180
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0010_Plastic_1180/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0010_Plastic_1180.stl
+/gate/mbed_s0010_Plastic_1180/setMaterial AC_Plastic_1180
+/gate/mbed_s0010_Plastic_1180/vis/setColor yellow
+
+/gate/world/daughters/name mbed_s0010_Titanium
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0010_Titanium/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0010_Titanium.stl
+/gate/mbed_s0010_Titanium/setMaterial AC_Titanium
+/gate/mbed_s0010_Titanium/vis/setColor grey
+
+/gate/world/daughters/name mbed_s0011_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0011_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0011_Plastic_0744.stl
+/gate/mbed_s0011_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0011_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0011_Plastic_1180
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0011_Plastic_1180/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0011_Plastic_1180.stl
+/gate/mbed_s0011_Plastic_1180/setMaterial AC_Plastic_1180
+/gate/mbed_s0011_Plastic_1180/vis/setColor yellow
+
+/gate/world/daughters/name mbed_s0011_Titanium
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0011_Titanium/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0011_Titanium.stl
+/gate/mbed_s0011_Titanium/setMaterial AC_Titanium
+/gate/mbed_s0011_Titanium/vis/setColor grey
+
+/gate/world/daughters/name mbed_s0012_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0012_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0012_Plastic_0744.stl
+/gate/mbed_s0012_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0012_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0012_Plastic_1180
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0012_Plastic_1180/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0012_Plastic_1180.stl
+/gate/mbed_s0012_Plastic_1180/setMaterial AC_Plastic_1180
+/gate/mbed_s0012_Plastic_1180/vis/setColor yellow
+
+/gate/world/daughters/name mbed_s0012_Titanium
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0012_Titanium/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0012_Titanium.stl
+/gate/mbed_s0012_Titanium/setMaterial AC_Titanium
+/gate/mbed_s0012_Titanium/vis/setColor grey
+
+/gate/world/daughters/name mbed_s0013_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0013_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0013_Plastic_0744.stl
+/gate/mbed_s0013_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0013_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0013_Plastic_1180
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0013_Plastic_1180/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0013_Plastic_1180.stl
+/gate/mbed_s0013_Plastic_1180/setMaterial AC_Plastic_1180
+/gate/mbed_s0013_Plastic_1180/vis/setColor yellow
+
+/gate/world/daughters/name mbed_s0013_Titanium
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0013_Titanium/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0013_Titanium.stl
+/gate/mbed_s0013_Titanium/setMaterial AC_Titanium
+/gate/mbed_s0013_Titanium/vis/setColor grey
+
+/gate/world/daughters/name mbed_s0014_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0014_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0014_Plastic_0744.stl
+/gate/mbed_s0014_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0014_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0014_Plastic_1180
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0014_Plastic_1180/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0014_Plastic_1180.stl
+/gate/mbed_s0014_Plastic_1180/setMaterial AC_Plastic_1180
+/gate/mbed_s0014_Plastic_1180/vis/setColor yellow
+
+/gate/world/daughters/name mbed_s0014_Titanium
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0014_Titanium/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0014_Titanium.stl
+/gate/mbed_s0014_Titanium/setMaterial AC_Titanium
+/gate/mbed_s0014_Titanium/vis/setColor grey
+
+/gate/world/daughters/name mbed_s0015_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0015_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0015_Plastic_0744.stl
+/gate/mbed_s0015_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0015_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0015_Plastic_1180
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0015_Plastic_1180/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0015_Plastic_1180.stl
+/gate/mbed_s0015_Plastic_1180/setMaterial AC_Plastic_1180
+/gate/mbed_s0015_Plastic_1180/vis/setColor yellow
+
+/gate/world/daughters/name mbed_s0015_Titanium
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0015_Titanium/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0015_Titanium.stl
+/gate/mbed_s0015_Titanium/setMaterial AC_Titanium
+/gate/mbed_s0015_Titanium/vis/setColor grey
+
+/gate/world/daughters/name mbed_s0016_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0016_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0016_Plastic_0744.stl
+/gate/mbed_s0016_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0016_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0016_Plastic_1180
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0016_Plastic_1180/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0016_Plastic_1180.stl
+/gate/mbed_s0016_Plastic_1180/setMaterial AC_Plastic_1180
+/gate/mbed_s0016_Plastic_1180/vis/setColor yellow
+
+/gate/world/daughters/name mbed_s0016_Titanium
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0016_Titanium/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0016_Titanium.stl
+/gate/mbed_s0016_Titanium/setMaterial AC_Titanium
+/gate/mbed_s0016_Titanium/vis/setColor grey
+
+/gate/world/daughters/name mbed_s0017_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0017_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0017_Plastic_0744.stl
+/gate/mbed_s0017_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0017_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0017_Plastic_1180
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0017_Plastic_1180/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0017_Plastic_1180.stl
+/gate/mbed_s0017_Plastic_1180/setMaterial AC_Plastic_1180
+/gate/mbed_s0017_Plastic_1180/vis/setColor yellow
+
+/gate/world/daughters/name mbed_s0017_Titanium
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0017_Titanium/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0017_Titanium.stl
+/gate/mbed_s0017_Titanium/setMaterial AC_Titanium
+/gate/mbed_s0017_Titanium/vis/setColor grey
+
+/gate/world/daughters/name mbed_s0018_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0018_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0018_Plastic_0744.stl
+/gate/mbed_s0018_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0018_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0018_Plastic_1180
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0018_Plastic_1180/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0018_Plastic_1180.stl
+/gate/mbed_s0018_Plastic_1180/setMaterial AC_Plastic_1180
+/gate/mbed_s0018_Plastic_1180/vis/setColor yellow
+
+/gate/world/daughters/name mbed_s0018_Titanium
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0018_Titanium/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0018_Titanium.stl
+/gate/mbed_s0018_Titanium/setMaterial AC_Titanium
+/gate/mbed_s0018_Titanium/vis/setColor grey
+
+/gate/world/daughters/name mbed_s0019_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0019_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0019_Plastic_0744.stl
+/gate/mbed_s0019_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0019_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0019_Plastic_1180
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0019_Plastic_1180/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0019_Plastic_1180.stl
+/gate/mbed_s0019_Plastic_1180/setMaterial AC_Plastic_1180
+/gate/mbed_s0019_Plastic_1180/vis/setColor yellow
+
+/gate/world/daughters/name mbed_s0019_Titanium
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0019_Titanium/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0019_Titanium.stl
+/gate/mbed_s0019_Titanium/setMaterial AC_Titanium
+/gate/mbed_s0019_Titanium/vis/setColor grey
+
+/gate/world/daughters/name mbed_s0020_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0020_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0020_Plastic_0744.stl
+/gate/mbed_s0020_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0020_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0020_Plastic_1180
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0020_Plastic_1180/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0020_Plastic_1180.stl
+/gate/mbed_s0020_Plastic_1180/setMaterial AC_Plastic_1180
+/gate/mbed_s0020_Plastic_1180/vis/setColor yellow
+
+/gate/world/daughters/name mbed_s0020_Titanium
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0020_Titanium/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0020_Titanium.stl
+/gate/mbed_s0020_Titanium/setMaterial AC_Titanium
+/gate/mbed_s0020_Titanium/vis/setColor grey
+
+/gate/world/daughters/name mbed_s0021_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0021_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0021_Plastic_0744.stl
+/gate/mbed_s0021_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0021_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0021_Plastic_1180
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0021_Plastic_1180/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0021_Plastic_1180.stl
+/gate/mbed_s0021_Plastic_1180/setMaterial AC_Plastic_1180
+/gate/mbed_s0021_Plastic_1180/vis/setColor yellow
+
+/gate/world/daughters/name mbed_s0021_Titanium
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0021_Titanium/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0021_Titanium.stl
+/gate/mbed_s0021_Titanium/setMaterial AC_Titanium
+/gate/mbed_s0021_Titanium/vis/setColor grey
+
+/gate/world/daughters/name mbed_s0022_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0022_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0022_Plastic_0744.stl
+/gate/mbed_s0022_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0022_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0022_Plastic_1180
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0022_Plastic_1180/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0022_Plastic_1180.stl
+/gate/mbed_s0022_Plastic_1180/setMaterial AC_Plastic_1180
+/gate/mbed_s0022_Plastic_1180/vis/setColor yellow
+
+/gate/world/daughters/name mbed_s0022_Titanium
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0022_Titanium/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0022_Titanium.stl
+/gate/mbed_s0022_Titanium/setMaterial AC_Titanium
+/gate/mbed_s0022_Titanium/vis/setColor grey
+
+/gate/world/daughters/name mbed_s0023_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0023_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0023_Plastic_0744.stl
+/gate/mbed_s0023_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0023_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0023_Plastic_1180
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0023_Plastic_1180/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0023_Plastic_1180.stl
+/gate/mbed_s0023_Plastic_1180/setMaterial AC_Plastic_1180
+/gate/mbed_s0023_Plastic_1180/vis/setColor yellow
+
+/gate/world/daughters/name mbed_s0023_Titanium
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0023_Titanium/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0023_Titanium.stl
+/gate/mbed_s0023_Titanium/setMaterial AC_Titanium
+/gate/mbed_s0023_Titanium/vis/setColor grey
+
+/gate/world/daughters/name mbed_s0024_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0024_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0024_Plastic_0744.stl
+/gate/mbed_s0024_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0024_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0024_Plastic_1180
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0024_Plastic_1180/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0024_Plastic_1180.stl
+/gate/mbed_s0024_Plastic_1180/setMaterial AC_Plastic_1180
+/gate/mbed_s0024_Plastic_1180/vis/setColor yellow
+
+/gate/world/daughters/name mbed_s0024_Titanium
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0024_Titanium/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0024_Titanium.stl
+/gate/mbed_s0024_Titanium/setMaterial AC_Titanium
+/gate/mbed_s0024_Titanium/vis/setColor grey
+
+/gate/world/daughters/name mbed_s0025_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0025_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0025_Plastic_0744.stl
+/gate/mbed_s0025_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0025_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0025_Plastic_1180
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0025_Plastic_1180/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0025_Plastic_1180.stl
+/gate/mbed_s0025_Plastic_1180/setMaterial AC_Plastic_1180
+/gate/mbed_s0025_Plastic_1180/vis/setColor yellow
+
+/gate/world/daughters/name mbed_s0025_Titanium
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0025_Titanium/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0025_Titanium.stl
+/gate/mbed_s0025_Titanium/setMaterial AC_Titanium
+/gate/mbed_s0025_Titanium/vis/setColor grey
+
+/gate/world/daughters/name mbed_s0026_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0026_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0026_Plastic_0744.stl
+/gate/mbed_s0026_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0026_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0026_Plastic_1180
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0026_Plastic_1180/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0026_Plastic_1180.stl
+/gate/mbed_s0026_Plastic_1180/setMaterial AC_Plastic_1180
+/gate/mbed_s0026_Plastic_1180/vis/setColor yellow
+
+/gate/world/daughters/name mbed_s0026_Titanium
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0026_Titanium/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0026_Titanium.stl
+/gate/mbed_s0026_Titanium/setMaterial AC_Titanium
+/gate/mbed_s0026_Titanium/vis/setColor grey
+
+/gate/world/daughters/name mbed_s0027_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0027_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0027_Plastic_0744.stl
+/gate/mbed_s0027_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0027_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0027_Plastic_1180
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0027_Plastic_1180/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0027_Plastic_1180.stl
+/gate/mbed_s0027_Plastic_1180/setMaterial AC_Plastic_1180
+/gate/mbed_s0027_Plastic_1180/vis/setColor yellow
+
+/gate/world/daughters/name mbed_s0027_Titanium
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0027_Titanium/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0027_Titanium.stl
+/gate/mbed_s0027_Titanium/setMaterial AC_Titanium
+/gate/mbed_s0027_Titanium/vis/setColor grey
+
+/gate/world/daughters/name mbed_s0028_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0028_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0028_Plastic_0744.stl
+/gate/mbed_s0028_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0028_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0028_Titanium
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0028_Titanium/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0028_Titanium.stl
+/gate/mbed_s0028_Titanium/setMaterial AC_Titanium
+/gate/mbed_s0028_Titanium/vis/setColor grey
+
+/gate/world/daughters/name mbed_s0029_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0029_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0029_Plastic_0744.stl
+/gate/mbed_s0029_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0029_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0029_Titanium
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0029_Titanium/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0029_Titanium.stl
+/gate/mbed_s0029_Titanium/setMaterial AC_Titanium
+/gate/mbed_s0029_Titanium/vis/setColor grey
+
+/gate/world/daughters/name mbed_s0030_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0030_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0030_Plastic_0744.stl
+/gate/mbed_s0030_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0030_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0030_Titanium
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0030_Titanium/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0030_Titanium.stl
+/gate/mbed_s0030_Titanium/setMaterial AC_Titanium
+/gate/mbed_s0030_Titanium/vis/setColor grey
+
+/gate/world/daughters/name mbed_s0031_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0031_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0031_Plastic_0744.stl
+/gate/mbed_s0031_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0031_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0032_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0032_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0032_Plastic_0744.stl
+/gate/mbed_s0032_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0032_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0033_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0033_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0033_Plastic_0744.stl
+/gate/mbed_s0033_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0033_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0034_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0034_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0034_Plastic_0744.stl
+/gate/mbed_s0034_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0034_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0035_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0035_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0035_Plastic_0744.stl
+/gate/mbed_s0035_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0035_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0036_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0036_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0036_Plastic_0744.stl
+/gate/mbed_s0036_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0036_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0037_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0037_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0037_Plastic_0744.stl
+/gate/mbed_s0037_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0037_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0038_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0038_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0038_Plastic_0744.stl
+/gate/mbed_s0038_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0038_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0039_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0039_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0039_Plastic_0744.stl
+/gate/mbed_s0039_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0039_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0040_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0040_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0040_Plastic_0744.stl
+/gate/mbed_s0040_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0040_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0041_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0041_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0041_Plastic_0744.stl
+/gate/mbed_s0041_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0041_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0042_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0042_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0042_Plastic_0744.stl
+/gate/mbed_s0042_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0042_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0043_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0043_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0043_Plastic_0744.stl
+/gate/mbed_s0043_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0043_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0044_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0044_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0044_Plastic_0744.stl
+/gate/mbed_s0044_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0044_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0045_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0045_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0045_Plastic_0744.stl
+/gate/mbed_s0045_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0045_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0046_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0046_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0046_Plastic_0744.stl
+/gate/mbed_s0046_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0046_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0047_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0047_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0047_Plastic_0744.stl
+/gate/mbed_s0047_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0047_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0048_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0048_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0048_Plastic_0744.stl
+/gate/mbed_s0048_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0048_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0049_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0049_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0049_Plastic_0744.stl
+/gate/mbed_s0049_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0049_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0050_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0050_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0050_Plastic_0744.stl
+/gate/mbed_s0050_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0050_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0051_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0051_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0051_Plastic_0744.stl
+/gate/mbed_s0051_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0051_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0052_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0052_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0052_Plastic_0744.stl
+/gate/mbed_s0052_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0052_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0053_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0053_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0053_Plastic_0744.stl
+/gate/mbed_s0053_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0053_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0054_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0054_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0054_Plastic_0744.stl
+/gate/mbed_s0054_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0054_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0055_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0055_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0055_Plastic_0744.stl
+/gate/mbed_s0055_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0055_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0056_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0056_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0056_Plastic_0744.stl
+/gate/mbed_s0056_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0056_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0057_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0057_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0057_Plastic_0744.stl
+/gate/mbed_s0057_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0057_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0058_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0058_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0058_Plastic_0744.stl
+/gate/mbed_s0058_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0058_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0059_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0059_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0059_Plastic_0744.stl
+/gate/mbed_s0059_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0059_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0060_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0060_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0060_Plastic_0744.stl
+/gate/mbed_s0060_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0060_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0061_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0061_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0061_Plastic_0744.stl
+/gate/mbed_s0061_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0061_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0062_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0062_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0062_Plastic_0744.stl
+/gate/mbed_s0062_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0062_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0063_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0063_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0063_Plastic_0744.stl
+/gate/mbed_s0063_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0063_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0064_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0064_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0064_Plastic_0744.stl
+/gate/mbed_s0064_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0064_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0065_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0065_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0065_Plastic_0744.stl
+/gate/mbed_s0065_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0065_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0066_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0066_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0066_Plastic_0744.stl
+/gate/mbed_s0066_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0066_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0067_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0067_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0067_Plastic_0744.stl
+/gate/mbed_s0067_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0067_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0068_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0068_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0068_Plastic_0744.stl
+/gate/mbed_s0068_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0068_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0069_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0069_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0069_Plastic_0744.stl
+/gate/mbed_s0069_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0069_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0070_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0070_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0070_Plastic_0744.stl
+/gate/mbed_s0070_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0070_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0071_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0071_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0071_Plastic_0744.stl
+/gate/mbed_s0071_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0071_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0072_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0072_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0072_Plastic_0744.stl
+/gate/mbed_s0072_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0072_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0073_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0073_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0073_Plastic_0744.stl
+/gate/mbed_s0073_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0073_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0074_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0074_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0074_Plastic_0744.stl
+/gate/mbed_s0074_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0074_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0075_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0075_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0075_Plastic_0744.stl
+/gate/mbed_s0075_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0075_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0076_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0076_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0076_Plastic_0744.stl
+/gate/mbed_s0076_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0076_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0077_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0077_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0077_Plastic_0744.stl
+/gate/mbed_s0077_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0077_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0078_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0078_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0078_Plastic_0744.stl
+/gate/mbed_s0078_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0078_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0079_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0079_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0079_Plastic_0744.stl
+/gate/mbed_s0079_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0079_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0119_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0119_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0119_Plastic_0744.stl
+/gate/mbed_s0119_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0119_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0120_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0120_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0120_Plastic_0744.stl
+/gate/mbed_s0120_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0120_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0121_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0121_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0121_Plastic_0744.stl
+/gate/mbed_s0121_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0121_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0122_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0122_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0122_Plastic_0744.stl
+/gate/mbed_s0122_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0122_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0123_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0123_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0123_Plastic_0744.stl
+/gate/mbed_s0123_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0123_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0124_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0124_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0124_Plastic_0744.stl
+/gate/mbed_s0124_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0124_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0125_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0125_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0125_Plastic_0744.stl
+/gate/mbed_s0125_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0125_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0126_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0126_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0126_Plastic_0744.stl
+/gate/mbed_s0126_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0126_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0127_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0127_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0127_Plastic_0744.stl
+/gate/mbed_s0127_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0127_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0128_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0128_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0128_Plastic_0744.stl
+/gate/mbed_s0128_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0128_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0129_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0129_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0129_Plastic_0744.stl
+/gate/mbed_s0129_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0129_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0130_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0130_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0130_Plastic_0744.stl
+/gate/mbed_s0130_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0130_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0131_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0131_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0131_Plastic_0744.stl
+/gate/mbed_s0131_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0131_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0132_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0132_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0132_Plastic_0744.stl
+/gate/mbed_s0132_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0132_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0133_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0133_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0133_Plastic_0744.stl
+/gate/mbed_s0133_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0133_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0134_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0134_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0134_Plastic_0744.stl
+/gate/mbed_s0134_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0134_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0135_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0135_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0135_Plastic_0744.stl
+/gate/mbed_s0135_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0135_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0136_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0136_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0136_Plastic_0744.stl
+/gate/mbed_s0136_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0136_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0137_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0137_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0137_Plastic_0744.stl
+/gate/mbed_s0137_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0137_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0138_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0138_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0138_Plastic_0744.stl
+/gate/mbed_s0138_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0138_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0139_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0139_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0139_Plastic_0744.stl
+/gate/mbed_s0139_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0139_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0140_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0140_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0140_Plastic_0744.stl
+/gate/mbed_s0140_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0140_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0141_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0141_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0141_Plastic_0744.stl
+/gate/mbed_s0141_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0141_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0142_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0142_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0142_Plastic_0744.stl
+/gate/mbed_s0142_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0142_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0143_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0143_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0143_Plastic_0744.stl
+/gate/mbed_s0143_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0143_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0144_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0144_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0144_Plastic_0744.stl
+/gate/mbed_s0144_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0144_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0145_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0145_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0145_Plastic_0744.stl
+/gate/mbed_s0145_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0145_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0146_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0146_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0146_Plastic_0744.stl
+/gate/mbed_s0146_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0146_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0147_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0147_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0147_Plastic_0744.stl
+/gate/mbed_s0147_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0147_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0148_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0148_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0148_Plastic_0744.stl
+/gate/mbed_s0148_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0148_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0149_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0149_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0149_Plastic_0744.stl
+/gate/mbed_s0149_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0149_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0150_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0150_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0150_Plastic_0744.stl
+/gate/mbed_s0150_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0150_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0151_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0151_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0151_Plastic_0744.stl
+/gate/mbed_s0151_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0151_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0152_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0152_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0152_Plastic_0744.stl
+/gate/mbed_s0152_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0152_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0153_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0153_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0153_Plastic_0744.stl
+/gate/mbed_s0153_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0153_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0154_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0154_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0154_Plastic_0744.stl
+/gate/mbed_s0154_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0154_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0155_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0155_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0155_Plastic_0744.stl
+/gate/mbed_s0155_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0155_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0156_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0156_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0156_Plastic_0744.stl
+/gate/mbed_s0156_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0156_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0157_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0157_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0157_Plastic_0744.stl
+/gate/mbed_s0157_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0157_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0158_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0158_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0158_Plastic_0744.stl
+/gate/mbed_s0158_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0158_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0159_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0159_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0159_Plastic_0744.stl
+/gate/mbed_s0159_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0159_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0160_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0160_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0160_Plastic_0744.stl
+/gate/mbed_s0160_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0160_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0161_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0161_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0161_Plastic_0744.stl
+/gate/mbed_s0161_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0161_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0162_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0162_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0162_Plastic_0744.stl
+/gate/mbed_s0162_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0162_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0163_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0163_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0163_Plastic_0744.stl
+/gate/mbed_s0163_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0163_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0164_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0164_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0164_Plastic_0744.stl
+/gate/mbed_s0164_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0164_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0165_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0165_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0165_Plastic_0744.stl
+/gate/mbed_s0165_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0165_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0166_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0166_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0166_Plastic_0744.stl
+/gate/mbed_s0166_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0166_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0167_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0167_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0167_Plastic_0744.stl
+/gate/mbed_s0167_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0167_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0168_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0168_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0168_Plastic_0744.stl
+/gate/mbed_s0168_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0168_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0169_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0169_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0169_Plastic_0744.stl
+/gate/mbed_s0169_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0169_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0170_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0170_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0170_Plastic_0744.stl
+/gate/mbed_s0170_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0170_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0171_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0171_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0171_Plastic_0744.stl
+/gate/mbed_s0171_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0171_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0172_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0172_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0172_Plastic_0744.stl
+/gate/mbed_s0172_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0172_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0173_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0173_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0173_Plastic_0744.stl
+/gate/mbed_s0173_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0173_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0174_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0174_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0174_Plastic_0744.stl
+/gate/mbed_s0174_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0174_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0175_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0175_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0175_Plastic_0744.stl
+/gate/mbed_s0175_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0175_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0176_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0176_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0176_Plastic_0744.stl
+/gate/mbed_s0176_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0176_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0177_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0177_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0177_Plastic_0744.stl
+/gate/mbed_s0177_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0177_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0178_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0178_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0178_Plastic_0744.stl
+/gate/mbed_s0178_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0178_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0179_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0179_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0179_Plastic_0744.stl
+/gate/mbed_s0179_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0179_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0180_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0180_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0180_Plastic_0744.stl
+/gate/mbed_s0180_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0180_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0181_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0181_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0181_Plastic_0744.stl
+/gate/mbed_s0181_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0181_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0182_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0182_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0182_Plastic_0744.stl
+/gate/mbed_s0182_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0182_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0183_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0183_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0183_Plastic_0744.stl
+/gate/mbed_s0183_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0183_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0184_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0184_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0184_Plastic_0744.stl
+/gate/mbed_s0184_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0184_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name mbed_s0185_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/mbed_s0185_Plastic_0744/geometry/setPathToSTLFile mouse_bed/stl/mbed_s0185_Plastic_0744.stl
+/gate/mbed_s0185_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/mbed_s0185_Plastic_0744/vis/setColor white
+
+# attach every part to the PhantomSD, so that Compton and Rayleigh scatter in it is recorded
+/gate/mbed_s0001_Plastic_0744/attachPhantomSD
+/gate/mbed_s0002_Plastic_0744/attachPhantomSD
+/gate/mbed_s0003_Plastic_0744/attachPhantomSD
+/gate/mbed_s0003_Titanium/attachPhantomSD
+/gate/mbed_s0004_Plastic_0744/attachPhantomSD
+/gate/mbed_s0004_Titanium/attachPhantomSD
+/gate/mbed_s0005_Plastic_0744/attachPhantomSD
+/gate/mbed_s0005_Titanium/attachPhantomSD
+/gate/mbed_s0006_Plastic_0744/attachPhantomSD
+/gate/mbed_s0006_Titanium/attachPhantomSD
+/gate/mbed_s0007_Plastic_0744/attachPhantomSD
+/gate/mbed_s0007_Titanium/attachPhantomSD
+/gate/mbed_s0008_Plastic_0744/attachPhantomSD
+/gate/mbed_s0008_Plastic_1180/attachPhantomSD
+/gate/mbed_s0008_Titanium/attachPhantomSD
+/gate/mbed_s0009_Plastic_0744/attachPhantomSD
+/gate/mbed_s0009_Plastic_1180/attachPhantomSD
+/gate/mbed_s0009_Titanium/attachPhantomSD
+/gate/mbed_s0010_Plastic_0744/attachPhantomSD
+/gate/mbed_s0010_Plastic_1180/attachPhantomSD
+/gate/mbed_s0010_Titanium/attachPhantomSD
+/gate/mbed_s0011_Plastic_0744/attachPhantomSD
+/gate/mbed_s0011_Plastic_1180/attachPhantomSD
+/gate/mbed_s0011_Titanium/attachPhantomSD
+/gate/mbed_s0012_Plastic_0744/attachPhantomSD
+/gate/mbed_s0012_Plastic_1180/attachPhantomSD
+/gate/mbed_s0012_Titanium/attachPhantomSD
+/gate/mbed_s0013_Plastic_0744/attachPhantomSD
+/gate/mbed_s0013_Plastic_1180/attachPhantomSD
+/gate/mbed_s0013_Titanium/attachPhantomSD
+/gate/mbed_s0014_Plastic_0744/attachPhantomSD
+/gate/mbed_s0014_Plastic_1180/attachPhantomSD
+/gate/mbed_s0014_Titanium/attachPhantomSD
+/gate/mbed_s0015_Plastic_0744/attachPhantomSD
+/gate/mbed_s0015_Plastic_1180/attachPhantomSD
+/gate/mbed_s0015_Titanium/attachPhantomSD
+/gate/mbed_s0016_Plastic_0744/attachPhantomSD
+/gate/mbed_s0016_Plastic_1180/attachPhantomSD
+/gate/mbed_s0016_Titanium/attachPhantomSD
+/gate/mbed_s0017_Plastic_0744/attachPhantomSD
+/gate/mbed_s0017_Plastic_1180/attachPhantomSD
+/gate/mbed_s0017_Titanium/attachPhantomSD
+/gate/mbed_s0018_Plastic_0744/attachPhantomSD
+/gate/mbed_s0018_Plastic_1180/attachPhantomSD
+/gate/mbed_s0018_Titanium/attachPhantomSD
+/gate/mbed_s0019_Plastic_0744/attachPhantomSD
+/gate/mbed_s0019_Plastic_1180/attachPhantomSD
+/gate/mbed_s0019_Titanium/attachPhantomSD
+/gate/mbed_s0020_Plastic_0744/attachPhantomSD
+/gate/mbed_s0020_Plastic_1180/attachPhantomSD
+/gate/mbed_s0020_Titanium/attachPhantomSD
+/gate/mbed_s0021_Plastic_0744/attachPhantomSD
+/gate/mbed_s0021_Plastic_1180/attachPhantomSD
+/gate/mbed_s0021_Titanium/attachPhantomSD
+/gate/mbed_s0022_Plastic_0744/attachPhantomSD
+/gate/mbed_s0022_Plastic_1180/attachPhantomSD
+/gate/mbed_s0022_Titanium/attachPhantomSD
+/gate/mbed_s0023_Plastic_0744/attachPhantomSD
+/gate/mbed_s0023_Plastic_1180/attachPhantomSD
+/gate/mbed_s0023_Titanium/attachPhantomSD
+/gate/mbed_s0024_Plastic_0744/attachPhantomSD
+/gate/mbed_s0024_Plastic_1180/attachPhantomSD
+/gate/mbed_s0024_Titanium/attachPhantomSD
+/gate/mbed_s0025_Plastic_0744/attachPhantomSD
+/gate/mbed_s0025_Plastic_1180/attachPhantomSD
+/gate/mbed_s0025_Titanium/attachPhantomSD
+/gate/mbed_s0026_Plastic_0744/attachPhantomSD
+/gate/mbed_s0026_Plastic_1180/attachPhantomSD
+/gate/mbed_s0026_Titanium/attachPhantomSD
+/gate/mbed_s0027_Plastic_0744/attachPhantomSD
+/gate/mbed_s0027_Plastic_1180/attachPhantomSD
+/gate/mbed_s0027_Titanium/attachPhantomSD
+/gate/mbed_s0028_Plastic_0744/attachPhantomSD
+/gate/mbed_s0028_Titanium/attachPhantomSD
+/gate/mbed_s0029_Plastic_0744/attachPhantomSD
+/gate/mbed_s0029_Titanium/attachPhantomSD
+/gate/mbed_s0030_Plastic_0744/attachPhantomSD
+/gate/mbed_s0030_Titanium/attachPhantomSD
+/gate/mbed_s0031_Plastic_0744/attachPhantomSD
+/gate/mbed_s0032_Plastic_0744/attachPhantomSD
+/gate/mbed_s0033_Plastic_0744/attachPhantomSD
+/gate/mbed_s0034_Plastic_0744/attachPhantomSD
+/gate/mbed_s0035_Plastic_0744/attachPhantomSD
+/gate/mbed_s0036_Plastic_0744/attachPhantomSD
+/gate/mbed_s0037_Plastic_0744/attachPhantomSD
+/gate/mbed_s0038_Plastic_0744/attachPhantomSD
+/gate/mbed_s0039_Plastic_0744/attachPhantomSD
+/gate/mbed_s0040_Plastic_0744/attachPhantomSD
+/gate/mbed_s0041_Plastic_0744/attachPhantomSD
+/gate/mbed_s0042_Plastic_0744/attachPhantomSD
+/gate/mbed_s0043_Plastic_0744/attachPhantomSD
+/gate/mbed_s0044_Plastic_0744/attachPhantomSD
+/gate/mbed_s0045_Plastic_0744/attachPhantomSD
+/gate/mbed_s0046_Plastic_0744/attachPhantomSD
+/gate/mbed_s0047_Plastic_0744/attachPhantomSD
+/gate/mbed_s0048_Plastic_0744/attachPhantomSD
+/gate/mbed_s0049_Plastic_0744/attachPhantomSD
+/gate/mbed_s0050_Plastic_0744/attachPhantomSD
+/gate/mbed_s0051_Plastic_0744/attachPhantomSD
+/gate/mbed_s0052_Plastic_0744/attachPhantomSD
+/gate/mbed_s0053_Plastic_0744/attachPhantomSD
+/gate/mbed_s0054_Plastic_0744/attachPhantomSD
+/gate/mbed_s0055_Plastic_0744/attachPhantomSD
+/gate/mbed_s0056_Plastic_0744/attachPhantomSD
+/gate/mbed_s0057_Plastic_0744/attachPhantomSD
+/gate/mbed_s0058_Plastic_0744/attachPhantomSD
+/gate/mbed_s0059_Plastic_0744/attachPhantomSD
+/gate/mbed_s0060_Plastic_0744/attachPhantomSD
+/gate/mbed_s0061_Plastic_0744/attachPhantomSD
+/gate/mbed_s0062_Plastic_0744/attachPhantomSD
+/gate/mbed_s0063_Plastic_0744/attachPhantomSD
+/gate/mbed_s0064_Plastic_0744/attachPhantomSD
+/gate/mbed_s0065_Plastic_0744/attachPhantomSD
+/gate/mbed_s0066_Plastic_0744/attachPhantomSD
+/gate/mbed_s0067_Plastic_0744/attachPhantomSD
+/gate/mbed_s0068_Plastic_0744/attachPhantomSD
+/gate/mbed_s0069_Plastic_0744/attachPhantomSD
+/gate/mbed_s0070_Plastic_0744/attachPhantomSD
+/gate/mbed_s0071_Plastic_0744/attachPhantomSD
+/gate/mbed_s0072_Plastic_0744/attachPhantomSD
+/gate/mbed_s0073_Plastic_0744/attachPhantomSD
+/gate/mbed_s0074_Plastic_0744/attachPhantomSD
+/gate/mbed_s0075_Plastic_0744/attachPhantomSD
+/gate/mbed_s0076_Plastic_0744/attachPhantomSD
+/gate/mbed_s0077_Plastic_0744/attachPhantomSD
+/gate/mbed_s0078_Plastic_0744/attachPhantomSD
+/gate/mbed_s0079_Plastic_0744/attachPhantomSD
+/gate/mbed_s0119_Plastic_0744/attachPhantomSD
+/gate/mbed_s0120_Plastic_0744/attachPhantomSD
+/gate/mbed_s0121_Plastic_0744/attachPhantomSD
+/gate/mbed_s0122_Plastic_0744/attachPhantomSD
+/gate/mbed_s0123_Plastic_0744/attachPhantomSD
+/gate/mbed_s0124_Plastic_0744/attachPhantomSD
+/gate/mbed_s0125_Plastic_0744/attachPhantomSD
+/gate/mbed_s0126_Plastic_0744/attachPhantomSD
+/gate/mbed_s0127_Plastic_0744/attachPhantomSD
+/gate/mbed_s0128_Plastic_0744/attachPhantomSD
+/gate/mbed_s0129_Plastic_0744/attachPhantomSD
+/gate/mbed_s0130_Plastic_0744/attachPhantomSD
+/gate/mbed_s0131_Plastic_0744/attachPhantomSD
+/gate/mbed_s0132_Plastic_0744/attachPhantomSD
+/gate/mbed_s0133_Plastic_0744/attachPhantomSD
+/gate/mbed_s0134_Plastic_0744/attachPhantomSD
+/gate/mbed_s0135_Plastic_0744/attachPhantomSD
+/gate/mbed_s0136_Plastic_0744/attachPhantomSD
+/gate/mbed_s0137_Plastic_0744/attachPhantomSD
+/gate/mbed_s0138_Plastic_0744/attachPhantomSD
+/gate/mbed_s0139_Plastic_0744/attachPhantomSD
+/gate/mbed_s0140_Plastic_0744/attachPhantomSD
+/gate/mbed_s0141_Plastic_0744/attachPhantomSD
+/gate/mbed_s0142_Plastic_0744/attachPhantomSD
+/gate/mbed_s0143_Plastic_0744/attachPhantomSD
+/gate/mbed_s0144_Plastic_0744/attachPhantomSD
+/gate/mbed_s0145_Plastic_0744/attachPhantomSD
+/gate/mbed_s0146_Plastic_0744/attachPhantomSD
+/gate/mbed_s0147_Plastic_0744/attachPhantomSD
+/gate/mbed_s0148_Plastic_0744/attachPhantomSD
+/gate/mbed_s0149_Plastic_0744/attachPhantomSD
+/gate/mbed_s0150_Plastic_0744/attachPhantomSD
+/gate/mbed_s0151_Plastic_0744/attachPhantomSD
+/gate/mbed_s0152_Plastic_0744/attachPhantomSD
+/gate/mbed_s0153_Plastic_0744/attachPhantomSD
+/gate/mbed_s0154_Plastic_0744/attachPhantomSD
+/gate/mbed_s0155_Plastic_0744/attachPhantomSD
+/gate/mbed_s0156_Plastic_0744/attachPhantomSD
+/gate/mbed_s0157_Plastic_0744/attachPhantomSD
+/gate/mbed_s0158_Plastic_0744/attachPhantomSD
+/gate/mbed_s0159_Plastic_0744/attachPhantomSD
+/gate/mbed_s0160_Plastic_0744/attachPhantomSD
+/gate/mbed_s0161_Plastic_0744/attachPhantomSD
+/gate/mbed_s0162_Plastic_0744/attachPhantomSD
+/gate/mbed_s0163_Plastic_0744/attachPhantomSD
+/gate/mbed_s0164_Plastic_0744/attachPhantomSD
+/gate/mbed_s0165_Plastic_0744/attachPhantomSD
+/gate/mbed_s0166_Plastic_0744/attachPhantomSD
+/gate/mbed_s0167_Plastic_0744/attachPhantomSD
+/gate/mbed_s0168_Plastic_0744/attachPhantomSD
+/gate/mbed_s0169_Plastic_0744/attachPhantomSD
+/gate/mbed_s0170_Plastic_0744/attachPhantomSD
+/gate/mbed_s0171_Plastic_0744/attachPhantomSD
+/gate/mbed_s0172_Plastic_0744/attachPhantomSD
+/gate/mbed_s0173_Plastic_0744/attachPhantomSD
+/gate/mbed_s0174_Plastic_0744/attachPhantomSD
+/gate/mbed_s0175_Plastic_0744/attachPhantomSD
+/gate/mbed_s0176_Plastic_0744/attachPhantomSD
+/gate/mbed_s0177_Plastic_0744/attachPhantomSD
+/gate/mbed_s0178_Plastic_0744/attachPhantomSD
+/gate/mbed_s0179_Plastic_0744/attachPhantomSD
+/gate/mbed_s0180_Plastic_0744/attachPhantomSD
+/gate/mbed_s0181_Plastic_0744/attachPhantomSD
+/gate/mbed_s0182_Plastic_0744/attachPhantomSD
+/gate/mbed_s0183_Plastic_0744/attachPhantomSD
+/gate/mbed_s0184_Plastic_0744/attachPhantomSD
+/gate/mbed_s0185_Plastic_0744/attachPhantomSD

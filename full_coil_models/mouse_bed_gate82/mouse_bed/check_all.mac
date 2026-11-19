@@ -1,0 +1,6 @@
+# Overlap check of the mouse bed (all parts) with a stand-in for the Quad35 coil's inner wall and the
+# NECR mouse phantom, without viewer and without acquisition. From the GATE project folder:
+#     Gate mouse_bed/check_all.mac > check_mouse_all.log 2>&1
+#     grep -c "OK!" check_mouse_all.log ; grep -i overlap check_mouse_all.log | grep -v -i "checking overlaps"
+/control/alias bedParts all
+/control/execute mouse_bed/check_common.mac

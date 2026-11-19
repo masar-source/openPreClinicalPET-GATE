@@ -1,0 +1,6 @@
+# Look at the coil and bed ("bore" set) in a window, without any acquisition. From the GATE project folder:
+#     Gate --qt coil3_bed/vis_bore.mac
+# If your GATE has no OGLSQt viewer, change OGLSQt to OGLI on the visDriver line below.
+/control/alias coilParts bore
+/control/alias visDriver OGLSQt
+/control/execute coil3_bed/vis_common.mac

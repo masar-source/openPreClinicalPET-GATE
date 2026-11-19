@@ -1,0 +1,28 @@
+# Quad86 coil, cut at z = -80 ... +80 mm.
+# Two coaxial G10 tubes at the radii of the 511 keV attenuation map (mu-map) of the coil, exact cylinders on
+# the scanner axis with uniform walls, material AC_G10 (1.79 g/cm3, defined in Coil3Bed.db):
+#   inner tube r 43.000-44.800 mm (wall 1.8 mm)
+#   outer tube r 54.690-56.890 mm (wall 2.2 mm)
+# The wall thicknesses agree with my caliper measurements.
+# The outer tube ends 0.01 mm inside the PET bore of the model (the PETscanner envelope starts at r 56.9 mm,
+# a 113.8 mm bore). It also clears the nylon front pad, whose 8 flat 1 mm plates have their inner faces at
+# r 56.963 mm (closest point, mid-face), by 0.073 mm.
+# Every part attaches its own PhantomSD, so scatter in the coil is labelled in the ROOT output.
+/gate/world/daughters/name q86_inner_tube
+/gate/world/daughters/insert cylinder
+/gate/q86_inner_tube/setMaterial AC_G10
+/gate/q86_inner_tube/geometry/setRmin 43.000 mm
+/gate/q86_inner_tube/geometry/setRmax 44.800 mm
+/gate/q86_inner_tube/geometry/setHeight 160.000 mm
+/gate/q86_inner_tube/placement/setTranslation 0 0 0.000 mm
+/gate/q86_inner_tube/vis/setColor red
+/gate/q86_inner_tube/attachPhantomSD
+/gate/world/daughters/name q86_outer_tube
+/gate/world/daughters/insert cylinder
+/gate/q86_outer_tube/setMaterial AC_G10
+/gate/q86_outer_tube/geometry/setRmin 54.690 mm
+/gate/q86_outer_tube/geometry/setRmax 56.890 mm
+/gate/q86_outer_tube/geometry/setHeight 160.000 mm
+/gate/q86_outer_tube/placement/setTranslation 0 0 0.000 mm
+/gate/q86_outer_tube/vis/setColor red
+/gate/q86_outer_tube/attachPhantomSD

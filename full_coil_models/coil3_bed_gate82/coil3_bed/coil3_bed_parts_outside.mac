@@ -1,0 +1,3406 @@
+# Parts for visualisation only: the rest of the coil and of the bed, 486 volumes, 1737096 facets.
+# Executed by coil3_bed_all.mac / coil3_bed_bore.mac (which load Coil3Bed.db and define bedCradle first).
+
+/gate/world/daughters/name bed_s0001_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0001_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0001_Plastic_0744.stl
+/gate/bed_s0001_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0001_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0002_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0002_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0002_Plastic_0744.stl
+/gate/bed_s0002_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0002_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0003_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0003_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0003_Plastic_0744.stl
+/gate/bed_s0003_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0003_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0003_Titanium
+/gate/world/daughters/insert tessellated
+/gate/bed_s0003_Titanium/geometry/setPathToSTLFile coil3_bed/stl/bed_s0003_Titanium.stl
+/gate/bed_s0003_Titanium/setMaterial AC_Titanium
+/gate/bed_s0003_Titanium/vis/setColor grey
+
+/gate/world/daughters/name bed_s0004_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0004_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0004_Plastic_0744.stl
+/gate/bed_s0004_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0004_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0004_Titanium
+/gate/world/daughters/insert tessellated
+/gate/bed_s0004_Titanium/geometry/setPathToSTLFile coil3_bed/stl/bed_s0004_Titanium.stl
+/gate/bed_s0004_Titanium/setMaterial AC_Titanium
+/gate/bed_s0004_Titanium/vis/setColor grey
+
+/gate/world/daughters/name bed_s0005_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0005_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0005_Plastic_0744.stl
+/gate/bed_s0005_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0005_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0005_Titanium
+/gate/world/daughters/insert tessellated
+/gate/bed_s0005_Titanium/geometry/setPathToSTLFile coil3_bed/stl/bed_s0005_Titanium.stl
+/gate/bed_s0005_Titanium/setMaterial AC_Titanium
+/gate/bed_s0005_Titanium/vis/setColor grey
+
+/gate/world/daughters/name bed_s0006_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0006_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0006_Plastic_0744.stl
+/gate/bed_s0006_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0006_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0006_Titanium
+/gate/world/daughters/insert tessellated
+/gate/bed_s0006_Titanium/geometry/setPathToSTLFile coil3_bed/stl/bed_s0006_Titanium.stl
+/gate/bed_s0006_Titanium/setMaterial AC_Titanium
+/gate/bed_s0006_Titanium/vis/setColor grey
+
+/gate/world/daughters/name bed_s0007_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0007_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0007_Plastic_0744.stl
+/gate/bed_s0007_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0007_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0007_Titanium
+/gate/world/daughters/insert tessellated
+/gate/bed_s0007_Titanium/geometry/setPathToSTLFile coil3_bed/stl/bed_s0007_Titanium.stl
+/gate/bed_s0007_Titanium/setMaterial AC_Titanium
+/gate/bed_s0007_Titanium/vis/setColor grey
+
+/gate/world/daughters/name bed_s0008_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0008_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0008_Plastic_0744.stl
+/gate/bed_s0008_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0008_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0008_Plastic_1180
+/gate/world/daughters/insert tessellated
+/gate/bed_s0008_Plastic_1180/geometry/setPathToSTLFile coil3_bed/stl/bed_s0008_Plastic_1180.stl
+/gate/bed_s0008_Plastic_1180/setMaterial AC_Plastic_1180
+/gate/bed_s0008_Plastic_1180/vis/setColor yellow
+
+/gate/world/daughters/name bed_s0008_Titanium
+/gate/world/daughters/insert tessellated
+/gate/bed_s0008_Titanium/geometry/setPathToSTLFile coil3_bed/stl/bed_s0008_Titanium.stl
+/gate/bed_s0008_Titanium/setMaterial AC_Titanium
+/gate/bed_s0008_Titanium/vis/setColor grey
+
+/gate/world/daughters/name bed_s0009_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0009_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0009_Plastic_0744.stl
+/gate/bed_s0009_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0009_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0009_Plastic_1180
+/gate/world/daughters/insert tessellated
+/gate/bed_s0009_Plastic_1180/geometry/setPathToSTLFile coil3_bed/stl/bed_s0009_Plastic_1180.stl
+/gate/bed_s0009_Plastic_1180/setMaterial AC_Plastic_1180
+/gate/bed_s0009_Plastic_1180/vis/setColor yellow
+
+/gate/world/daughters/name bed_s0009_Titanium
+/gate/world/daughters/insert tessellated
+/gate/bed_s0009_Titanium/geometry/setPathToSTLFile coil3_bed/stl/bed_s0009_Titanium.stl
+/gate/bed_s0009_Titanium/setMaterial AC_Titanium
+/gate/bed_s0009_Titanium/vis/setColor grey
+
+/gate/world/daughters/name bed_s0010_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0010_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0010_Plastic_0744.stl
+/gate/bed_s0010_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0010_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0010_Plastic_1180
+/gate/world/daughters/insert tessellated
+/gate/bed_s0010_Plastic_1180/geometry/setPathToSTLFile coil3_bed/stl/bed_s0010_Plastic_1180.stl
+/gate/bed_s0010_Plastic_1180/setMaterial AC_Plastic_1180
+/gate/bed_s0010_Plastic_1180/vis/setColor yellow
+
+/gate/world/daughters/name bed_s0010_Titanium
+/gate/world/daughters/insert tessellated
+/gate/bed_s0010_Titanium/geometry/setPathToSTLFile coil3_bed/stl/bed_s0010_Titanium.stl
+/gate/bed_s0010_Titanium/setMaterial AC_Titanium
+/gate/bed_s0010_Titanium/vis/setColor grey
+
+/gate/world/daughters/name bed_s0011_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0011_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0011_Plastic_0744.stl
+/gate/bed_s0011_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0011_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0011_Plastic_1180
+/gate/world/daughters/insert tessellated
+/gate/bed_s0011_Plastic_1180/geometry/setPathToSTLFile coil3_bed/stl/bed_s0011_Plastic_1180.stl
+/gate/bed_s0011_Plastic_1180/setMaterial AC_Plastic_1180
+/gate/bed_s0011_Plastic_1180/vis/setColor yellow
+
+/gate/world/daughters/name bed_s0011_Titanium
+/gate/world/daughters/insert tessellated
+/gate/bed_s0011_Titanium/geometry/setPathToSTLFile coil3_bed/stl/bed_s0011_Titanium.stl
+/gate/bed_s0011_Titanium/setMaterial AC_Titanium
+/gate/bed_s0011_Titanium/vis/setColor grey
+
+/gate/world/daughters/name bed_s0012_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0012_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0012_Plastic_0744.stl
+/gate/bed_s0012_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0012_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0012_Plastic_1180
+/gate/world/daughters/insert tessellated
+/gate/bed_s0012_Plastic_1180/geometry/setPathToSTLFile coil3_bed/stl/bed_s0012_Plastic_1180.stl
+/gate/bed_s0012_Plastic_1180/setMaterial AC_Plastic_1180
+/gate/bed_s0012_Plastic_1180/vis/setColor yellow
+
+/gate/world/daughters/name bed_s0012_Titanium
+/gate/world/daughters/insert tessellated
+/gate/bed_s0012_Titanium/geometry/setPathToSTLFile coil3_bed/stl/bed_s0012_Titanium.stl
+/gate/bed_s0012_Titanium/setMaterial AC_Titanium
+/gate/bed_s0012_Titanium/vis/setColor grey
+
+/gate/world/daughters/name bed_s0013_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0013_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0013_Plastic_0744.stl
+/gate/bed_s0013_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0013_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0013_Plastic_1180
+/gate/world/daughters/insert tessellated
+/gate/bed_s0013_Plastic_1180/geometry/setPathToSTLFile coil3_bed/stl/bed_s0013_Plastic_1180.stl
+/gate/bed_s0013_Plastic_1180/setMaterial AC_Plastic_1180
+/gate/bed_s0013_Plastic_1180/vis/setColor yellow
+
+/gate/world/daughters/name bed_s0013_Titanium
+/gate/world/daughters/insert tessellated
+/gate/bed_s0013_Titanium/geometry/setPathToSTLFile coil3_bed/stl/bed_s0013_Titanium.stl
+/gate/bed_s0013_Titanium/setMaterial AC_Titanium
+/gate/bed_s0013_Titanium/vis/setColor grey
+
+/gate/world/daughters/name bed_s0014_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0014_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0014_Plastic_0744.stl
+/gate/bed_s0014_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0014_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0014_Plastic_1180
+/gate/world/daughters/insert tessellated
+/gate/bed_s0014_Plastic_1180/geometry/setPathToSTLFile coil3_bed/stl/bed_s0014_Plastic_1180.stl
+/gate/bed_s0014_Plastic_1180/setMaterial AC_Plastic_1180
+/gate/bed_s0014_Plastic_1180/vis/setColor yellow
+
+/gate/world/daughters/name bed_s0014_Titanium
+/gate/world/daughters/insert tessellated
+/gate/bed_s0014_Titanium/geometry/setPathToSTLFile coil3_bed/stl/bed_s0014_Titanium.stl
+/gate/bed_s0014_Titanium/setMaterial AC_Titanium
+/gate/bed_s0014_Titanium/vis/setColor grey
+
+/gate/world/daughters/name bed_s0015_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0015_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0015_Plastic_0744.stl
+/gate/bed_s0015_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0015_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0015_Plastic_1180
+/gate/world/daughters/insert tessellated
+/gate/bed_s0015_Plastic_1180/geometry/setPathToSTLFile coil3_bed/stl/bed_s0015_Plastic_1180.stl
+/gate/bed_s0015_Plastic_1180/setMaterial AC_Plastic_1180
+/gate/bed_s0015_Plastic_1180/vis/setColor yellow
+
+/gate/world/daughters/name bed_s0015_Titanium
+/gate/world/daughters/insert tessellated
+/gate/bed_s0015_Titanium/geometry/setPathToSTLFile coil3_bed/stl/bed_s0015_Titanium.stl
+/gate/bed_s0015_Titanium/setMaterial AC_Titanium
+/gate/bed_s0015_Titanium/vis/setColor grey
+
+/gate/world/daughters/name bed_s0016_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0016_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0016_Plastic_0744.stl
+/gate/bed_s0016_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0016_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0016_Plastic_1180
+/gate/world/daughters/insert tessellated
+/gate/bed_s0016_Plastic_1180/geometry/setPathToSTLFile coil3_bed/stl/bed_s0016_Plastic_1180.stl
+/gate/bed_s0016_Plastic_1180/setMaterial AC_Plastic_1180
+/gate/bed_s0016_Plastic_1180/vis/setColor yellow
+
+/gate/world/daughters/name bed_s0016_Titanium
+/gate/world/daughters/insert tessellated
+/gate/bed_s0016_Titanium/geometry/setPathToSTLFile coil3_bed/stl/bed_s0016_Titanium.stl
+/gate/bed_s0016_Titanium/setMaterial AC_Titanium
+/gate/bed_s0016_Titanium/vis/setColor grey
+
+/gate/world/daughters/name bed_s0017_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0017_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0017_Plastic_0744.stl
+/gate/bed_s0017_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0017_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0017_Plastic_1180
+/gate/world/daughters/insert tessellated
+/gate/bed_s0017_Plastic_1180/geometry/setPathToSTLFile coil3_bed/stl/bed_s0017_Plastic_1180.stl
+/gate/bed_s0017_Plastic_1180/setMaterial AC_Plastic_1180
+/gate/bed_s0017_Plastic_1180/vis/setColor yellow
+
+/gate/world/daughters/name bed_s0017_Titanium
+/gate/world/daughters/insert tessellated
+/gate/bed_s0017_Titanium/geometry/setPathToSTLFile coil3_bed/stl/bed_s0017_Titanium.stl
+/gate/bed_s0017_Titanium/setMaterial AC_Titanium
+/gate/bed_s0017_Titanium/vis/setColor grey
+
+/gate/world/daughters/name bed_s0018_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0018_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0018_Plastic_0744.stl
+/gate/bed_s0018_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0018_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0018_Plastic_1180
+/gate/world/daughters/insert tessellated
+/gate/bed_s0018_Plastic_1180/geometry/setPathToSTLFile coil3_bed/stl/bed_s0018_Plastic_1180.stl
+/gate/bed_s0018_Plastic_1180/setMaterial AC_Plastic_1180
+/gate/bed_s0018_Plastic_1180/vis/setColor yellow
+
+/gate/world/daughters/name bed_s0018_Titanium
+/gate/world/daughters/insert tessellated
+/gate/bed_s0018_Titanium/geometry/setPathToSTLFile coil3_bed/stl/bed_s0018_Titanium.stl
+/gate/bed_s0018_Titanium/setMaterial AC_Titanium
+/gate/bed_s0018_Titanium/vis/setColor grey
+
+/gate/world/daughters/name bed_s0019_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0019_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0019_Plastic_0744.stl
+/gate/bed_s0019_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0019_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0019_Plastic_1180
+/gate/world/daughters/insert tessellated
+/gate/bed_s0019_Plastic_1180/geometry/setPathToSTLFile coil3_bed/stl/bed_s0019_Plastic_1180.stl
+/gate/bed_s0019_Plastic_1180/setMaterial AC_Plastic_1180
+/gate/bed_s0019_Plastic_1180/vis/setColor yellow
+
+/gate/world/daughters/name bed_s0019_Titanium
+/gate/world/daughters/insert tessellated
+/gate/bed_s0019_Titanium/geometry/setPathToSTLFile coil3_bed/stl/bed_s0019_Titanium.stl
+/gate/bed_s0019_Titanium/setMaterial AC_Titanium
+/gate/bed_s0019_Titanium/vis/setColor grey
+
+/gate/world/daughters/name bed_s0020_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0020_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0020_Plastic_0744.stl
+/gate/bed_s0020_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0020_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0020_Plastic_1180
+/gate/world/daughters/insert tessellated
+/gate/bed_s0020_Plastic_1180/geometry/setPathToSTLFile coil3_bed/stl/bed_s0020_Plastic_1180.stl
+/gate/bed_s0020_Plastic_1180/setMaterial AC_Plastic_1180
+/gate/bed_s0020_Plastic_1180/vis/setColor yellow
+
+/gate/world/daughters/name bed_s0020_Titanium
+/gate/world/daughters/insert tessellated
+/gate/bed_s0020_Titanium/geometry/setPathToSTLFile coil3_bed/stl/bed_s0020_Titanium.stl
+/gate/bed_s0020_Titanium/setMaterial AC_Titanium
+/gate/bed_s0020_Titanium/vis/setColor grey
+
+/gate/world/daughters/name bed_s0021_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0021_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0021_Plastic_0744.stl
+/gate/bed_s0021_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0021_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0021_Plastic_1180
+/gate/world/daughters/insert tessellated
+/gate/bed_s0021_Plastic_1180/geometry/setPathToSTLFile coil3_bed/stl/bed_s0021_Plastic_1180.stl
+/gate/bed_s0021_Plastic_1180/setMaterial AC_Plastic_1180
+/gate/bed_s0021_Plastic_1180/vis/setColor yellow
+
+/gate/world/daughters/name bed_s0021_Titanium
+/gate/world/daughters/insert tessellated
+/gate/bed_s0021_Titanium/geometry/setPathToSTLFile coil3_bed/stl/bed_s0021_Titanium.stl
+/gate/bed_s0021_Titanium/setMaterial AC_Titanium
+/gate/bed_s0021_Titanium/vis/setColor grey
+
+/gate/world/daughters/name bed_s0022_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0022_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0022_Plastic_0744.stl
+/gate/bed_s0022_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0022_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0022_Plastic_1180
+/gate/world/daughters/insert tessellated
+/gate/bed_s0022_Plastic_1180/geometry/setPathToSTLFile coil3_bed/stl/bed_s0022_Plastic_1180.stl
+/gate/bed_s0022_Plastic_1180/setMaterial AC_Plastic_1180
+/gate/bed_s0022_Plastic_1180/vis/setColor yellow
+
+/gate/world/daughters/name bed_s0022_Titanium
+/gate/world/daughters/insert tessellated
+/gate/bed_s0022_Titanium/geometry/setPathToSTLFile coil3_bed/stl/bed_s0022_Titanium.stl
+/gate/bed_s0022_Titanium/setMaterial AC_Titanium
+/gate/bed_s0022_Titanium/vis/setColor grey
+
+/gate/world/daughters/name bed_s0023_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0023_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0023_Plastic_0744.stl
+/gate/bed_s0023_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0023_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0023_Plastic_1180
+/gate/world/daughters/insert tessellated
+/gate/bed_s0023_Plastic_1180/geometry/setPathToSTLFile coil3_bed/stl/bed_s0023_Plastic_1180.stl
+/gate/bed_s0023_Plastic_1180/setMaterial AC_Plastic_1180
+/gate/bed_s0023_Plastic_1180/vis/setColor yellow
+
+/gate/world/daughters/name bed_s0023_Titanium
+/gate/world/daughters/insert tessellated
+/gate/bed_s0023_Titanium/geometry/setPathToSTLFile coil3_bed/stl/bed_s0023_Titanium.stl
+/gate/bed_s0023_Titanium/setMaterial AC_Titanium
+/gate/bed_s0023_Titanium/vis/setColor grey
+
+/gate/world/daughters/name bed_s0024_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0024_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0024_Plastic_0744.stl
+/gate/bed_s0024_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0024_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0024_Plastic_1180
+/gate/world/daughters/insert tessellated
+/gate/bed_s0024_Plastic_1180/geometry/setPathToSTLFile coil3_bed/stl/bed_s0024_Plastic_1180.stl
+/gate/bed_s0024_Plastic_1180/setMaterial AC_Plastic_1180
+/gate/bed_s0024_Plastic_1180/vis/setColor yellow
+
+/gate/world/daughters/name bed_s0024_Titanium
+/gate/world/daughters/insert tessellated
+/gate/bed_s0024_Titanium/geometry/setPathToSTLFile coil3_bed/stl/bed_s0024_Titanium.stl
+/gate/bed_s0024_Titanium/setMaterial AC_Titanium
+/gate/bed_s0024_Titanium/vis/setColor grey
+
+/gate/world/daughters/name bed_s0025_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0025_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0025_Plastic_0744.stl
+/gate/bed_s0025_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0025_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0025_Plastic_1180
+/gate/world/daughters/insert tessellated
+/gate/bed_s0025_Plastic_1180/geometry/setPathToSTLFile coil3_bed/stl/bed_s0025_Plastic_1180.stl
+/gate/bed_s0025_Plastic_1180/setMaterial AC_Plastic_1180
+/gate/bed_s0025_Plastic_1180/vis/setColor yellow
+
+/gate/world/daughters/name bed_s0025_Titanium
+/gate/world/daughters/insert tessellated
+/gate/bed_s0025_Titanium/geometry/setPathToSTLFile coil3_bed/stl/bed_s0025_Titanium.stl
+/gate/bed_s0025_Titanium/setMaterial AC_Titanium
+/gate/bed_s0025_Titanium/vis/setColor grey
+
+/gate/world/daughters/name bed_s0026_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0026_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0026_Plastic_0744.stl
+/gate/bed_s0026_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0026_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0026_Plastic_1180
+/gate/world/daughters/insert tessellated
+/gate/bed_s0026_Plastic_1180/geometry/setPathToSTLFile coil3_bed/stl/bed_s0026_Plastic_1180.stl
+/gate/bed_s0026_Plastic_1180/setMaterial AC_Plastic_1180
+/gate/bed_s0026_Plastic_1180/vis/setColor yellow
+
+/gate/world/daughters/name bed_s0026_Titanium
+/gate/world/daughters/insert tessellated
+/gate/bed_s0026_Titanium/geometry/setPathToSTLFile coil3_bed/stl/bed_s0026_Titanium.stl
+/gate/bed_s0026_Titanium/setMaterial AC_Titanium
+/gate/bed_s0026_Titanium/vis/setColor grey
+
+/gate/world/daughters/name bed_s0027_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0027_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0027_Plastic_0744.stl
+/gate/bed_s0027_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0027_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0027_Plastic_1180
+/gate/world/daughters/insert tessellated
+/gate/bed_s0027_Plastic_1180/geometry/setPathToSTLFile coil3_bed/stl/bed_s0027_Plastic_1180.stl
+/gate/bed_s0027_Plastic_1180/setMaterial AC_Plastic_1180
+/gate/bed_s0027_Plastic_1180/vis/setColor yellow
+
+/gate/world/daughters/name bed_s0027_Titanium
+/gate/world/daughters/insert tessellated
+/gate/bed_s0027_Titanium/geometry/setPathToSTLFile coil3_bed/stl/bed_s0027_Titanium.stl
+/gate/bed_s0027_Titanium/setMaterial AC_Titanium
+/gate/bed_s0027_Titanium/vis/setColor grey
+
+/gate/world/daughters/name bed_s0028_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0028_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0028_Plastic_0744.stl
+/gate/bed_s0028_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0028_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0028_Titanium
+/gate/world/daughters/insert tessellated
+/gate/bed_s0028_Titanium/geometry/setPathToSTLFile coil3_bed/stl/bed_s0028_Titanium.stl
+/gate/bed_s0028_Titanium/setMaterial AC_Titanium
+/gate/bed_s0028_Titanium/vis/setColor grey
+
+/gate/world/daughters/name bed_s0029_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0029_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0029_Plastic_0744.stl
+/gate/bed_s0029_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0029_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0029_Titanium
+/gate/world/daughters/insert tessellated
+/gate/bed_s0029_Titanium/geometry/setPathToSTLFile coil3_bed/stl/bed_s0029_Titanium.stl
+/gate/bed_s0029_Titanium/setMaterial AC_Titanium
+/gate/bed_s0029_Titanium/vis/setColor grey
+
+/gate/world/daughters/name bed_s0030_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0030_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0030_Plastic_0744.stl
+/gate/bed_s0030_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0030_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0030_Titanium
+/gate/world/daughters/insert tessellated
+/gate/bed_s0030_Titanium/geometry/setPathToSTLFile coil3_bed/stl/bed_s0030_Titanium.stl
+/gate/bed_s0030_Titanium/setMaterial AC_Titanium
+/gate/bed_s0030_Titanium/vis/setColor grey
+
+/gate/world/daughters/name bed_s0031_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0031_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0031_Plastic_0744.stl
+/gate/bed_s0031_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0031_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0032_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0032_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0032_Plastic_0744.stl
+/gate/bed_s0032_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0032_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0033_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0033_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0033_Plastic_0744.stl
+/gate/bed_s0033_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0033_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0034_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0034_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0034_Plastic_0744.stl
+/gate/bed_s0034_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0034_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0035_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0035_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0035_Plastic_0744.stl
+/gate/bed_s0035_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0035_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0036_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0036_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0036_Plastic_0744.stl
+/gate/bed_s0036_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0036_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0037_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0037_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0037_Plastic_0744.stl
+/gate/bed_s0037_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0037_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0038_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0038_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0038_Plastic_0744.stl
+/gate/bed_s0038_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0038_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0039_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0039_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0039_Plastic_0744.stl
+/gate/bed_s0039_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0039_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0040_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0040_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0040_Plastic_0744.stl
+/gate/bed_s0040_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0040_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0041_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0041_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0041_Plastic_0744.stl
+/gate/bed_s0041_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0041_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0042_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0042_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0042_Plastic_0744.stl
+/gate/bed_s0042_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0042_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0043_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0043_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0043_Plastic_0744.stl
+/gate/bed_s0043_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0043_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0044_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0044_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0044_Plastic_0744.stl
+/gate/bed_s0044_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0044_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0045_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0045_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0045_Plastic_0744.stl
+/gate/bed_s0045_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0045_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0046_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0046_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0046_Plastic_0744.stl
+/gate/bed_s0046_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0046_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0047_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0047_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0047_Plastic_0744.stl
+/gate/bed_s0047_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0047_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0048_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0048_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0048_Plastic_0744.stl
+/gate/bed_s0048_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0048_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0049_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0049_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0049_Plastic_0744.stl
+/gate/bed_s0049_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0049_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0050_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0050_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0050_Plastic_0744.stl
+/gate/bed_s0050_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0050_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0051_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0051_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0051_Plastic_0744.stl
+/gate/bed_s0051_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0051_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0052_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0052_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0052_Plastic_0744.stl
+/gate/bed_s0052_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0052_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0053_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0053_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0053_Plastic_0744.stl
+/gate/bed_s0053_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0053_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0054_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0054_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0054_Plastic_0744.stl
+/gate/bed_s0054_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0054_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0055_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0055_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0055_Plastic_0744.stl
+/gate/bed_s0055_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0055_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0056_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0056_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0056_Plastic_0744.stl
+/gate/bed_s0056_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0056_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0057_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0057_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0057_Plastic_0744.stl
+/gate/bed_s0057_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0057_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0058_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0058_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0058_Plastic_0744.stl
+/gate/bed_s0058_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0058_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0059_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0059_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0059_Plastic_0744.stl
+/gate/bed_s0059_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0059_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0060_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0060_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0060_Plastic_0744.stl
+/gate/bed_s0060_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0060_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0061_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0061_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0061_Plastic_0744.stl
+/gate/bed_s0061_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0061_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0062_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0062_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0062_Plastic_0744.stl
+/gate/bed_s0062_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0062_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0063_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0063_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0063_Plastic_0744.stl
+/gate/bed_s0063_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0063_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0064_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0064_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0064_Plastic_0744.stl
+/gate/bed_s0064_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0064_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0065_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0065_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0065_Plastic_0744.stl
+/gate/bed_s0065_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0065_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0066_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0066_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0066_Plastic_0744.stl
+/gate/bed_s0066_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0066_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0067_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0067_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0067_Plastic_0744.stl
+/gate/bed_s0067_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0067_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0068_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0068_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0068_Plastic_0744.stl
+/gate/bed_s0068_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0068_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0069_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0069_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0069_Plastic_0744.stl
+/gate/bed_s0069_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0069_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0070_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0070_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0070_Plastic_0744.stl
+/gate/bed_s0070_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0070_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0071_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0071_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0071_Plastic_0744.stl
+/gate/bed_s0071_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0071_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0072_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0072_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0072_Plastic_0744.stl
+/gate/bed_s0072_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0072_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0073_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0073_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0073_Plastic_0744.stl
+/gate/bed_s0073_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0073_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0074_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0074_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0074_Plastic_0744.stl
+/gate/bed_s0074_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0074_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0075_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0075_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0075_Plastic_0744.stl
+/gate/bed_s0075_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0075_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0076_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0076_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0076_Plastic_0744.stl
+/gate/bed_s0076_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0076_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0077_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0077_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0077_Plastic_0744.stl
+/gate/bed_s0077_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0077_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0078_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0078_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0078_Plastic_0744.stl
+/gate/bed_s0078_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0078_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0079_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0079_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0079_Plastic_0744.stl
+/gate/bed_s0079_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0079_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0119_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0119_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0119_Plastic_0744.stl
+/gate/bed_s0119_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0119_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0120_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0120_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0120_Plastic_0744.stl
+/gate/bed_s0120_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0120_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0121_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0121_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0121_Plastic_0744.stl
+/gate/bed_s0121_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0121_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0122_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0122_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0122_Plastic_0744.stl
+/gate/bed_s0122_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0122_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0123_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0123_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0123_Plastic_0744.stl
+/gate/bed_s0123_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0123_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0124_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0124_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0124_Plastic_0744.stl
+/gate/bed_s0124_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0124_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0125_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0125_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0125_Plastic_0744.stl
+/gate/bed_s0125_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0125_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0126_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0126_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0126_Plastic_0744.stl
+/gate/bed_s0126_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0126_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0127_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0127_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0127_Plastic_0744.stl
+/gate/bed_s0127_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0127_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0128_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0128_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0128_Plastic_0744.stl
+/gate/bed_s0128_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0128_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0129_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0129_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0129_Plastic_0744.stl
+/gate/bed_s0129_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0129_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0130_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0130_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0130_Plastic_0744.stl
+/gate/bed_s0130_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0130_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0131_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0131_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0131_Plastic_0744.stl
+/gate/bed_s0131_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0131_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0132_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0132_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0132_Plastic_0744.stl
+/gate/bed_s0132_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0132_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0133_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0133_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0133_Plastic_0744.stl
+/gate/bed_s0133_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0133_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0134_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0134_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0134_Plastic_0744.stl
+/gate/bed_s0134_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0134_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0135_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0135_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0135_Plastic_0744.stl
+/gate/bed_s0135_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0135_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0136_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0136_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0136_Plastic_0744.stl
+/gate/bed_s0136_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0136_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0137_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0137_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0137_Plastic_0744.stl
+/gate/bed_s0137_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0137_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0138_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0138_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0138_Plastic_0744.stl
+/gate/bed_s0138_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0138_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0139_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0139_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0139_Plastic_0744.stl
+/gate/bed_s0139_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0139_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0140_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0140_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0140_Plastic_0744.stl
+/gate/bed_s0140_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0140_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0141_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0141_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0141_Plastic_0744.stl
+/gate/bed_s0141_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0141_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0142_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0142_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0142_Plastic_0744.stl
+/gate/bed_s0142_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0142_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0143_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0143_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0143_Plastic_0744.stl
+/gate/bed_s0143_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0143_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0144_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0144_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0144_Plastic_0744.stl
+/gate/bed_s0144_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0144_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0145_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0145_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0145_Plastic_0744.stl
+/gate/bed_s0145_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0145_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0146_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0146_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0146_Plastic_0744.stl
+/gate/bed_s0146_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0146_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0147_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0147_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0147_Plastic_0744.stl
+/gate/bed_s0147_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0147_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0148_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0148_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0148_Plastic_0744.stl
+/gate/bed_s0148_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0148_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0149_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0149_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0149_Plastic_0744.stl
+/gate/bed_s0149_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0149_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0150_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0150_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0150_Plastic_0744.stl
+/gate/bed_s0150_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0150_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0151_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0151_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0151_Plastic_0744.stl
+/gate/bed_s0151_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0151_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0152_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0152_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0152_Plastic_0744.stl
+/gate/bed_s0152_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0152_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0153_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0153_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0153_Plastic_0744.stl
+/gate/bed_s0153_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0153_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0154_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0154_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0154_Plastic_0744.stl
+/gate/bed_s0154_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0154_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0155_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0155_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0155_Plastic_0744.stl
+/gate/bed_s0155_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0155_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0156_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0156_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0156_Plastic_0744.stl
+/gate/bed_s0156_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0156_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0157_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0157_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0157_Plastic_0744.stl
+/gate/bed_s0157_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0157_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0158_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0158_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0158_Plastic_0744.stl
+/gate/bed_s0158_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0158_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0159_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0159_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0159_Plastic_0744.stl
+/gate/bed_s0159_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0159_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0160_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0160_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0160_Plastic_0744.stl
+/gate/bed_s0160_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0160_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0161_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0161_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0161_Plastic_0744.stl
+/gate/bed_s0161_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0161_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0162_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0162_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0162_Plastic_0744.stl
+/gate/bed_s0162_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0162_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0163_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0163_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0163_Plastic_0744.stl
+/gate/bed_s0163_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0163_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0164_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0164_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0164_Plastic_0744.stl
+/gate/bed_s0164_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0164_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0165_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0165_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0165_Plastic_0744.stl
+/gate/bed_s0165_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0165_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0166_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0166_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0166_Plastic_0744.stl
+/gate/bed_s0166_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0166_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0167_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0167_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0167_Plastic_0744.stl
+/gate/bed_s0167_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0167_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0168_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0168_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0168_Plastic_0744.stl
+/gate/bed_s0168_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0168_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0169_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0169_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0169_Plastic_0744.stl
+/gate/bed_s0169_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0169_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0170_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0170_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0170_Plastic_0744.stl
+/gate/bed_s0170_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0170_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0171_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0171_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0171_Plastic_0744.stl
+/gate/bed_s0171_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0171_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0172_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0172_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0172_Plastic_0744.stl
+/gate/bed_s0172_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0172_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0173_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0173_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0173_Plastic_0744.stl
+/gate/bed_s0173_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0173_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0174_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0174_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0174_Plastic_0744.stl
+/gate/bed_s0174_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0174_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0175_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0175_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0175_Plastic_0744.stl
+/gate/bed_s0175_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0175_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0176_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0176_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0176_Plastic_0744.stl
+/gate/bed_s0176_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0176_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0177_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0177_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0177_Plastic_0744.stl
+/gate/bed_s0177_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0177_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0178_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0178_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0178_Plastic_0744.stl
+/gate/bed_s0178_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0178_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0179_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0179_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0179_Plastic_0744.stl
+/gate/bed_s0179_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0179_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0180_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0180_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0180_Plastic_0744.stl
+/gate/bed_s0180_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0180_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0181_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0181_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0181_Plastic_0744.stl
+/gate/bed_s0181_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0181_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0182_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0182_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0182_Plastic_0744.stl
+/gate/bed_s0182_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0182_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0183_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0183_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0183_Plastic_0744.stl
+/gate/bed_s0183_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0183_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0184_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0184_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0184_Plastic_0744.stl
+/gate/bed_s0184_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0184_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name bed_s0185_Plastic_0744
+/gate/world/daughters/insert tessellated
+/gate/bed_s0185_Plastic_0744/geometry/setPathToSTLFile coil3_bed/stl/bed_s0185_Plastic_0744.stl
+/gate/bed_s0185_Plastic_0744/setMaterial AC_Plastic_0744
+/gate/bed_s0185_Plastic_0744/vis/setColor white
+
+/gate/world/daughters/name coil_s0001_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0001_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0001_Plastic_1276.stl
+/gate/coil_s0001_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0001_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0002_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0002_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0002_Plastic_1276.stl
+/gate/coil_s0002_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0002_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0003_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0003_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0003_Plastic_1276.stl
+/gate/coil_s0003_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0003_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0004_Plastic_0923
+/gate/world/daughters/insert tessellated
+/gate/coil_s0004_Plastic_0923/geometry/setPathToSTLFile coil3_bed/stl/coil_s0004_Plastic_0923.stl
+/gate/coil_s0004_Plastic_0923/setMaterial AC_Plastic_0923
+/gate/coil_s0004_Plastic_0923/vis/setColor cyan
+
+/gate/world/daughters/name coil_s0004_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0004_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0004_Plastic_1276.stl
+/gate/coil_s0004_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0004_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0005_Plastic_0923
+/gate/world/daughters/insert tessellated
+/gate/coil_s0005_Plastic_0923/geometry/setPathToSTLFile coil3_bed/stl/coil_s0005_Plastic_0923.stl
+/gate/coil_s0005_Plastic_0923/setMaterial AC_Plastic_0923
+/gate/coil_s0005_Plastic_0923/vis/setColor cyan
+
+/gate/world/daughters/name coil_s0005_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0005_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0005_Plastic_1276.stl
+/gate/coil_s0005_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0005_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0006_Plastic_0923
+/gate/world/daughters/insert tessellated
+/gate/coil_s0006_Plastic_0923/geometry/setPathToSTLFile coil3_bed/stl/coil_s0006_Plastic_0923.stl
+/gate/coil_s0006_Plastic_0923/setMaterial AC_Plastic_0923
+/gate/coil_s0006_Plastic_0923/vis/setColor cyan
+
+/gate/world/daughters/name coil_s0006_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0006_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0006_Plastic_1276.stl
+/gate/coil_s0006_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0006_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0007_Plastic_0923
+/gate/world/daughters/insert tessellated
+/gate/coil_s0007_Plastic_0923/geometry/setPathToSTLFile coil3_bed/stl/coil_s0007_Plastic_0923.stl
+/gate/coil_s0007_Plastic_0923/setMaterial AC_Plastic_0923
+/gate/coil_s0007_Plastic_0923/vis/setColor cyan
+
+/gate/world/daughters/name coil_s0007_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0007_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0007_Plastic_1276.stl
+/gate/coil_s0007_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0007_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0008_Plastic_0923
+/gate/world/daughters/insert tessellated
+/gate/coil_s0008_Plastic_0923/geometry/setPathToSTLFile coil3_bed/stl/coil_s0008_Plastic_0923.stl
+/gate/coil_s0008_Plastic_0923/setMaterial AC_Plastic_0923
+/gate/coil_s0008_Plastic_0923/vis/setColor cyan
+
+/gate/world/daughters/name coil_s0008_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0008_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0008_Plastic_1276.stl
+/gate/coil_s0008_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0008_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0009_Plastic_0923
+/gate/world/daughters/insert tessellated
+/gate/coil_s0009_Plastic_0923/geometry/setPathToSTLFile coil3_bed/stl/coil_s0009_Plastic_0923.stl
+/gate/coil_s0009_Plastic_0923/setMaterial AC_Plastic_0923
+/gate/coil_s0009_Plastic_0923/vis/setColor cyan
+
+/gate/world/daughters/name coil_s0009_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0009_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0009_Plastic_1276.stl
+/gate/coil_s0009_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0009_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0010_Plastic_0923
+/gate/world/daughters/insert tessellated
+/gate/coil_s0010_Plastic_0923/geometry/setPathToSTLFile coil3_bed/stl/coil_s0010_Plastic_0923.stl
+/gate/coil_s0010_Plastic_0923/setMaterial AC_Plastic_0923
+/gate/coil_s0010_Plastic_0923/vis/setColor cyan
+
+/gate/world/daughters/name coil_s0010_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0010_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0010_Plastic_1276.stl
+/gate/coil_s0010_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0010_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0011_Plastic_0923
+/gate/world/daughters/insert tessellated
+/gate/coil_s0011_Plastic_0923/geometry/setPathToSTLFile coil3_bed/stl/coil_s0011_Plastic_0923.stl
+/gate/coil_s0011_Plastic_0923/setMaterial AC_Plastic_0923
+/gate/coil_s0011_Plastic_0923/vis/setColor cyan
+
+/gate/world/daughters/name coil_s0011_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0011_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0011_Plastic_1276.stl
+/gate/coil_s0011_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0011_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0012_Plastic_0923
+/gate/world/daughters/insert tessellated
+/gate/coil_s0012_Plastic_0923/geometry/setPathToSTLFile coil3_bed/stl/coil_s0012_Plastic_0923.stl
+/gate/coil_s0012_Plastic_0923/setMaterial AC_Plastic_0923
+/gate/coil_s0012_Plastic_0923/vis/setColor cyan
+
+/gate/world/daughters/name coil_s0012_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0012_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0012_Plastic_1276.stl
+/gate/coil_s0012_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0012_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0013_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0013_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0013_Plastic_1276.stl
+/gate/coil_s0013_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0013_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0014_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0014_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0014_Plastic_1276.stl
+/gate/coil_s0014_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0014_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0015_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0015_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0015_Plastic_1276.stl
+/gate/coil_s0015_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0015_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0016_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0016_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0016_Plastic_1276.stl
+/gate/coil_s0016_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0016_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0017_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0017_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0017_Plastic_1276.stl
+/gate/coil_s0017_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0017_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0018_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0018_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0018_Plastic_1276.stl
+/gate/coil_s0018_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0018_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0019_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0019_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0019_Plastic_1276.stl
+/gate/coil_s0019_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0019_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0020_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0020_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0020_Plastic_1276.stl
+/gate/coil_s0020_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0020_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0021_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0021_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0021_Plastic_1276.stl
+/gate/coil_s0021_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0021_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0022_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0022_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0022_Plastic_1276.stl
+/gate/coil_s0022_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0022_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0023_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0023_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0023_Plastic_1276.stl
+/gate/coil_s0023_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0023_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0024_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0024_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0024_Plastic_1276.stl
+/gate/coil_s0024_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0024_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0025_Plastic_0923
+/gate/world/daughters/insert tessellated
+/gate/coil_s0025_Plastic_0923/geometry/setPathToSTLFile coil3_bed/stl/coil_s0025_Plastic_0923.stl
+/gate/coil_s0025_Plastic_0923/setMaterial AC_Plastic_0923
+/gate/coil_s0025_Plastic_0923/vis/setColor cyan
+
+/gate/world/daughters/name coil_s0025_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0025_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0025_Plastic_1276.stl
+/gate/coil_s0025_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0025_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0026_Plastic_0923
+/gate/world/daughters/insert tessellated
+/gate/coil_s0026_Plastic_0923/geometry/setPathToSTLFile coil3_bed/stl/coil_s0026_Plastic_0923.stl
+/gate/coil_s0026_Plastic_0923/setMaterial AC_Plastic_0923
+/gate/coil_s0026_Plastic_0923/vis/setColor cyan
+
+/gate/world/daughters/name coil_s0026_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0026_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0026_Plastic_1276.stl
+/gate/coil_s0026_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0026_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0027_Plastic_0923
+/gate/world/daughters/insert tessellated
+/gate/coil_s0027_Plastic_0923/geometry/setPathToSTLFile coil3_bed/stl/coil_s0027_Plastic_0923.stl
+/gate/coil_s0027_Plastic_0923/setMaterial AC_Plastic_0923
+/gate/coil_s0027_Plastic_0923/vis/setColor cyan
+
+/gate/world/daughters/name coil_s0027_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0027_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0027_Plastic_1276.stl
+/gate/coil_s0027_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0027_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0028_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0028_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0028_Plastic_1276.stl
+/gate/coil_s0028_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0028_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0029_Plastic_0923
+/gate/world/daughters/insert tessellated
+/gate/coil_s0029_Plastic_0923/geometry/setPathToSTLFile coil3_bed/stl/coil_s0029_Plastic_0923.stl
+/gate/coil_s0029_Plastic_0923/setMaterial AC_Plastic_0923
+/gate/coil_s0029_Plastic_0923/vis/setColor cyan
+
+/gate/world/daughters/name coil_s0029_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0029_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0029_Plastic_1276.stl
+/gate/coil_s0029_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0029_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0030_Plastic_0923
+/gate/world/daughters/insert tessellated
+/gate/coil_s0030_Plastic_0923/geometry/setPathToSTLFile coil3_bed/stl/coil_s0030_Plastic_0923.stl
+/gate/coil_s0030_Plastic_0923/setMaterial AC_Plastic_0923
+/gate/coil_s0030_Plastic_0923/vis/setColor cyan
+
+/gate/world/daughters/name coil_s0030_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0030_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0030_Plastic_1276.stl
+/gate/coil_s0030_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0030_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0031_Plastic_0923
+/gate/world/daughters/insert tessellated
+/gate/coil_s0031_Plastic_0923/geometry/setPathToSTLFile coil3_bed/stl/coil_s0031_Plastic_0923.stl
+/gate/coil_s0031_Plastic_0923/setMaterial AC_Plastic_0923
+/gate/coil_s0031_Plastic_0923/vis/setColor cyan
+
+/gate/world/daughters/name coil_s0031_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0031_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0031_Plastic_1276.stl
+/gate/coil_s0031_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0031_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0031_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0031_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0031_G10.stl
+/gate/coil_s0031_G10/setMaterial AC_G10
+/gate/coil_s0031_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0032_Plastic_0923
+/gate/world/daughters/insert tessellated
+/gate/coil_s0032_Plastic_0923/geometry/setPathToSTLFile coil3_bed/stl/coil_s0032_Plastic_0923.stl
+/gate/coil_s0032_Plastic_0923/setMaterial AC_Plastic_0923
+/gate/coil_s0032_Plastic_0923/vis/setColor cyan
+
+/gate/world/daughters/name coil_s0032_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0032_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0032_Plastic_1276.stl
+/gate/coil_s0032_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0032_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0032_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0032_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0032_G10.stl
+/gate/coil_s0032_G10/setMaterial AC_G10
+/gate/coil_s0032_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0032_Brass
+/gate/world/daughters/insert tessellated
+/gate/coil_s0032_Brass/geometry/setPathToSTLFile coil3_bed/stl/coil_s0032_Brass.stl
+/gate/coil_s0032_Brass/setMaterial AC_Brass
+/gate/coil_s0032_Brass/vis/setColor yellow
+
+/gate/world/daughters/name coil_s0033_Plastic_0923
+/gate/world/daughters/insert tessellated
+/gate/coil_s0033_Plastic_0923/geometry/setPathToSTLFile coil3_bed/stl/coil_s0033_Plastic_0923.stl
+/gate/coil_s0033_Plastic_0923/setMaterial AC_Plastic_0923
+/gate/coil_s0033_Plastic_0923/vis/setColor cyan
+
+/gate/world/daughters/name coil_s0033_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0033_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0033_Plastic_1276.stl
+/gate/coil_s0033_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0033_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0033_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0033_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0033_G10.stl
+/gate/coil_s0033_G10/setMaterial AC_G10
+/gate/coil_s0033_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0033_Brass
+/gate/world/daughters/insert tessellated
+/gate/coil_s0033_Brass/geometry/setPathToSTLFile coil3_bed/stl/coil_s0033_Brass.stl
+/gate/coil_s0033_Brass/setMaterial AC_Brass
+/gate/coil_s0033_Brass/vis/setColor yellow
+
+/gate/world/daughters/name coil_s0034_Plastic_0923
+/gate/world/daughters/insert tessellated
+/gate/coil_s0034_Plastic_0923/geometry/setPathToSTLFile coil3_bed/stl/coil_s0034_Plastic_0923.stl
+/gate/coil_s0034_Plastic_0923/setMaterial AC_Plastic_0923
+/gate/coil_s0034_Plastic_0923/vis/setColor cyan
+
+/gate/world/daughters/name coil_s0034_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0034_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0034_Plastic_1276.stl
+/gate/coil_s0034_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0034_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0034_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0034_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0034_G10.stl
+/gate/coil_s0034_G10/setMaterial AC_G10
+/gate/coil_s0034_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0034_Brass
+/gate/world/daughters/insert tessellated
+/gate/coil_s0034_Brass/geometry/setPathToSTLFile coil3_bed/stl/coil_s0034_Brass.stl
+/gate/coil_s0034_Brass/setMaterial AC_Brass
+/gate/coil_s0034_Brass/vis/setColor yellow
+
+/gate/world/daughters/name coil_s0035_Plastic_0923
+/gate/world/daughters/insert tessellated
+/gate/coil_s0035_Plastic_0923/geometry/setPathToSTLFile coil3_bed/stl/coil_s0035_Plastic_0923.stl
+/gate/coil_s0035_Plastic_0923/setMaterial AC_Plastic_0923
+/gate/coil_s0035_Plastic_0923/vis/setColor cyan
+
+/gate/world/daughters/name coil_s0035_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0035_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0035_Plastic_1276.stl
+/gate/coil_s0035_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0035_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0035_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0035_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0035_G10.stl
+/gate/coil_s0035_G10/setMaterial AC_G10
+/gate/coil_s0035_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0035_Brass
+/gate/world/daughters/insert tessellated
+/gate/coil_s0035_Brass/geometry/setPathToSTLFile coil3_bed/stl/coil_s0035_Brass.stl
+/gate/coil_s0035_Brass/setMaterial AC_Brass
+/gate/coil_s0035_Brass/vis/setColor yellow
+
+/gate/world/daughters/name coil_s0036_Plastic_0923
+/gate/world/daughters/insert tessellated
+/gate/coil_s0036_Plastic_0923/geometry/setPathToSTLFile coil3_bed/stl/coil_s0036_Plastic_0923.stl
+/gate/coil_s0036_Plastic_0923/setMaterial AC_Plastic_0923
+/gate/coil_s0036_Plastic_0923/vis/setColor cyan
+
+/gate/world/daughters/name coil_s0036_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0036_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0036_Plastic_1276.stl
+/gate/coil_s0036_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0036_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0036_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0036_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0036_G10.stl
+/gate/coil_s0036_G10/setMaterial AC_G10
+/gate/coil_s0036_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0036_Brass
+/gate/world/daughters/insert tessellated
+/gate/coil_s0036_Brass/geometry/setPathToSTLFile coil3_bed/stl/coil_s0036_Brass.stl
+/gate/coil_s0036_Brass/setMaterial AC_Brass
+/gate/coil_s0036_Brass/vis/setColor yellow
+
+/gate/world/daughters/name coil_s0037_Plastic_0923
+/gate/world/daughters/insert tessellated
+/gate/coil_s0037_Plastic_0923/geometry/setPathToSTLFile coil3_bed/stl/coil_s0037_Plastic_0923.stl
+/gate/coil_s0037_Plastic_0923/setMaterial AC_Plastic_0923
+/gate/coil_s0037_Plastic_0923/vis/setColor cyan
+
+/gate/world/daughters/name coil_s0037_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0037_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0037_Plastic_1276.stl
+/gate/coil_s0037_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0037_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0037_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0037_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0037_G10.stl
+/gate/coil_s0037_G10/setMaterial AC_G10
+/gate/coil_s0037_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0037_Brass
+/gate/world/daughters/insert tessellated
+/gate/coil_s0037_Brass/geometry/setPathToSTLFile coil3_bed/stl/coil_s0037_Brass.stl
+/gate/coil_s0037_Brass/setMaterial AC_Brass
+/gate/coil_s0037_Brass/vis/setColor yellow
+
+/gate/world/daughters/name coil_s0038_Plastic_0923
+/gate/world/daughters/insert tessellated
+/gate/coil_s0038_Plastic_0923/geometry/setPathToSTLFile coil3_bed/stl/coil_s0038_Plastic_0923.stl
+/gate/coil_s0038_Plastic_0923/setMaterial AC_Plastic_0923
+/gate/coil_s0038_Plastic_0923/vis/setColor cyan
+
+/gate/world/daughters/name coil_s0038_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0038_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0038_Plastic_1276.stl
+/gate/coil_s0038_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0038_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0038_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0038_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0038_G10.stl
+/gate/coil_s0038_G10/setMaterial AC_G10
+/gate/coil_s0038_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0038_Brass
+/gate/world/daughters/insert tessellated
+/gate/coil_s0038_Brass/geometry/setPathToSTLFile coil3_bed/stl/coil_s0038_Brass.stl
+/gate/coil_s0038_Brass/setMaterial AC_Brass
+/gate/coil_s0038_Brass/vis/setColor yellow
+
+/gate/world/daughters/name coil_s0039_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0039_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0039_Plastic_1276.stl
+/gate/coil_s0039_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0039_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0039_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0039_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0039_G10.stl
+/gate/coil_s0039_G10/setMaterial AC_G10
+/gate/coil_s0039_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0039_Brass
+/gate/world/daughters/insert tessellated
+/gate/coil_s0039_Brass/geometry/setPathToSTLFile coil3_bed/stl/coil_s0039_Brass.stl
+/gate/coil_s0039_Brass/setMaterial AC_Brass
+/gate/coil_s0039_Brass/vis/setColor yellow
+
+/gate/world/daughters/name coil_s0040_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0040_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0040_Plastic_1276.stl
+/gate/coil_s0040_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0040_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0040_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0040_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0040_G10.stl
+/gate/coil_s0040_G10/setMaterial AC_G10
+/gate/coil_s0040_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0040_Brass
+/gate/world/daughters/insert tessellated
+/gate/coil_s0040_Brass/geometry/setPathToSTLFile coil3_bed/stl/coil_s0040_Brass.stl
+/gate/coil_s0040_Brass/setMaterial AC_Brass
+/gate/coil_s0040_Brass/vis/setColor yellow
+
+/gate/world/daughters/name coil_s0041_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0041_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0041_Plastic_1276.stl
+/gate/coil_s0041_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0041_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0041_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0041_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0041_G10.stl
+/gate/coil_s0041_G10/setMaterial AC_G10
+/gate/coil_s0041_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0041_Brass
+/gate/world/daughters/insert tessellated
+/gate/coil_s0041_Brass/geometry/setPathToSTLFile coil3_bed/stl/coil_s0041_Brass.stl
+/gate/coil_s0041_Brass/setMaterial AC_Brass
+/gate/coil_s0041_Brass/vis/setColor yellow
+
+/gate/world/daughters/name coil_s0042_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0042_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0042_Plastic_1276.stl
+/gate/coil_s0042_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0042_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0042_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0042_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0042_G10.stl
+/gate/coil_s0042_G10/setMaterial AC_G10
+/gate/coil_s0042_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0046_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0046_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0046_G10.stl
+/gate/coil_s0046_G10/setMaterial AC_G10
+/gate/coil_s0046_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0047_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0047_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0047_G10.stl
+/gate/coil_s0047_G10/setMaterial AC_G10
+/gate/coil_s0047_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0048_Brass
+/gate/world/daughters/insert tessellated
+/gate/coil_s0048_Brass/geometry/setPathToSTLFile coil3_bed/stl/coil_s0048_Brass.stl
+/gate/coil_s0048_Brass/setMaterial AC_Brass
+/gate/coil_s0048_Brass/vis/setColor yellow
+
+/gate/world/daughters/name coil_s0049_Brass
+/gate/world/daughters/insert tessellated
+/gate/coil_s0049_Brass/geometry/setPathToSTLFile coil3_bed/stl/coil_s0049_Brass.stl
+/gate/coil_s0049_Brass/setMaterial AC_Brass
+/gate/coil_s0049_Brass/vis/setColor yellow
+
+/gate/world/daughters/name coil_s0050_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0050_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0050_G10.stl
+/gate/coil_s0050_G10/setMaterial AC_G10
+/gate/coil_s0050_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0050_Brass
+/gate/world/daughters/insert tessellated
+/gate/coil_s0050_Brass/geometry/setPathToSTLFile coil3_bed/stl/coil_s0050_Brass.stl
+/gate/coil_s0050_Brass/setMaterial AC_Brass
+/gate/coil_s0050_Brass/vis/setColor yellow
+
+/gate/world/daughters/name coil_s0051_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0051_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0051_G10.stl
+/gate/coil_s0051_G10/setMaterial AC_G10
+/gate/coil_s0051_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0051_Brass
+/gate/world/daughters/insert tessellated
+/gate/coil_s0051_Brass/geometry/setPathToSTLFile coil3_bed/stl/coil_s0051_Brass.stl
+/gate/coil_s0051_Brass/setMaterial AC_Brass
+/gate/coil_s0051_Brass/vis/setColor yellow
+
+/gate/world/daughters/name coil_s0052_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0052_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0052_G10.stl
+/gate/coil_s0052_G10/setMaterial AC_G10
+/gate/coil_s0052_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0052_Brass
+/gate/world/daughters/insert tessellated
+/gate/coil_s0052_Brass/geometry/setPathToSTLFile coil3_bed/stl/coil_s0052_Brass.stl
+/gate/coil_s0052_Brass/setMaterial AC_Brass
+/gate/coil_s0052_Brass/vis/setColor yellow
+
+/gate/world/daughters/name coil_s0053_Brass
+/gate/world/daughters/insert tessellated
+/gate/coil_s0053_Brass/geometry/setPathToSTLFile coil3_bed/stl/coil_s0053_Brass.stl
+/gate/coil_s0053_Brass/setMaterial AC_Brass
+/gate/coil_s0053_Brass/vis/setColor yellow
+
+/gate/world/daughters/name coil_s0054_Brass
+/gate/world/daughters/insert tessellated
+/gate/coil_s0054_Brass/geometry/setPathToSTLFile coil3_bed/stl/coil_s0054_Brass.stl
+/gate/coil_s0054_Brass/setMaterial AC_Brass
+/gate/coil_s0054_Brass/vis/setColor yellow
+
+/gate/world/daughters/name coil_s0055_Aluminium
+/gate/world/daughters/insert tessellated
+/gate/coil_s0055_Aluminium/geometry/setPathToSTLFile coil3_bed/stl/coil_s0055_Aluminium.stl
+/gate/coil_s0055_Aluminium/setMaterial AC_Aluminium
+/gate/coil_s0055_Aluminium/vis/setColor grey
+
+/gate/world/daughters/name coil_s0055_Brass
+/gate/world/daughters/insert tessellated
+/gate/coil_s0055_Brass/geometry/setPathToSTLFile coil3_bed/stl/coil_s0055_Brass.stl
+/gate/coil_s0055_Brass/setMaterial AC_Brass
+/gate/coil_s0055_Brass/vis/setColor yellow
+
+/gate/world/daughters/name coil_s0056_Aluminium
+/gate/world/daughters/insert tessellated
+/gate/coil_s0056_Aluminium/geometry/setPathToSTLFile coil3_bed/stl/coil_s0056_Aluminium.stl
+/gate/coil_s0056_Aluminium/setMaterial AC_Aluminium
+/gate/coil_s0056_Aluminium/vis/setColor grey
+
+/gate/world/daughters/name coil_s0056_Brass
+/gate/world/daughters/insert tessellated
+/gate/coil_s0056_Brass/geometry/setPathToSTLFile coil3_bed/stl/coil_s0056_Brass.stl
+/gate/coil_s0056_Brass/setMaterial AC_Brass
+/gate/coil_s0056_Brass/vis/setColor yellow
+
+/gate/world/daughters/name coil_s0057_Aluminium
+/gate/world/daughters/insert tessellated
+/gate/coil_s0057_Aluminium/geometry/setPathToSTLFile coil3_bed/stl/coil_s0057_Aluminium.stl
+/gate/coil_s0057_Aluminium/setMaterial AC_Aluminium
+/gate/coil_s0057_Aluminium/vis/setColor grey
+
+/gate/world/daughters/name coil_s0057_Brass
+/gate/world/daughters/insert tessellated
+/gate/coil_s0057_Brass/geometry/setPathToSTLFile coil3_bed/stl/coil_s0057_Brass.stl
+/gate/coil_s0057_Brass/setMaterial AC_Brass
+/gate/coil_s0057_Brass/vis/setColor yellow
+
+/gate/world/daughters/name coil_s0058_Aluminium
+/gate/world/daughters/insert tessellated
+/gate/coil_s0058_Aluminium/geometry/setPathToSTLFile coil3_bed/stl/coil_s0058_Aluminium.stl
+/gate/coil_s0058_Aluminium/setMaterial AC_Aluminium
+/gate/coil_s0058_Aluminium/vis/setColor grey
+
+/gate/world/daughters/name coil_s0058_Brass
+/gate/world/daughters/insert tessellated
+/gate/coil_s0058_Brass/geometry/setPathToSTLFile coil3_bed/stl/coil_s0058_Brass.stl
+/gate/coil_s0058_Brass/setMaterial AC_Brass
+/gate/coil_s0058_Brass/vis/setColor yellow
+
+/gate/world/daughters/name coil_s0059_Aluminium
+/gate/world/daughters/insert tessellated
+/gate/coil_s0059_Aluminium/geometry/setPathToSTLFile coil3_bed/stl/coil_s0059_Aluminium.stl
+/gate/coil_s0059_Aluminium/setMaterial AC_Aluminium
+/gate/coil_s0059_Aluminium/vis/setColor grey
+
+/gate/world/daughters/name coil_s0059_Brass
+/gate/world/daughters/insert tessellated
+/gate/coil_s0059_Brass/geometry/setPathToSTLFile coil3_bed/stl/coil_s0059_Brass.stl
+/gate/coil_s0059_Brass/setMaterial AC_Brass
+/gate/coil_s0059_Brass/vis/setColor yellow
+
+/gate/world/daughters/name coil_s0060_Aluminium
+/gate/world/daughters/insert tessellated
+/gate/coil_s0060_Aluminium/geometry/setPathToSTLFile coil3_bed/stl/coil_s0060_Aluminium.stl
+/gate/coil_s0060_Aluminium/setMaterial AC_Aluminium
+/gate/coil_s0060_Aluminium/vis/setColor grey
+
+/gate/world/daughters/name coil_s0060_Brass
+/gate/world/daughters/insert tessellated
+/gate/coil_s0060_Brass/geometry/setPathToSTLFile coil3_bed/stl/coil_s0060_Brass.stl
+/gate/coil_s0060_Brass/setMaterial AC_Brass
+/gate/coil_s0060_Brass/vis/setColor yellow
+
+/gate/world/daughters/name coil_s0061_Aluminium
+/gate/world/daughters/insert tessellated
+/gate/coil_s0061_Aluminium/geometry/setPathToSTLFile coil3_bed/stl/coil_s0061_Aluminium.stl
+/gate/coil_s0061_Aluminium/setMaterial AC_Aluminium
+/gate/coil_s0061_Aluminium/vis/setColor grey
+
+/gate/world/daughters/name coil_s0061_Brass
+/gate/world/daughters/insert tessellated
+/gate/coil_s0061_Brass/geometry/setPathToSTLFile coil3_bed/stl/coil_s0061_Brass.stl
+/gate/coil_s0061_Brass/setMaterial AC_Brass
+/gate/coil_s0061_Brass/vis/setColor yellow
+
+/gate/world/daughters/name coil_s0062_Aluminium
+/gate/world/daughters/insert tessellated
+/gate/coil_s0062_Aluminium/geometry/setPathToSTLFile coil3_bed/stl/coil_s0062_Aluminium.stl
+/gate/coil_s0062_Aluminium/setMaterial AC_Aluminium
+/gate/coil_s0062_Aluminium/vis/setColor grey
+
+/gate/world/daughters/name coil_s0063_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0063_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0063_G10.stl
+/gate/coil_s0063_G10/setMaterial AC_G10
+/gate/coil_s0063_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0063_Aluminium
+/gate/world/daughters/insert tessellated
+/gate/coil_s0063_Aluminium/geometry/setPathToSTLFile coil3_bed/stl/coil_s0063_Aluminium.stl
+/gate/coil_s0063_Aluminium/setMaterial AC_Aluminium
+/gate/coil_s0063_Aluminium/vis/setColor grey
+
+/gate/world/daughters/name coil_s0064_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0064_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0064_G10.stl
+/gate/coil_s0064_G10/setMaterial AC_G10
+/gate/coil_s0064_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0064_Aluminium
+/gate/world/daughters/insert tessellated
+/gate/coil_s0064_Aluminium/geometry/setPathToSTLFile coil3_bed/stl/coil_s0064_Aluminium.stl
+/gate/coil_s0064_Aluminium/setMaterial AC_Aluminium
+/gate/coil_s0064_Aluminium/vis/setColor grey
+
+/gate/world/daughters/name coil_s0065_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0065_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0065_G10.stl
+/gate/coil_s0065_G10/setMaterial AC_G10
+/gate/coil_s0065_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0065_Aluminium
+/gate/world/daughters/insert tessellated
+/gate/coil_s0065_Aluminium/geometry/setPathToSTLFile coil3_bed/stl/coil_s0065_Aluminium.stl
+/gate/coil_s0065_Aluminium/setMaterial AC_Aluminium
+/gate/coil_s0065_Aluminium/vis/setColor grey
+
+/gate/world/daughters/name coil_s0066_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0066_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0066_G10.stl
+/gate/coil_s0066_G10/setMaterial AC_G10
+/gate/coil_s0066_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0067_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0067_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0067_Plastic_1276.stl
+/gate/coil_s0067_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0067_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0067_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0067_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0067_G10.stl
+/gate/coil_s0067_G10/setMaterial AC_G10
+/gate/coil_s0067_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0068_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0068_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0068_Plastic_1276.stl
+/gate/coil_s0068_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0068_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0068_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0068_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0068_G10.stl
+/gate/coil_s0068_G10/setMaterial AC_G10
+/gate/coil_s0068_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0068_Brass
+/gate/world/daughters/insert tessellated
+/gate/coil_s0068_Brass/geometry/setPathToSTLFile coil3_bed/stl/coil_s0068_Brass.stl
+/gate/coil_s0068_Brass/setMaterial AC_Brass
+/gate/coil_s0068_Brass/vis/setColor yellow
+
+/gate/world/daughters/name coil_s0069_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0069_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0069_Plastic_1276.stl
+/gate/coil_s0069_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0069_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0069_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0069_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0069_G10.stl
+/gate/coil_s0069_G10/setMaterial AC_G10
+/gate/coil_s0069_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0069_Brass
+/gate/world/daughters/insert tessellated
+/gate/coil_s0069_Brass/geometry/setPathToSTLFile coil3_bed/stl/coil_s0069_Brass.stl
+/gate/coil_s0069_Brass/setMaterial AC_Brass
+/gate/coil_s0069_Brass/vis/setColor yellow
+
+/gate/world/daughters/name coil_s0070_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0070_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0070_Plastic_1276.stl
+/gate/coil_s0070_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0070_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0070_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0070_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0070_G10.stl
+/gate/coil_s0070_G10/setMaterial AC_G10
+/gate/coil_s0070_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0070_Brass
+/gate/world/daughters/insert tessellated
+/gate/coil_s0070_Brass/geometry/setPathToSTLFile coil3_bed/stl/coil_s0070_Brass.stl
+/gate/coil_s0070_Brass/setMaterial AC_Brass
+/gate/coil_s0070_Brass/vis/setColor yellow
+
+/gate/world/daughters/name coil_s0071_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0071_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0071_Plastic_1276.stl
+/gate/coil_s0071_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0071_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0071_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0071_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0071_G10.stl
+/gate/coil_s0071_G10/setMaterial AC_G10
+/gate/coil_s0071_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0071_Brass
+/gate/world/daughters/insert tessellated
+/gate/coil_s0071_Brass/geometry/setPathToSTLFile coil3_bed/stl/coil_s0071_Brass.stl
+/gate/coil_s0071_Brass/setMaterial AC_Brass
+/gate/coil_s0071_Brass/vis/setColor yellow
+
+/gate/world/daughters/name coil_s0072_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0072_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0072_Plastic_1276.stl
+/gate/coil_s0072_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0072_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0072_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0072_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0072_G10.stl
+/gate/coil_s0072_G10/setMaterial AC_G10
+/gate/coil_s0072_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0072_Brass
+/gate/world/daughters/insert tessellated
+/gate/coil_s0072_Brass/geometry/setPathToSTLFile coil3_bed/stl/coil_s0072_Brass.stl
+/gate/coil_s0072_Brass/setMaterial AC_Brass
+/gate/coil_s0072_Brass/vis/setColor yellow
+
+/gate/world/daughters/name coil_s0073_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0073_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0073_Plastic_1276.stl
+/gate/coil_s0073_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0073_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0073_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0073_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0073_G10.stl
+/gate/coil_s0073_G10/setMaterial AC_G10
+/gate/coil_s0073_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0073_Brass
+/gate/world/daughters/insert tessellated
+/gate/coil_s0073_Brass/geometry/setPathToSTLFile coil3_bed/stl/coil_s0073_Brass.stl
+/gate/coil_s0073_Brass/setMaterial AC_Brass
+/gate/coil_s0073_Brass/vis/setColor yellow
+
+/gate/world/daughters/name coil_s0074_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0074_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0074_Plastic_1276.stl
+/gate/coil_s0074_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0074_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0074_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0074_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0074_G10.stl
+/gate/coil_s0074_G10/setMaterial AC_G10
+/gate/coil_s0074_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0074_Brass
+/gate/world/daughters/insert tessellated
+/gate/coil_s0074_Brass/geometry/setPathToSTLFile coil3_bed/stl/coil_s0074_Brass.stl
+/gate/coil_s0074_Brass/setMaterial AC_Brass
+/gate/coil_s0074_Brass/vis/setColor yellow
+
+/gate/world/daughters/name coil_s0075_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0075_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0075_Plastic_1276.stl
+/gate/coil_s0075_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0075_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0075_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0075_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0075_G10.stl
+/gate/coil_s0075_G10/setMaterial AC_G10
+/gate/coil_s0075_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0075_Brass
+/gate/world/daughters/insert tessellated
+/gate/coil_s0075_Brass/geometry/setPathToSTLFile coil3_bed/stl/coil_s0075_Brass.stl
+/gate/coil_s0075_Brass/setMaterial AC_Brass
+/gate/coil_s0075_Brass/vis/setColor yellow
+
+/gate/world/daughters/name coil_s0076_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0076_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0076_Plastic_1276.stl
+/gate/coil_s0076_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0076_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0076_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0076_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0076_G10.stl
+/gate/coil_s0076_G10/setMaterial AC_G10
+/gate/coil_s0076_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0076_Brass
+/gate/world/daughters/insert tessellated
+/gate/coil_s0076_Brass/geometry/setPathToSTLFile coil3_bed/stl/coil_s0076_Brass.stl
+/gate/coil_s0076_Brass/setMaterial AC_Brass
+/gate/coil_s0076_Brass/vis/setColor yellow
+
+/gate/world/daughters/name coil_s0077_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0077_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0077_Plastic_1276.stl
+/gate/coil_s0077_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0077_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0077_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0077_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0077_G10.stl
+/gate/coil_s0077_G10/setMaterial AC_G10
+/gate/coil_s0077_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0077_Brass
+/gate/world/daughters/insert tessellated
+/gate/coil_s0077_Brass/geometry/setPathToSTLFile coil3_bed/stl/coil_s0077_Brass.stl
+/gate/coil_s0077_Brass/setMaterial AC_Brass
+/gate/coil_s0077_Brass/vis/setColor yellow
+
+/gate/world/daughters/name coil_s0078_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0078_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0078_Plastic_1276.stl
+/gate/coil_s0078_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0078_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0078_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0078_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0078_G10.stl
+/gate/coil_s0078_G10/setMaterial AC_G10
+/gate/coil_s0078_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0079_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0079_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0079_Plastic_1276.stl
+/gate/coil_s0079_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0079_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0079_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0079_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0079_G10.stl
+/gate/coil_s0079_G10/setMaterial AC_G10
+/gate/coil_s0079_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0080_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0080_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0080_Plastic_1276.stl
+/gate/coil_s0080_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0080_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0080_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0080_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0080_G10.stl
+/gate/coil_s0080_G10/setMaterial AC_G10
+/gate/coil_s0080_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0081_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0081_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0081_Plastic_1276.stl
+/gate/coil_s0081_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0081_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0081_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0081_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0081_G10.stl
+/gate/coil_s0081_G10/setMaterial AC_G10
+/gate/coil_s0081_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0081_Brass
+/gate/world/daughters/insert tessellated
+/gate/coil_s0081_Brass/geometry/setPathToSTLFile coil3_bed/stl/coil_s0081_Brass.stl
+/gate/coil_s0081_Brass/setMaterial AC_Brass
+/gate/coil_s0081_Brass/vis/setColor yellow
+
+/gate/world/daughters/name coil_s0082_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0082_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0082_Plastic_1276.stl
+/gate/coil_s0082_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0082_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0082_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0082_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0082_G10.stl
+/gate/coil_s0082_G10/setMaterial AC_G10
+/gate/coil_s0082_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0082_Brass
+/gate/world/daughters/insert tessellated
+/gate/coil_s0082_Brass/geometry/setPathToSTLFile coil3_bed/stl/coil_s0082_Brass.stl
+/gate/coil_s0082_Brass/setMaterial AC_Brass
+/gate/coil_s0082_Brass/vis/setColor yellow
+
+/gate/world/daughters/name coil_s0083_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0083_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0083_Plastic_1276.stl
+/gate/coil_s0083_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0083_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0083_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0083_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0083_G10.stl
+/gate/coil_s0083_G10/setMaterial AC_G10
+/gate/coil_s0083_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0083_Brass
+/gate/world/daughters/insert tessellated
+/gate/coil_s0083_Brass/geometry/setPathToSTLFile coil3_bed/stl/coil_s0083_Brass.stl
+/gate/coil_s0083_Brass/setMaterial AC_Brass
+/gate/coil_s0083_Brass/vis/setColor yellow
+
+/gate/world/daughters/name coil_s0084_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0084_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0084_Plastic_1276.stl
+/gate/coil_s0084_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0084_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0084_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0084_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0084_G10.stl
+/gate/coil_s0084_G10/setMaterial AC_G10
+/gate/coil_s0084_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0084_Brass
+/gate/world/daughters/insert tessellated
+/gate/coil_s0084_Brass/geometry/setPathToSTLFile coil3_bed/stl/coil_s0084_Brass.stl
+/gate/coil_s0084_Brass/setMaterial AC_Brass
+/gate/coil_s0084_Brass/vis/setColor yellow
+
+/gate/world/daughters/name coil_s0085_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0085_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0085_Plastic_1276.stl
+/gate/coil_s0085_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0085_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0085_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0085_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0085_G10.stl
+/gate/coil_s0085_G10/setMaterial AC_G10
+/gate/coil_s0085_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0085_Brass
+/gate/world/daughters/insert tessellated
+/gate/coil_s0085_Brass/geometry/setPathToSTLFile coil3_bed/stl/coil_s0085_Brass.stl
+/gate/coil_s0085_Brass/setMaterial AC_Brass
+/gate/coil_s0085_Brass/vis/setColor yellow
+
+/gate/world/daughters/name coil_s0086_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0086_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0086_Plastic_1276.stl
+/gate/coil_s0086_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0086_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0086_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0086_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0086_G10.stl
+/gate/coil_s0086_G10/setMaterial AC_G10
+/gate/coil_s0086_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0086_Brass
+/gate/world/daughters/insert tessellated
+/gate/coil_s0086_Brass/geometry/setPathToSTLFile coil3_bed/stl/coil_s0086_Brass.stl
+/gate/coil_s0086_Brass/setMaterial AC_Brass
+/gate/coil_s0086_Brass/vis/setColor yellow
+
+/gate/world/daughters/name coil_s0087_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0087_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0087_Plastic_1276.stl
+/gate/coil_s0087_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0087_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0087_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0087_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0087_G10.stl
+/gate/coil_s0087_G10/setMaterial AC_G10
+/gate/coil_s0087_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0087_Brass
+/gate/world/daughters/insert tessellated
+/gate/coil_s0087_Brass/geometry/setPathToSTLFile coil3_bed/stl/coil_s0087_Brass.stl
+/gate/coil_s0087_Brass/setMaterial AC_Brass
+/gate/coil_s0087_Brass/vis/setColor yellow
+
+/gate/world/daughters/name coil_s0088_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0088_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0088_Plastic_1276.stl
+/gate/coil_s0088_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0088_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0088_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0088_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0088_G10.stl
+/gate/coil_s0088_G10/setMaterial AC_G10
+/gate/coil_s0088_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0088_Brass
+/gate/world/daughters/insert tessellated
+/gate/coil_s0088_Brass/geometry/setPathToSTLFile coil3_bed/stl/coil_s0088_Brass.stl
+/gate/coil_s0088_Brass/setMaterial AC_Brass
+/gate/coil_s0088_Brass/vis/setColor yellow
+
+/gate/world/daughters/name coil_s0089_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0089_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0089_Plastic_1276.stl
+/gate/coil_s0089_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0089_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0089_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0089_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0089_G10.stl
+/gate/coil_s0089_G10/setMaterial AC_G10
+/gate/coil_s0089_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0089_Brass
+/gate/world/daughters/insert tessellated
+/gate/coil_s0089_Brass/geometry/setPathToSTLFile coil3_bed/stl/coil_s0089_Brass.stl
+/gate/coil_s0089_Brass/setMaterial AC_Brass
+/gate/coil_s0089_Brass/vis/setColor yellow
+
+/gate/world/daughters/name coil_s0090_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0090_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0090_Plastic_1276.stl
+/gate/coil_s0090_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0090_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0090_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0090_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0090_G10.stl
+/gate/coil_s0090_G10/setMaterial AC_G10
+/gate/coil_s0090_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0090_Brass
+/gate/world/daughters/insert tessellated
+/gate/coil_s0090_Brass/geometry/setPathToSTLFile coil3_bed/stl/coil_s0090_Brass.stl
+/gate/coil_s0090_Brass/setMaterial AC_Brass
+/gate/coil_s0090_Brass/vis/setColor yellow
+
+/gate/world/daughters/name coil_s0091_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0091_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0091_Plastic_1276.stl
+/gate/coil_s0091_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0091_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0091_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0091_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0091_G10.stl
+/gate/coil_s0091_G10/setMaterial AC_G10
+/gate/coil_s0091_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0092_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0092_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0092_G10.stl
+/gate/coil_s0092_G10/setMaterial AC_G10
+/gate/coil_s0092_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0093_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0093_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0093_Plastic_1276.stl
+/gate/coil_s0093_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0093_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0093_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0093_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0093_G10.stl
+/gate/coil_s0093_G10/setMaterial AC_G10
+/gate/coil_s0093_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0094_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0094_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0094_Plastic_1276.stl
+/gate/coil_s0094_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0094_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0094_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0094_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0094_G10.stl
+/gate/coil_s0094_G10/setMaterial AC_G10
+/gate/coil_s0094_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0094_Brass
+/gate/world/daughters/insert tessellated
+/gate/coil_s0094_Brass/geometry/setPathToSTLFile coil3_bed/stl/coil_s0094_Brass.stl
+/gate/coil_s0094_Brass/setMaterial AC_Brass
+/gate/coil_s0094_Brass/vis/setColor yellow
+
+/gate/world/daughters/name coil_s0095_Plastic_0923
+/gate/world/daughters/insert tessellated
+/gate/coil_s0095_Plastic_0923/geometry/setPathToSTLFile coil3_bed/stl/coil_s0095_Plastic_0923.stl
+/gate/coil_s0095_Plastic_0923/setMaterial AC_Plastic_0923
+/gate/coil_s0095_Plastic_0923/vis/setColor cyan
+
+/gate/world/daughters/name coil_s0095_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0095_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0095_Plastic_1276.stl
+/gate/coil_s0095_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0095_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0095_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0095_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0095_G10.stl
+/gate/coil_s0095_G10/setMaterial AC_G10
+/gate/coil_s0095_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0095_Brass
+/gate/world/daughters/insert tessellated
+/gate/coil_s0095_Brass/geometry/setPathToSTLFile coil3_bed/stl/coil_s0095_Brass.stl
+/gate/coil_s0095_Brass/setMaterial AC_Brass
+/gate/coil_s0095_Brass/vis/setColor yellow
+
+/gate/world/daughters/name coil_s0096_Plastic_0923
+/gate/world/daughters/insert tessellated
+/gate/coil_s0096_Plastic_0923/geometry/setPathToSTLFile coil3_bed/stl/coil_s0096_Plastic_0923.stl
+/gate/coil_s0096_Plastic_0923/setMaterial AC_Plastic_0923
+/gate/coil_s0096_Plastic_0923/vis/setColor cyan
+
+/gate/world/daughters/name coil_s0096_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0096_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0096_Plastic_1276.stl
+/gate/coil_s0096_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0096_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0096_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0096_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0096_G10.stl
+/gate/coil_s0096_G10/setMaterial AC_G10
+/gate/coil_s0096_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0096_Brass
+/gate/world/daughters/insert tessellated
+/gate/coil_s0096_Brass/geometry/setPathToSTLFile coil3_bed/stl/coil_s0096_Brass.stl
+/gate/coil_s0096_Brass/setMaterial AC_Brass
+/gate/coil_s0096_Brass/vis/setColor yellow
+
+/gate/world/daughters/name coil_s0097_Plastic_0923
+/gate/world/daughters/insert tessellated
+/gate/coil_s0097_Plastic_0923/geometry/setPathToSTLFile coil3_bed/stl/coil_s0097_Plastic_0923.stl
+/gate/coil_s0097_Plastic_0923/setMaterial AC_Plastic_0923
+/gate/coil_s0097_Plastic_0923/vis/setColor cyan
+
+/gate/world/daughters/name coil_s0097_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0097_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0097_Plastic_1276.stl
+/gate/coil_s0097_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0097_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0097_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0097_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0097_G10.stl
+/gate/coil_s0097_G10/setMaterial AC_G10
+/gate/coil_s0097_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0097_Brass
+/gate/world/daughters/insert tessellated
+/gate/coil_s0097_Brass/geometry/setPathToSTLFile coil3_bed/stl/coil_s0097_Brass.stl
+/gate/coil_s0097_Brass/setMaterial AC_Brass
+/gate/coil_s0097_Brass/vis/setColor yellow
+
+/gate/world/daughters/name coil_s0098_Plastic_0923
+/gate/world/daughters/insert tessellated
+/gate/coil_s0098_Plastic_0923/geometry/setPathToSTLFile coil3_bed/stl/coil_s0098_Plastic_0923.stl
+/gate/coil_s0098_Plastic_0923/setMaterial AC_Plastic_0923
+/gate/coil_s0098_Plastic_0923/vis/setColor cyan
+
+/gate/world/daughters/name coil_s0098_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0098_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0098_Plastic_1276.stl
+/gate/coil_s0098_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0098_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0098_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0098_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0098_G10.stl
+/gate/coil_s0098_G10/setMaterial AC_G10
+/gate/coil_s0098_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0098_Brass
+/gate/world/daughters/insert tessellated
+/gate/coil_s0098_Brass/geometry/setPathToSTLFile coil3_bed/stl/coil_s0098_Brass.stl
+/gate/coil_s0098_Brass/setMaterial AC_Brass
+/gate/coil_s0098_Brass/vis/setColor yellow
+
+/gate/world/daughters/name coil_s0099_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0099_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0099_Plastic_1276.stl
+/gate/coil_s0099_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0099_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0099_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0099_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0099_G10.stl
+/gate/coil_s0099_G10/setMaterial AC_G10
+/gate/coil_s0099_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0099_Brass
+/gate/world/daughters/insert tessellated
+/gate/coil_s0099_Brass/geometry/setPathToSTLFile coil3_bed/stl/coil_s0099_Brass.stl
+/gate/coil_s0099_Brass/setMaterial AC_Brass
+/gate/coil_s0099_Brass/vis/setColor yellow
+
+/gate/world/daughters/name coil_s0100_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0100_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0100_Plastic_1276.stl
+/gate/coil_s0100_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0100_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0100_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0100_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0100_G10.stl
+/gate/coil_s0100_G10/setMaterial AC_G10
+/gate/coil_s0100_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0100_Brass
+/gate/world/daughters/insert tessellated
+/gate/coil_s0100_Brass/geometry/setPathToSTLFile coil3_bed/stl/coil_s0100_Brass.stl
+/gate/coil_s0100_Brass/setMaterial AC_Brass
+/gate/coil_s0100_Brass/vis/setColor yellow
+
+/gate/world/daughters/name coil_s0101_Plastic_0923
+/gate/world/daughters/insert tessellated
+/gate/coil_s0101_Plastic_0923/geometry/setPathToSTLFile coil3_bed/stl/coil_s0101_Plastic_0923.stl
+/gate/coil_s0101_Plastic_0923/setMaterial AC_Plastic_0923
+/gate/coil_s0101_Plastic_0923/vis/setColor cyan
+
+/gate/world/daughters/name coil_s0101_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0101_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0101_Plastic_1276.stl
+/gate/coil_s0101_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0101_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0101_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0101_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0101_G10.stl
+/gate/coil_s0101_G10/setMaterial AC_G10
+/gate/coil_s0101_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0101_Brass
+/gate/world/daughters/insert tessellated
+/gate/coil_s0101_Brass/geometry/setPathToSTLFile coil3_bed/stl/coil_s0101_Brass.stl
+/gate/coil_s0101_Brass/setMaterial AC_Brass
+/gate/coil_s0101_Brass/vis/setColor yellow
+
+/gate/world/daughters/name coil_s0102_Plastic_0923
+/gate/world/daughters/insert tessellated
+/gate/coil_s0102_Plastic_0923/geometry/setPathToSTLFile coil3_bed/stl/coil_s0102_Plastic_0923.stl
+/gate/coil_s0102_Plastic_0923/setMaterial AC_Plastic_0923
+/gate/coil_s0102_Plastic_0923/vis/setColor cyan
+
+/gate/world/daughters/name coil_s0102_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0102_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0102_Plastic_1276.stl
+/gate/coil_s0102_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0102_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0102_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0102_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0102_G10.stl
+/gate/coil_s0102_G10/setMaterial AC_G10
+/gate/coil_s0102_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0102_Brass
+/gate/world/daughters/insert tessellated
+/gate/coil_s0102_Brass/geometry/setPathToSTLFile coil3_bed/stl/coil_s0102_Brass.stl
+/gate/coil_s0102_Brass/setMaterial AC_Brass
+/gate/coil_s0102_Brass/vis/setColor yellow
+
+/gate/world/daughters/name coil_s0103_Plastic_0923
+/gate/world/daughters/insert tessellated
+/gate/coil_s0103_Plastic_0923/geometry/setPathToSTLFile coil3_bed/stl/coil_s0103_Plastic_0923.stl
+/gate/coil_s0103_Plastic_0923/setMaterial AC_Plastic_0923
+/gate/coil_s0103_Plastic_0923/vis/setColor cyan
+
+/gate/world/daughters/name coil_s0103_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0103_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0103_Plastic_1276.stl
+/gate/coil_s0103_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0103_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0103_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0103_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0103_G10.stl
+/gate/coil_s0103_G10/setMaterial AC_G10
+/gate/coil_s0103_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0103_Brass
+/gate/world/daughters/insert tessellated
+/gate/coil_s0103_Brass/geometry/setPathToSTLFile coil3_bed/stl/coil_s0103_Brass.stl
+/gate/coil_s0103_Brass/setMaterial AC_Brass
+/gate/coil_s0103_Brass/vis/setColor yellow
+
+/gate/world/daughters/name coil_s0104_Plastic_0923
+/gate/world/daughters/insert tessellated
+/gate/coil_s0104_Plastic_0923/geometry/setPathToSTLFile coil3_bed/stl/coil_s0104_Plastic_0923.stl
+/gate/coil_s0104_Plastic_0923/setMaterial AC_Plastic_0923
+/gate/coil_s0104_Plastic_0923/vis/setColor cyan
+
+/gate/world/daughters/name coil_s0104_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0104_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0104_Plastic_1276.stl
+/gate/coil_s0104_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0104_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0104_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0104_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0104_G10.stl
+/gate/coil_s0104_G10/setMaterial AC_G10
+/gate/coil_s0104_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0105_Plastic_0923
+/gate/world/daughters/insert tessellated
+/gate/coil_s0105_Plastic_0923/geometry/setPathToSTLFile coil3_bed/stl/coil_s0105_Plastic_0923.stl
+/gate/coil_s0105_Plastic_0923/setMaterial AC_Plastic_0923
+/gate/coil_s0105_Plastic_0923/vis/setColor cyan
+
+/gate/world/daughters/name coil_s0105_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0105_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0105_Plastic_1276.stl
+/gate/coil_s0105_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0105_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0105_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0105_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0105_G10.stl
+/gate/coil_s0105_G10/setMaterial AC_G10
+/gate/coil_s0105_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0106_Plastic_0923
+/gate/world/daughters/insert tessellated
+/gate/coil_s0106_Plastic_0923/geometry/setPathToSTLFile coil3_bed/stl/coil_s0106_Plastic_0923.stl
+/gate/coil_s0106_Plastic_0923/setMaterial AC_Plastic_0923
+/gate/coil_s0106_Plastic_0923/vis/setColor cyan
+
+/gate/world/daughters/name coil_s0106_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0106_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0106_Plastic_1276.stl
+/gate/coil_s0106_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0106_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0106_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0106_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0106_G10.stl
+/gate/coil_s0106_G10/setMaterial AC_G10
+/gate/coil_s0106_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0107_Plastic_0923
+/gate/world/daughters/insert tessellated
+/gate/coil_s0107_Plastic_0923/geometry/setPathToSTLFile coil3_bed/stl/coil_s0107_Plastic_0923.stl
+/gate/coil_s0107_Plastic_0923/setMaterial AC_Plastic_0923
+/gate/coil_s0107_Plastic_0923/vis/setColor cyan
+
+/gate/world/daughters/name coil_s0107_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0107_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0107_Plastic_1276.stl
+/gate/coil_s0107_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0107_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0107_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0107_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0107_G10.stl
+/gate/coil_s0107_G10/setMaterial AC_G10
+/gate/coil_s0107_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0108_Plastic_0923
+/gate/world/daughters/insert tessellated
+/gate/coil_s0108_Plastic_0923/geometry/setPathToSTLFile coil3_bed/stl/coil_s0108_Plastic_0923.stl
+/gate/coil_s0108_Plastic_0923/setMaterial AC_Plastic_0923
+/gate/coil_s0108_Plastic_0923/vis/setColor cyan
+
+/gate/world/daughters/name coil_s0108_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0108_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0108_Plastic_1276.stl
+/gate/coil_s0108_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0108_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0109_Plastic_0923
+/gate/world/daughters/insert tessellated
+/gate/coil_s0109_Plastic_0923/geometry/setPathToSTLFile coil3_bed/stl/coil_s0109_Plastic_0923.stl
+/gate/coil_s0109_Plastic_0923/setMaterial AC_Plastic_0923
+/gate/coil_s0109_Plastic_0923/vis/setColor cyan
+
+/gate/world/daughters/name coil_s0109_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0109_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0109_Plastic_1276.stl
+/gate/coil_s0109_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0109_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0110_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0110_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0110_Plastic_1276.stl
+/gate/coil_s0110_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0110_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0111_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0111_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0111_Plastic_1276.stl
+/gate/coil_s0111_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0111_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0112_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0112_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0112_Plastic_1276.stl
+/gate/coil_s0112_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0112_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0113_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0113_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0113_Plastic_1276.stl
+/gate/coil_s0113_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0113_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0114_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0114_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0114_Plastic_1276.stl
+/gate/coil_s0114_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0114_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0115_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0115_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0115_Plastic_1276.stl
+/gate/coil_s0115_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0115_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0116_Plastic_0923
+/gate/world/daughters/insert tessellated
+/gate/coil_s0116_Plastic_0923/geometry/setPathToSTLFile coil3_bed/stl/coil_s0116_Plastic_0923.stl
+/gate/coil_s0116_Plastic_0923/setMaterial AC_Plastic_0923
+/gate/coil_s0116_Plastic_0923/vis/setColor cyan
+
+/gate/world/daughters/name coil_s0116_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0116_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0116_Plastic_1276.stl
+/gate/coil_s0116_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0116_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0117_Plastic_0923
+/gate/world/daughters/insert tessellated
+/gate/coil_s0117_Plastic_0923/geometry/setPathToSTLFile coil3_bed/stl/coil_s0117_Plastic_0923.stl
+/gate/coil_s0117_Plastic_0923/setMaterial AC_Plastic_0923
+/gate/coil_s0117_Plastic_0923/vis/setColor cyan
+
+/gate/world/daughters/name coil_s0117_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0117_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0117_Plastic_1276.stl
+/gate/coil_s0117_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0117_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0118_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0118_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0118_Plastic_1276.stl
+/gate/coil_s0118_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0118_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0119_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0119_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0119_Plastic_1276.stl
+/gate/coil_s0119_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0119_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0120_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0120_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0120_Plastic_1276.stl
+/gate/coil_s0120_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0120_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0121_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0121_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0121_Plastic_1276.stl
+/gate/coil_s0121_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0121_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0122_Plastic_0923
+/gate/world/daughters/insert tessellated
+/gate/coil_s0122_Plastic_0923/geometry/setPathToSTLFile coil3_bed/stl/coil_s0122_Plastic_0923.stl
+/gate/coil_s0122_Plastic_0923/setMaterial AC_Plastic_0923
+/gate/coil_s0122_Plastic_0923/vis/setColor cyan
+
+/gate/world/daughters/name coil_s0122_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0122_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0122_Plastic_1276.stl
+/gate/coil_s0122_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0122_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0123_Plastic_0923
+/gate/world/daughters/insert tessellated
+/gate/coil_s0123_Plastic_0923/geometry/setPathToSTLFile coil3_bed/stl/coil_s0123_Plastic_0923.stl
+/gate/coil_s0123_Plastic_0923/setMaterial AC_Plastic_0923
+/gate/coil_s0123_Plastic_0923/vis/setColor cyan
+
+/gate/world/daughters/name coil_s0123_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0123_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0123_Plastic_1276.stl
+/gate/coil_s0123_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0123_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0123_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0123_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0123_G10.stl
+/gate/coil_s0123_G10/setMaterial AC_G10
+/gate/coil_s0123_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0124_Plastic_0923
+/gate/world/daughters/insert tessellated
+/gate/coil_s0124_Plastic_0923/geometry/setPathToSTLFile coil3_bed/stl/coil_s0124_Plastic_0923.stl
+/gate/coil_s0124_Plastic_0923/setMaterial AC_Plastic_0923
+/gate/coil_s0124_Plastic_0923/vis/setColor cyan
+
+/gate/world/daughters/name coil_s0124_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0124_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0124_Plastic_1276.stl
+/gate/coil_s0124_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0124_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0124_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0124_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0124_G10.stl
+/gate/coil_s0124_G10/setMaterial AC_G10
+/gate/coil_s0124_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0125_Plastic_0923
+/gate/world/daughters/insert tessellated
+/gate/coil_s0125_Plastic_0923/geometry/setPathToSTLFile coil3_bed/stl/coil_s0125_Plastic_0923.stl
+/gate/coil_s0125_Plastic_0923/setMaterial AC_Plastic_0923
+/gate/coil_s0125_Plastic_0923/vis/setColor cyan
+
+/gate/world/daughters/name coil_s0125_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0125_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0125_Plastic_1276.stl
+/gate/coil_s0125_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0125_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0125_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0125_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0125_G10.stl
+/gate/coil_s0125_G10/setMaterial AC_G10
+/gate/coil_s0125_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0126_Plastic_0923
+/gate/world/daughters/insert tessellated
+/gate/coil_s0126_Plastic_0923/geometry/setPathToSTLFile coil3_bed/stl/coil_s0126_Plastic_0923.stl
+/gate/coil_s0126_Plastic_0923/setMaterial AC_Plastic_0923
+/gate/coil_s0126_Plastic_0923/vis/setColor cyan
+
+/gate/world/daughters/name coil_s0126_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0126_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0126_Plastic_1276.stl
+/gate/coil_s0126_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0126_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0127_Plastic_0923
+/gate/world/daughters/insert tessellated
+/gate/coil_s0127_Plastic_0923/geometry/setPathToSTLFile coil3_bed/stl/coil_s0127_Plastic_0923.stl
+/gate/coil_s0127_Plastic_0923/setMaterial AC_Plastic_0923
+/gate/coil_s0127_Plastic_0923/vis/setColor cyan
+
+/gate/world/daughters/name coil_s0127_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0127_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0127_Plastic_1276.stl
+/gate/coil_s0127_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0127_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0128_Plastic_0923
+/gate/world/daughters/insert tessellated
+/gate/coil_s0128_Plastic_0923/geometry/setPathToSTLFile coil3_bed/stl/coil_s0128_Plastic_0923.stl
+/gate/coil_s0128_Plastic_0923/setMaterial AC_Plastic_0923
+/gate/coil_s0128_Plastic_0923/vis/setColor cyan
+
+/gate/world/daughters/name coil_s0128_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0128_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0128_Plastic_1276.stl
+/gate/coil_s0128_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0128_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0129_Plastic_0923
+/gate/world/daughters/insert tessellated
+/gate/coil_s0129_Plastic_0923/geometry/setPathToSTLFile coil3_bed/stl/coil_s0129_Plastic_0923.stl
+/gate/coil_s0129_Plastic_0923/setMaterial AC_Plastic_0923
+/gate/coil_s0129_Plastic_0923/vis/setColor cyan
+
+/gate/world/daughters/name coil_s0129_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0129_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0129_Plastic_1276.stl
+/gate/coil_s0129_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0129_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0130_Plastic_0923
+/gate/world/daughters/insert tessellated
+/gate/coil_s0130_Plastic_0923/geometry/setPathToSTLFile coil3_bed/stl/coil_s0130_Plastic_0923.stl
+/gate/coil_s0130_Plastic_0923/setMaterial AC_Plastic_0923
+/gate/coil_s0130_Plastic_0923/vis/setColor cyan
+
+/gate/world/daughters/name coil_s0130_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0130_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0130_Plastic_1276.stl
+/gate/coil_s0130_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0130_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0130_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0130_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0130_G10.stl
+/gate/coil_s0130_G10/setMaterial AC_G10
+/gate/coil_s0130_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0131_Plastic_0923
+/gate/world/daughters/insert tessellated
+/gate/coil_s0131_Plastic_0923/geometry/setPathToSTLFile coil3_bed/stl/coil_s0131_Plastic_0923.stl
+/gate/coil_s0131_Plastic_0923/setMaterial AC_Plastic_0923
+/gate/coil_s0131_Plastic_0923/vis/setColor cyan
+
+/gate/world/daughters/name coil_s0131_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0131_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0131_Plastic_1276.stl
+/gate/coil_s0131_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0131_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0131_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0131_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0131_G10.stl
+/gate/coil_s0131_G10/setMaterial AC_G10
+/gate/coil_s0131_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0132_Plastic_0923
+/gate/world/daughters/insert tessellated
+/gate/coil_s0132_Plastic_0923/geometry/setPathToSTLFile coil3_bed/stl/coil_s0132_Plastic_0923.stl
+/gate/coil_s0132_Plastic_0923/setMaterial AC_Plastic_0923
+/gate/coil_s0132_Plastic_0923/vis/setColor cyan
+
+/gate/world/daughters/name coil_s0132_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0132_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0132_Plastic_1276.stl
+/gate/coil_s0132_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0132_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0132_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0132_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0132_G10.stl
+/gate/coil_s0132_G10/setMaterial AC_G10
+/gate/coil_s0132_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0132_Aluminium
+/gate/world/daughters/insert tessellated
+/gate/coil_s0132_Aluminium/geometry/setPathToSTLFile coil3_bed/stl/coil_s0132_Aluminium.stl
+/gate/coil_s0132_Aluminium/setMaterial AC_Aluminium
+/gate/coil_s0132_Aluminium/vis/setColor grey
+
+/gate/world/daughters/name coil_s0133_Plastic_1276
+/gate/world/daughters/insert tessellated
+/gate/coil_s0133_Plastic_1276/geometry/setPathToSTLFile coil3_bed/stl/coil_s0133_Plastic_1276.stl
+/gate/coil_s0133_Plastic_1276/setMaterial AC_Plastic_1276
+/gate/coil_s0133_Plastic_1276/vis/setColor magenta
+
+/gate/world/daughters/name coil_s0133_G10
+/gate/world/daughters/insert tessellated
+/gate/coil_s0133_G10/geometry/setPathToSTLFile coil3_bed/stl/coil_s0133_G10.stl
+/gate/coil_s0133_G10/setMaterial AC_G10
+/gate/coil_s0133_G10/vis/setColor red
+
+/gate/world/daughters/name coil_s0133_Aluminium
+/gate/world/daughters/insert tessellated
+/gate/coil_s0133_Aluminium/geometry/setPathToSTLFile coil3_bed/stl/coil_s0133_Aluminium.stl
+/gate/coil_s0133_Aluminium/setMaterial AC_Aluminium
+/gate/coil_s0133_Aluminium/vis/setColor grey
+
+# attach every part to the PhantomSD, so that Compton and Rayleigh scatter in it is recorded
+/gate/bed_s0001_Plastic_0744/attachPhantomSD
+/gate/bed_s0002_Plastic_0744/attachPhantomSD
+/gate/bed_s0003_Plastic_0744/attachPhantomSD
+/gate/bed_s0003_Titanium/attachPhantomSD
+/gate/bed_s0004_Plastic_0744/attachPhantomSD
+/gate/bed_s0004_Titanium/attachPhantomSD
+/gate/bed_s0005_Plastic_0744/attachPhantomSD
+/gate/bed_s0005_Titanium/attachPhantomSD
+/gate/bed_s0006_Plastic_0744/attachPhantomSD
+/gate/bed_s0006_Titanium/attachPhantomSD
+/gate/bed_s0007_Plastic_0744/attachPhantomSD
+/gate/bed_s0007_Titanium/attachPhantomSD
+/gate/bed_s0008_Plastic_0744/attachPhantomSD
+/gate/bed_s0008_Plastic_1180/attachPhantomSD
+/gate/bed_s0008_Titanium/attachPhantomSD
+/gate/bed_s0009_Plastic_0744/attachPhantomSD
+/gate/bed_s0009_Plastic_1180/attachPhantomSD
+/gate/bed_s0009_Titanium/attachPhantomSD
+/gate/bed_s0010_Plastic_0744/attachPhantomSD
+/gate/bed_s0010_Plastic_1180/attachPhantomSD
+/gate/bed_s0010_Titanium/attachPhantomSD
+/gate/bed_s0011_Plastic_0744/attachPhantomSD
+/gate/bed_s0011_Plastic_1180/attachPhantomSD
+/gate/bed_s0011_Titanium/attachPhantomSD
+/gate/bed_s0012_Plastic_0744/attachPhantomSD
+/gate/bed_s0012_Plastic_1180/attachPhantomSD
+/gate/bed_s0012_Titanium/attachPhantomSD
+/gate/bed_s0013_Plastic_0744/attachPhantomSD
+/gate/bed_s0013_Plastic_1180/attachPhantomSD
+/gate/bed_s0013_Titanium/attachPhantomSD
+/gate/bed_s0014_Plastic_0744/attachPhantomSD
+/gate/bed_s0014_Plastic_1180/attachPhantomSD
+/gate/bed_s0014_Titanium/attachPhantomSD
+/gate/bed_s0015_Plastic_0744/attachPhantomSD
+/gate/bed_s0015_Plastic_1180/attachPhantomSD
+/gate/bed_s0015_Titanium/attachPhantomSD
+/gate/bed_s0016_Plastic_0744/attachPhantomSD
+/gate/bed_s0016_Plastic_1180/attachPhantomSD
+/gate/bed_s0016_Titanium/attachPhantomSD
+/gate/bed_s0017_Plastic_0744/attachPhantomSD
+/gate/bed_s0017_Plastic_1180/attachPhantomSD
+/gate/bed_s0017_Titanium/attachPhantomSD
+/gate/bed_s0018_Plastic_0744/attachPhantomSD
+/gate/bed_s0018_Plastic_1180/attachPhantomSD
+/gate/bed_s0018_Titanium/attachPhantomSD
+/gate/bed_s0019_Plastic_0744/attachPhantomSD
+/gate/bed_s0019_Plastic_1180/attachPhantomSD
+/gate/bed_s0019_Titanium/attachPhantomSD
+/gate/bed_s0020_Plastic_0744/attachPhantomSD
+/gate/bed_s0020_Plastic_1180/attachPhantomSD
+/gate/bed_s0020_Titanium/attachPhantomSD
+/gate/bed_s0021_Plastic_0744/attachPhantomSD
+/gate/bed_s0021_Plastic_1180/attachPhantomSD
+/gate/bed_s0021_Titanium/attachPhantomSD
+/gate/bed_s0022_Plastic_0744/attachPhantomSD
+/gate/bed_s0022_Plastic_1180/attachPhantomSD
+/gate/bed_s0022_Titanium/attachPhantomSD
+/gate/bed_s0023_Plastic_0744/attachPhantomSD
+/gate/bed_s0023_Plastic_1180/attachPhantomSD
+/gate/bed_s0023_Titanium/attachPhantomSD
+/gate/bed_s0024_Plastic_0744/attachPhantomSD
+/gate/bed_s0024_Plastic_1180/attachPhantomSD
+/gate/bed_s0024_Titanium/attachPhantomSD
+/gate/bed_s0025_Plastic_0744/attachPhantomSD
+/gate/bed_s0025_Plastic_1180/attachPhantomSD
+/gate/bed_s0025_Titanium/attachPhantomSD
+/gate/bed_s0026_Plastic_0744/attachPhantomSD
+/gate/bed_s0026_Plastic_1180/attachPhantomSD
+/gate/bed_s0026_Titanium/attachPhantomSD
+/gate/bed_s0027_Plastic_0744/attachPhantomSD
+/gate/bed_s0027_Plastic_1180/attachPhantomSD
+/gate/bed_s0027_Titanium/attachPhantomSD
+/gate/bed_s0028_Plastic_0744/attachPhantomSD
+/gate/bed_s0028_Titanium/attachPhantomSD
+/gate/bed_s0029_Plastic_0744/attachPhantomSD
+/gate/bed_s0029_Titanium/attachPhantomSD
+/gate/bed_s0030_Plastic_0744/attachPhantomSD
+/gate/bed_s0030_Titanium/attachPhantomSD
+/gate/bed_s0031_Plastic_0744/attachPhantomSD
+/gate/bed_s0032_Plastic_0744/attachPhantomSD
+/gate/bed_s0033_Plastic_0744/attachPhantomSD
+/gate/bed_s0034_Plastic_0744/attachPhantomSD
+/gate/bed_s0035_Plastic_0744/attachPhantomSD
+/gate/bed_s0036_Plastic_0744/attachPhantomSD
+/gate/bed_s0037_Plastic_0744/attachPhantomSD
+/gate/bed_s0038_Plastic_0744/attachPhantomSD
+/gate/bed_s0039_Plastic_0744/attachPhantomSD
+/gate/bed_s0040_Plastic_0744/attachPhantomSD
+/gate/bed_s0041_Plastic_0744/attachPhantomSD
+/gate/bed_s0042_Plastic_0744/attachPhantomSD
+/gate/bed_s0043_Plastic_0744/attachPhantomSD
+/gate/bed_s0044_Plastic_0744/attachPhantomSD
+/gate/bed_s0045_Plastic_0744/attachPhantomSD
+/gate/bed_s0046_Plastic_0744/attachPhantomSD
+/gate/bed_s0047_Plastic_0744/attachPhantomSD
+/gate/bed_s0048_Plastic_0744/attachPhantomSD
+/gate/bed_s0049_Plastic_0744/attachPhantomSD
+/gate/bed_s0050_Plastic_0744/attachPhantomSD
+/gate/bed_s0051_Plastic_0744/attachPhantomSD
+/gate/bed_s0052_Plastic_0744/attachPhantomSD
+/gate/bed_s0053_Plastic_0744/attachPhantomSD
+/gate/bed_s0054_Plastic_0744/attachPhantomSD
+/gate/bed_s0055_Plastic_0744/attachPhantomSD
+/gate/bed_s0056_Plastic_0744/attachPhantomSD
+/gate/bed_s0057_Plastic_0744/attachPhantomSD
+/gate/bed_s0058_Plastic_0744/attachPhantomSD
+/gate/bed_s0059_Plastic_0744/attachPhantomSD
+/gate/bed_s0060_Plastic_0744/attachPhantomSD
+/gate/bed_s0061_Plastic_0744/attachPhantomSD
+/gate/bed_s0062_Plastic_0744/attachPhantomSD
+/gate/bed_s0063_Plastic_0744/attachPhantomSD
+/gate/bed_s0064_Plastic_0744/attachPhantomSD
+/gate/bed_s0065_Plastic_0744/attachPhantomSD
+/gate/bed_s0066_Plastic_0744/attachPhantomSD
+/gate/bed_s0067_Plastic_0744/attachPhantomSD
+/gate/bed_s0068_Plastic_0744/attachPhantomSD
+/gate/bed_s0069_Plastic_0744/attachPhantomSD
+/gate/bed_s0070_Plastic_0744/attachPhantomSD
+/gate/bed_s0071_Plastic_0744/attachPhantomSD
+/gate/bed_s0072_Plastic_0744/attachPhantomSD
+/gate/bed_s0073_Plastic_0744/attachPhantomSD
+/gate/bed_s0074_Plastic_0744/attachPhantomSD
+/gate/bed_s0075_Plastic_0744/attachPhantomSD
+/gate/bed_s0076_Plastic_0744/attachPhantomSD
+/gate/bed_s0077_Plastic_0744/attachPhantomSD
+/gate/bed_s0078_Plastic_0744/attachPhantomSD
+/gate/bed_s0079_Plastic_0744/attachPhantomSD
+/gate/bed_s0119_Plastic_0744/attachPhantomSD
+/gate/bed_s0120_Plastic_0744/attachPhantomSD
+/gate/bed_s0121_Plastic_0744/attachPhantomSD
+/gate/bed_s0122_Plastic_0744/attachPhantomSD
+/gate/bed_s0123_Plastic_0744/attachPhantomSD
+/gate/bed_s0124_Plastic_0744/attachPhantomSD
+/gate/bed_s0125_Plastic_0744/attachPhantomSD
+/gate/bed_s0126_Plastic_0744/attachPhantomSD
+/gate/bed_s0127_Plastic_0744/attachPhantomSD
+/gate/bed_s0128_Plastic_0744/attachPhantomSD
+/gate/bed_s0129_Plastic_0744/attachPhantomSD
+/gate/bed_s0130_Plastic_0744/attachPhantomSD
+/gate/bed_s0131_Plastic_0744/attachPhantomSD
+/gate/bed_s0132_Plastic_0744/attachPhantomSD
+/gate/bed_s0133_Plastic_0744/attachPhantomSD
+/gate/bed_s0134_Plastic_0744/attachPhantomSD
+/gate/bed_s0135_Plastic_0744/attachPhantomSD
+/gate/bed_s0136_Plastic_0744/attachPhantomSD
+/gate/bed_s0137_Plastic_0744/attachPhantomSD
+/gate/bed_s0138_Plastic_0744/attachPhantomSD
+/gate/bed_s0139_Plastic_0744/attachPhantomSD
+/gate/bed_s0140_Plastic_0744/attachPhantomSD
+/gate/bed_s0141_Plastic_0744/attachPhantomSD
+/gate/bed_s0142_Plastic_0744/attachPhantomSD
+/gate/bed_s0143_Plastic_0744/attachPhantomSD
+/gate/bed_s0144_Plastic_0744/attachPhantomSD
+/gate/bed_s0145_Plastic_0744/attachPhantomSD
+/gate/bed_s0146_Plastic_0744/attachPhantomSD
+/gate/bed_s0147_Plastic_0744/attachPhantomSD
+/gate/bed_s0148_Plastic_0744/attachPhantomSD
+/gate/bed_s0149_Plastic_0744/attachPhantomSD
+/gate/bed_s0150_Plastic_0744/attachPhantomSD
+/gate/bed_s0151_Plastic_0744/attachPhantomSD
+/gate/bed_s0152_Plastic_0744/attachPhantomSD
+/gate/bed_s0153_Plastic_0744/attachPhantomSD
+/gate/bed_s0154_Plastic_0744/attachPhantomSD
+/gate/bed_s0155_Plastic_0744/attachPhantomSD
+/gate/bed_s0156_Plastic_0744/attachPhantomSD
+/gate/bed_s0157_Plastic_0744/attachPhantomSD
+/gate/bed_s0158_Plastic_0744/attachPhantomSD
+/gate/bed_s0159_Plastic_0744/attachPhantomSD
+/gate/bed_s0160_Plastic_0744/attachPhantomSD
+/gate/bed_s0161_Plastic_0744/attachPhantomSD
+/gate/bed_s0162_Plastic_0744/attachPhantomSD
+/gate/bed_s0163_Plastic_0744/attachPhantomSD
+/gate/bed_s0164_Plastic_0744/attachPhantomSD
+/gate/bed_s0165_Plastic_0744/attachPhantomSD
+/gate/bed_s0166_Plastic_0744/attachPhantomSD
+/gate/bed_s0167_Plastic_0744/attachPhantomSD
+/gate/bed_s0168_Plastic_0744/attachPhantomSD
+/gate/bed_s0169_Plastic_0744/attachPhantomSD
+/gate/bed_s0170_Plastic_0744/attachPhantomSD
+/gate/bed_s0171_Plastic_0744/attachPhantomSD
+/gate/bed_s0172_Plastic_0744/attachPhantomSD
+/gate/bed_s0173_Plastic_0744/attachPhantomSD
+/gate/bed_s0174_Plastic_0744/attachPhantomSD
+/gate/bed_s0175_Plastic_0744/attachPhantomSD
+/gate/bed_s0176_Plastic_0744/attachPhantomSD
+/gate/bed_s0177_Plastic_0744/attachPhantomSD
+/gate/bed_s0178_Plastic_0744/attachPhantomSD
+/gate/bed_s0179_Plastic_0744/attachPhantomSD
+/gate/bed_s0180_Plastic_0744/attachPhantomSD
+/gate/bed_s0181_Plastic_0744/attachPhantomSD
+/gate/bed_s0182_Plastic_0744/attachPhantomSD
+/gate/bed_s0183_Plastic_0744/attachPhantomSD
+/gate/bed_s0184_Plastic_0744/attachPhantomSD
+/gate/bed_s0185_Plastic_0744/attachPhantomSD
+/gate/coil_s0001_Plastic_1276/attachPhantomSD
+/gate/coil_s0002_Plastic_1276/attachPhantomSD
+/gate/coil_s0003_Plastic_1276/attachPhantomSD
+/gate/coil_s0004_Plastic_0923/attachPhantomSD
+/gate/coil_s0004_Plastic_1276/attachPhantomSD
+/gate/coil_s0005_Plastic_0923/attachPhantomSD
+/gate/coil_s0005_Plastic_1276/attachPhantomSD
+/gate/coil_s0006_Plastic_0923/attachPhantomSD
+/gate/coil_s0006_Plastic_1276/attachPhantomSD
+/gate/coil_s0007_Plastic_0923/attachPhantomSD
+/gate/coil_s0007_Plastic_1276/attachPhantomSD
+/gate/coil_s0008_Plastic_0923/attachPhantomSD
+/gate/coil_s0008_Plastic_1276/attachPhantomSD
+/gate/coil_s0009_Plastic_0923/attachPhantomSD
+/gate/coil_s0009_Plastic_1276/attachPhantomSD
+/gate/coil_s0010_Plastic_0923/attachPhantomSD
+/gate/coil_s0010_Plastic_1276/attachPhantomSD
+/gate/coil_s0011_Plastic_0923/attachPhantomSD
+/gate/coil_s0011_Plastic_1276/attachPhantomSD
+/gate/coil_s0012_Plastic_0923/attachPhantomSD
+/gate/coil_s0012_Plastic_1276/attachPhantomSD
+/gate/coil_s0013_Plastic_1276/attachPhantomSD
+/gate/coil_s0014_Plastic_1276/attachPhantomSD
+/gate/coil_s0015_Plastic_1276/attachPhantomSD
+/gate/coil_s0016_Plastic_1276/attachPhantomSD
+/gate/coil_s0017_Plastic_1276/attachPhantomSD
+/gate/coil_s0018_Plastic_1276/attachPhantomSD
+/gate/coil_s0019_Plastic_1276/attachPhantomSD
+/gate/coil_s0020_Plastic_1276/attachPhantomSD
+/gate/coil_s0021_Plastic_1276/attachPhantomSD
+/gate/coil_s0022_Plastic_1276/attachPhantomSD
+/gate/coil_s0023_Plastic_1276/attachPhantomSD
+/gate/coil_s0024_Plastic_1276/attachPhantomSD
+/gate/coil_s0025_Plastic_0923/attachPhantomSD
+/gate/coil_s0025_Plastic_1276/attachPhantomSD
+/gate/coil_s0026_Plastic_0923/attachPhantomSD
+/gate/coil_s0026_Plastic_1276/attachPhantomSD
+/gate/coil_s0027_Plastic_0923/attachPhantomSD
+/gate/coil_s0027_Plastic_1276/attachPhantomSD
+/gate/coil_s0028_Plastic_1276/attachPhantomSD
+/gate/coil_s0029_Plastic_0923/attachPhantomSD
+/gate/coil_s0029_Plastic_1276/attachPhantomSD
+/gate/coil_s0030_Plastic_0923/attachPhantomSD
+/gate/coil_s0030_Plastic_1276/attachPhantomSD
+/gate/coil_s0031_Plastic_0923/attachPhantomSD
+/gate/coil_s0031_Plastic_1276/attachPhantomSD
+/gate/coil_s0031_G10/attachPhantomSD
+/gate/coil_s0032_Plastic_0923/attachPhantomSD
+/gate/coil_s0032_Plastic_1276/attachPhantomSD
+/gate/coil_s0032_G10/attachPhantomSD
+/gate/coil_s0032_Brass/attachPhantomSD
+/gate/coil_s0033_Plastic_0923/attachPhantomSD
+/gate/coil_s0033_Plastic_1276/attachPhantomSD
+/gate/coil_s0033_G10/attachPhantomSD
+/gate/coil_s0033_Brass/attachPhantomSD
+/gate/coil_s0034_Plastic_0923/attachPhantomSD
+/gate/coil_s0034_Plastic_1276/attachPhantomSD
+/gate/coil_s0034_G10/attachPhantomSD
+/gate/coil_s0034_Brass/attachPhantomSD
+/gate/coil_s0035_Plastic_0923/attachPhantomSD
+/gate/coil_s0035_Plastic_1276/attachPhantomSD
+/gate/coil_s0035_G10/attachPhantomSD
+/gate/coil_s0035_Brass/attachPhantomSD
+/gate/coil_s0036_Plastic_0923/attachPhantomSD
+/gate/coil_s0036_Plastic_1276/attachPhantomSD
+/gate/coil_s0036_G10/attachPhantomSD
+/gate/coil_s0036_Brass/attachPhantomSD
+/gate/coil_s0037_Plastic_0923/attachPhantomSD
+/gate/coil_s0037_Plastic_1276/attachPhantomSD
+/gate/coil_s0037_G10/attachPhantomSD
+/gate/coil_s0037_Brass/attachPhantomSD
+/gate/coil_s0038_Plastic_0923/attachPhantomSD
+/gate/coil_s0038_Plastic_1276/attachPhantomSD
+/gate/coil_s0038_G10/attachPhantomSD
+/gate/coil_s0038_Brass/attachPhantomSD
+/gate/coil_s0039_Plastic_1276/attachPhantomSD
+/gate/coil_s0039_G10/attachPhantomSD
+/gate/coil_s0039_Brass/attachPhantomSD
+/gate/coil_s0040_Plastic_1276/attachPhantomSD
+/gate/coil_s0040_G10/attachPhantomSD
+/gate/coil_s0040_Brass/attachPhantomSD
+/gate/coil_s0041_Plastic_1276/attachPhantomSD
+/gate/coil_s0041_G10/attachPhantomSD
+/gate/coil_s0041_Brass/attachPhantomSD
+/gate/coil_s0042_Plastic_1276/attachPhantomSD
+/gate/coil_s0042_G10/attachPhantomSD
+/gate/coil_s0046_G10/attachPhantomSD
+/gate/coil_s0047_G10/attachPhantomSD
+/gate/coil_s0048_Brass/attachPhantomSD
+/gate/coil_s0049_Brass/attachPhantomSD
+/gate/coil_s0050_G10/attachPhantomSD
+/gate/coil_s0050_Brass/attachPhantomSD
+/gate/coil_s0051_G10/attachPhantomSD
+/gate/coil_s0051_Brass/attachPhantomSD
+/gate/coil_s0052_G10/attachPhantomSD
+/gate/coil_s0052_Brass/attachPhantomSD
+/gate/coil_s0053_Brass/attachPhantomSD
+/gate/coil_s0054_Brass/attachPhantomSD
+/gate/coil_s0055_Aluminium/attachPhantomSD
+/gate/coil_s0055_Brass/attachPhantomSD
+/gate/coil_s0056_Aluminium/attachPhantomSD
+/gate/coil_s0056_Brass/attachPhantomSD
+/gate/coil_s0057_Aluminium/attachPhantomSD
+/gate/coil_s0057_Brass/attachPhantomSD
+/gate/coil_s0058_Aluminium/attachPhantomSD
+/gate/coil_s0058_Brass/attachPhantomSD
+/gate/coil_s0059_Aluminium/attachPhantomSD
+/gate/coil_s0059_Brass/attachPhantomSD
+/gate/coil_s0060_Aluminium/attachPhantomSD
+/gate/coil_s0060_Brass/attachPhantomSD
+/gate/coil_s0061_Aluminium/attachPhantomSD
+/gate/coil_s0061_Brass/attachPhantomSD
+/gate/coil_s0062_Aluminium/attachPhantomSD
+/gate/coil_s0063_G10/attachPhantomSD
+/gate/coil_s0063_Aluminium/attachPhantomSD
+/gate/coil_s0064_G10/attachPhantomSD
+/gate/coil_s0064_Aluminium/attachPhantomSD
+/gate/coil_s0065_G10/attachPhantomSD
+/gate/coil_s0065_Aluminium/attachPhantomSD
+/gate/coil_s0066_G10/attachPhantomSD
+/gate/coil_s0067_Plastic_1276/attachPhantomSD
+/gate/coil_s0067_G10/attachPhantomSD
+/gate/coil_s0068_Plastic_1276/attachPhantomSD
+/gate/coil_s0068_G10/attachPhantomSD
+/gate/coil_s0068_Brass/attachPhantomSD
+/gate/coil_s0069_Plastic_1276/attachPhantomSD
+/gate/coil_s0069_G10/attachPhantomSD
+/gate/coil_s0069_Brass/attachPhantomSD
+/gate/coil_s0070_Plastic_1276/attachPhantomSD
+/gate/coil_s0070_G10/attachPhantomSD
+/gate/coil_s0070_Brass/attachPhantomSD
+/gate/coil_s0071_Plastic_1276/attachPhantomSD
+/gate/coil_s0071_G10/attachPhantomSD
+/gate/coil_s0071_Brass/attachPhantomSD
+/gate/coil_s0072_Plastic_1276/attachPhantomSD
+/gate/coil_s0072_G10/attachPhantomSD
+/gate/coil_s0072_Brass/attachPhantomSD
+/gate/coil_s0073_Plastic_1276/attachPhantomSD
+/gate/coil_s0073_G10/attachPhantomSD
+/gate/coil_s0073_Brass/attachPhantomSD
+/gate/coil_s0074_Plastic_1276/attachPhantomSD
+/gate/coil_s0074_G10/attachPhantomSD
+/gate/coil_s0074_Brass/attachPhantomSD
+/gate/coil_s0075_Plastic_1276/attachPhantomSD
+/gate/coil_s0075_G10/attachPhantomSD
+/gate/coil_s0075_Brass/attachPhantomSD
+/gate/coil_s0076_Plastic_1276/attachPhantomSD
+/gate/coil_s0076_G10/attachPhantomSD
+/gate/coil_s0076_Brass/attachPhantomSD
+/gate/coil_s0077_Plastic_1276/attachPhantomSD
+/gate/coil_s0077_G10/attachPhantomSD
+/gate/coil_s0077_Brass/attachPhantomSD
+/gate/coil_s0078_Plastic_1276/attachPhantomSD
+/gate/coil_s0078_G10/attachPhantomSD
+/gate/coil_s0079_Plastic_1276/attachPhantomSD
+/gate/coil_s0079_G10/attachPhantomSD
+/gate/coil_s0080_Plastic_1276/attachPhantomSD
+/gate/coil_s0080_G10/attachPhantomSD
+/gate/coil_s0081_Plastic_1276/attachPhantomSD
+/gate/coil_s0081_G10/attachPhantomSD
+/gate/coil_s0081_Brass/attachPhantomSD
+/gate/coil_s0082_Plastic_1276/attachPhantomSD
+/gate/coil_s0082_G10/attachPhantomSD
+/gate/coil_s0082_Brass/attachPhantomSD
+/gate/coil_s0083_Plastic_1276/attachPhantomSD
+/gate/coil_s0083_G10/attachPhantomSD
+/gate/coil_s0083_Brass/attachPhantomSD
+/gate/coil_s0084_Plastic_1276/attachPhantomSD
+/gate/coil_s0084_G10/attachPhantomSD
+/gate/coil_s0084_Brass/attachPhantomSD
+/gate/coil_s0085_Plastic_1276/attachPhantomSD
+/gate/coil_s0085_G10/attachPhantomSD
+/gate/coil_s0085_Brass/attachPhantomSD
+/gate/coil_s0086_Plastic_1276/attachPhantomSD
+/gate/coil_s0086_G10/attachPhantomSD
+/gate/coil_s0086_Brass/attachPhantomSD
+/gate/coil_s0087_Plastic_1276/attachPhantomSD
+/gate/coil_s0087_G10/attachPhantomSD
+/gate/coil_s0087_Brass/attachPhantomSD
+/gate/coil_s0088_Plastic_1276/attachPhantomSD
+/gate/coil_s0088_G10/attachPhantomSD
+/gate/coil_s0088_Brass/attachPhantomSD
+/gate/coil_s0089_Plastic_1276/attachPhantomSD
+/gate/coil_s0089_G10/attachPhantomSD
+/gate/coil_s0089_Brass/attachPhantomSD
+/gate/coil_s0090_Plastic_1276/attachPhantomSD
+/gate/coil_s0090_G10/attachPhantomSD
+/gate/coil_s0090_Brass/attachPhantomSD
+/gate/coil_s0091_Plastic_1276/attachPhantomSD
+/gate/coil_s0091_G10/attachPhantomSD
+/gate/coil_s0092_G10/attachPhantomSD
+/gate/coil_s0093_Plastic_1276/attachPhantomSD
+/gate/coil_s0093_G10/attachPhantomSD
+/gate/coil_s0094_Plastic_1276/attachPhantomSD
+/gate/coil_s0094_G10/attachPhantomSD
+/gate/coil_s0094_Brass/attachPhantomSD
+/gate/coil_s0095_Plastic_0923/attachPhantomSD
+/gate/coil_s0095_Plastic_1276/attachPhantomSD
+/gate/coil_s0095_G10/attachPhantomSD
+/gate/coil_s0095_Brass/attachPhantomSD
+/gate/coil_s0096_Plastic_0923/attachPhantomSD
+/gate/coil_s0096_Plastic_1276/attachPhantomSD
+/gate/coil_s0096_G10/attachPhantomSD
+/gate/coil_s0096_Brass/attachPhantomSD
+/gate/coil_s0097_Plastic_0923/attachPhantomSD
+/gate/coil_s0097_Plastic_1276/attachPhantomSD
+/gate/coil_s0097_G10/attachPhantomSD
+/gate/coil_s0097_Brass/attachPhantomSD
+/gate/coil_s0098_Plastic_0923/attachPhantomSD
+/gate/coil_s0098_Plastic_1276/attachPhantomSD
+/gate/coil_s0098_G10/attachPhantomSD
+/gate/coil_s0098_Brass/attachPhantomSD
+/gate/coil_s0099_Plastic_1276/attachPhantomSD
+/gate/coil_s0099_G10/attachPhantomSD
+/gate/coil_s0099_Brass/attachPhantomSD
+/gate/coil_s0100_Plastic_1276/attachPhantomSD
+/gate/coil_s0100_G10/attachPhantomSD
+/gate/coil_s0100_Brass/attachPhantomSD
+/gate/coil_s0101_Plastic_0923/attachPhantomSD
+/gate/coil_s0101_Plastic_1276/attachPhantomSD
+/gate/coil_s0101_G10/attachPhantomSD
+/gate/coil_s0101_Brass/attachPhantomSD
+/gate/coil_s0102_Plastic_0923/attachPhantomSD
+/gate/coil_s0102_Plastic_1276/attachPhantomSD
+/gate/coil_s0102_G10/attachPhantomSD
+/gate/coil_s0102_Brass/attachPhantomSD
+/gate/coil_s0103_Plastic_0923/attachPhantomSD
+/gate/coil_s0103_Plastic_1276/attachPhantomSD
+/gate/coil_s0103_G10/attachPhantomSD
+/gate/coil_s0103_Brass/attachPhantomSD
+/gate/coil_s0104_Plastic_0923/attachPhantomSD
+/gate/coil_s0104_Plastic_1276/attachPhantomSD
+/gate/coil_s0104_G10/attachPhantomSD
+/gate/coil_s0105_Plastic_0923/attachPhantomSD
+/gate/coil_s0105_Plastic_1276/attachPhantomSD
+/gate/coil_s0105_G10/attachPhantomSD
+/gate/coil_s0106_Plastic_0923/attachPhantomSD
+/gate/coil_s0106_Plastic_1276/attachPhantomSD
+/gate/coil_s0106_G10/attachPhantomSD
+/gate/coil_s0107_Plastic_0923/attachPhantomSD
+/gate/coil_s0107_Plastic_1276/attachPhantomSD
+/gate/coil_s0107_G10/attachPhantomSD
+/gate/coil_s0108_Plastic_0923/attachPhantomSD
+/gate/coil_s0108_Plastic_1276/attachPhantomSD
+/gate/coil_s0109_Plastic_0923/attachPhantomSD
+/gate/coil_s0109_Plastic_1276/attachPhantomSD
+/gate/coil_s0110_Plastic_1276/attachPhantomSD
+/gate/coil_s0111_Plastic_1276/attachPhantomSD
+/gate/coil_s0112_Plastic_1276/attachPhantomSD
+/gate/coil_s0113_Plastic_1276/attachPhantomSD
+/gate/coil_s0114_Plastic_1276/attachPhantomSD
+/gate/coil_s0115_Plastic_1276/attachPhantomSD
+/gate/coil_s0116_Plastic_0923/attachPhantomSD
+/gate/coil_s0116_Plastic_1276/attachPhantomSD
+/gate/coil_s0117_Plastic_0923/attachPhantomSD
+/gate/coil_s0117_Plastic_1276/attachPhantomSD
+/gate/coil_s0118_Plastic_1276/attachPhantomSD
+/gate/coil_s0119_Plastic_1276/attachPhantomSD
+/gate/coil_s0120_Plastic_1276/attachPhantomSD
+/gate/coil_s0121_Plastic_1276/attachPhantomSD
+/gate/coil_s0122_Plastic_0923/attachPhantomSD
+/gate/coil_s0122_Plastic_1276/attachPhantomSD
+/gate/coil_s0123_Plastic_0923/attachPhantomSD
+/gate/coil_s0123_Plastic_1276/attachPhantomSD
+/gate/coil_s0123_G10/attachPhantomSD
+/gate/coil_s0124_Plastic_0923/attachPhantomSD
+/gate/coil_s0124_Plastic_1276/attachPhantomSD
+/gate/coil_s0124_G10/attachPhantomSD
+/gate/coil_s0125_Plastic_0923/attachPhantomSD
+/gate/coil_s0125_Plastic_1276/attachPhantomSD
+/gate/coil_s0125_G10/attachPhantomSD
+/gate/coil_s0126_Plastic_0923/attachPhantomSD
+/gate/coil_s0126_Plastic_1276/attachPhantomSD
+/gate/coil_s0127_Plastic_0923/attachPhantomSD
+/gate/coil_s0127_Plastic_1276/attachPhantomSD
+/gate/coil_s0128_Plastic_0923/attachPhantomSD
+/gate/coil_s0128_Plastic_1276/attachPhantomSD
+/gate/coil_s0129_Plastic_0923/attachPhantomSD
+/gate/coil_s0129_Plastic_1276/attachPhantomSD
+/gate/coil_s0130_Plastic_0923/attachPhantomSD
+/gate/coil_s0130_Plastic_1276/attachPhantomSD
+/gate/coil_s0130_G10/attachPhantomSD
+/gate/coil_s0131_Plastic_0923/attachPhantomSD
+/gate/coil_s0131_Plastic_1276/attachPhantomSD
+/gate/coil_s0131_G10/attachPhantomSD
+/gate/coil_s0132_Plastic_0923/attachPhantomSD
+/gate/coil_s0132_Plastic_1276/attachPhantomSD
+/gate/coil_s0132_G10/attachPhantomSD
+/gate/coil_s0132_Aluminium/attachPhantomSD
+/gate/coil_s0133_Plastic_1276/attachPhantomSD
+/gate/coil_s0133_G10/attachPhantomSD
+/gate/coil_s0133_Aluminium/attachPhantomSD

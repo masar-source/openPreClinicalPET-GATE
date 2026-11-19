@@ -1,0 +1,32 @@
+#####################################################################################
+# Overlap check of the coil and bed volumes only: no viewer, no sources, no acquisition.
+# Do not run this file directly: run check_bore.mac or check_all.mac (they set coilParts).
+# Run from a GATE project folder that holds Material/GateMaterials.db and coil3_bed/.
+# The log prints one "Checking overlaps for volume ..." line per volume; any overlap is reported
+# with the word "Overlap".
+#####################################################################################
+
+/gate/geometry/setMaterialDatabase Material/GateMaterials.db
+
+/gate/world/geometry/setXLength 100 cm
+/gate/world/geometry/setYLength 100 cm
+/gate/world/geometry/setZLength 100 cm
+/gate/world/setMaterial Air
+
+# The PET system volume of the test macros (PETscanner: air, r 56.9-99 mm, 155 mm long), so that
+# the coil is also checked against it.
+/gate/world/daughters/name   PETboreOutline
+/gate/world/daughters/insert cylinder
+/gate/PETboreOutline/setMaterial         Air
+/gate/PETboreOutline/geometry/setRmin    56.9 mm
+/gate/PETboreOutline/geometry/setRmax    99 mm
+/gate/PETboreOutline/geometry/setHeight  155 mm
+
+/control/execute coil3_bed/coil3_bed_{coilParts}.mac
+
+/gate/physics/addPhysicsList empenelope
+/gate/run/initialize
+
+/geometry/test/resolution 2000
+/geometry/test/tolerance 0. mm
+/geometry/test/run

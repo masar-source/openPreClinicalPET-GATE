@@ -1,0 +1,6 @@
+# Same as vis_bore.mac but without a screen (e.g. the GATE 8.2 Docker image): writes the scene to
+# g4_00.wrl (VRML) in the project folder. Open it with any VRML viewer (e.g. view3dscene, MeshLab).
+#     docker run --rm -v "$PWD:/APP" opengatecollaboration/gate:8.2-docker coil3_bed/vis_bore_file.mac
+/control/alias coilParts bore
+/control/alias visDriver VRML2FILE
+/control/execute coil3_bed/vis_common.mac

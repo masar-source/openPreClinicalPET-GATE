@@ -1,0 +1,5 @@
+# Overlap check of the "all" set, without viewer and without acquisition. From the GATE project folder:
+#     Gate coil3_bed/check_all.mac > check_all.log 2>&1
+#     grep -c "OK!" check_all.log ; grep -i overlap check_all.log | grep -v -i "checking overlaps"
+/control/alias coilParts all
+/control/execute coil3_bed/check_common.mac

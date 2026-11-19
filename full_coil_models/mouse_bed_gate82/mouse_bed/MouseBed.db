@@ -1,0 +1,15 @@
+[Materials]
+
+AC_Plastic_0744: d=0.7994 g/cm3 ; n=3 ; state=solid
+        +el: name=Carbon     ; n=5
+        +el: name=Hydrogen   ; n=8
+        +el: name=Oxygen     ; n=2
+
+AC_Plastic_1180: d=1.2680 g/cm3 ; n=3 ; state=solid
+        +el: name=Carbon     ; n=5
+        +el: name=Hydrogen   ; n=8
+        +el: name=Oxygen     ; n=2
+
+AC_Titanium: d=4.51 g/cm3 ; n=1 ; state=solid
+        +el: name=Titanium   ; n=1
+
