@@ -1,4 +1,0 @@
-# Overlap check of the Quad35 coil (bore parts), no viewer, no acquisition. From the GATE project folder:
-#     Gate quad35_coil/check_bore.mac > check_q35_bore.log 2>&1
-/control/alias coilParts bore
-/control/execute quad35_coil/check_common.mac

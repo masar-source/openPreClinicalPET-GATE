@@ -1,4 +1,0 @@
-# Look at the Quad35 coil (bore parts) in a window:   Gate --qt quad35_coil/vis_bore.mac
-/control/alias coilParts bore
-/control/alias visDriver OGLSQt
-/control/execute quad35_coil/vis_common.mac
