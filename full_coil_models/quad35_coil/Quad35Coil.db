@@ -1,0 +1,18 @@
+[Materials]
+
+AC_G10: d=1.7915 g/cm3 ; n=4 ; state=solid
+        +el: name=Silicon    ; n=1
+        +el: name=Oxygen     ; n=2
+        +el: name=Carbon     ; n=3
+        +el: name=Hydrogen   ; n=3
+
+AC_Plastic_0923: d=0.9919 g/cm3 ; n=3 ; state=solid
+        +el: name=Carbon     ; n=5
+        +el: name=Hydrogen   ; n=8
+        +el: name=Oxygen     ; n=2
+
+AC_Plastic_1276: d=1.3711 g/cm3 ; n=3 ; state=solid
+        +el: name=Carbon     ; n=5
+        +el: name=Hydrogen   ; n=8
+        +el: name=Oxygen     ; n=2
+

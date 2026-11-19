@@ -1,0 +1,4 @@
+# Look at the Quad35 coil (all parts) in a window:   Gate --qt quad35_coil/vis_all.mac
+/control/alias coilParts all
+/control/alias visDriver OGLSQt
+/control/execute quad35_coil/vis_common.mac
