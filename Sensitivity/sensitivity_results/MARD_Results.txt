@@ -1,2 +1,0 @@
-Metric	MARD (%)
-Sensitivity / Axial profile	3.448058518511337
