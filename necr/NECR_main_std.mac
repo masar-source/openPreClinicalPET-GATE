@@ -1,0 +1,838 @@
+# NECR_main_std.mac
+# Count rates and NECR (NEMA NU 4-2008 Sec. 4) of the Bruker PET insert Si 198 inside the 9.4 T MR scanner, GATE 8.2.
+# The model holds the PET insert, the RF coil, the animal cradle and the NEMA mouse-like scatter phantom with its
+# F-18 line source, in the 9.4 T field.
+#
+# Three coil/cradle setups are in this one file (SETUP block below); exactly one is active:
+#   q35    : Quad35 coil + mouse cradle, phantom at the measured position (line source 5.5 mm below the axis)
+#            measured sheet '20220915 Quad35 Maus' (145 frames)
+#   q86    : Quad86 coil + mouse cradle, phantom centred, resting on the cradle (line source 10 mm below the axis)
+#            measured sheet '20220906 Quad86 Maus' (132 frames)
+#   q86rat : Quad86 coil + rat cradle, phantom centred, resting on the cradle (line source 10 mm below the axis)
+#            measured sheet '20220906 Quad86 Maus' (132 frames)
+# The sheets are in 'PET-MR NEC curves NEMA Masar.xlsx' (measurements published in Kuntner et al. 2025).
+#
+# The model in short (details in the sections below):
+#  * Detector: 8 heads x 3 rings of monolithic trapezoidal LYSO blocks, 117 mm between opposite entrance faces,
+#    ring pitch 52 mm, a copper RF shield and a nylon front pad in front of the crystals.
+#  * Coil and cradle: from coil_bed_real/, cut at z = +-80 mm (beyond the detectors) to save time. The full
+#    models are in full_coil_models/.
+#  * Phantom: high density polyethylene, 0.96 g/cm3 (NEMA NU 4-2008 Sec. 4.3), 25 mm x 70 mm. The source is
+#    F-18 ions in the 60 mm water column of the line-source tube, 10 mm off the phantom axis.
+#  * Physics: Penelope electromagnetic models and radioactive decay, 9.4 T field along the scanner axis.
+#  * Digitizer: 18 % FWHM energy resolution at 511 keV, QE 0.90, 100 ns pile-up, 200 ns paralysable + 600 ns
+#    nonparalysable deadtime per crystal, 255.55-766.5 keV, 7 ns coincidence window, takeAllGoods,
+#    delayed coincidences for the randoms.
+#  * Intrinsic Lu-176 source (152 kBq): still in the macro. All results in the paper were run with it switched
+#    off (necr_run.py --no-lu176).
+#
+# Keep coil_bed_real/ and Material/ next to this file. Run it with necr_run.py, which writes one copy per
+# activity into macros/ and activates the setup you choose, e.g.
+#   python3 necr_run.py --setup q35 --no-lu176 --workers 64
+# The default output names are output/NECR_<tag>_<frame>.root, with the tag of the setup (std35v2, std86v2,
+# std86ratv2). necr_analysis.py then applies the NEMA analysis (Sec. 4.4) and compares with the measurement.
+#
+
+########################## SCANNER ##########################
+#//////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\#
+#
+# Bruker PET insert Si 198
+# Axial FOV: 150 mm
+# Inner diameter of the air system envelope: 113.8 mm
+# Detector material: LYSO
+# Crystals: monolithic trapezoidal blocks, 50 x 50 mm exit face, 48 x 48 mm entrance face, 10 mm thick
+# Detectors per ring: 8
+# Detector rings: 3
+# Radial sinogram pixel (0.478602 mm): set in necr_analysis.py, not here
+#
+#//////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\#
+
+
+#    exit face (50 x 50 mm)
+#  ------------------
+#  \                /    trapezoidal crystal, 10 mm thick
+#   ----------------
+#    entrance face (48 x 48 mm), towards the scanner axis
+
+
+
+######################## RUN SETTINGS #######################
+#///////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\#
+# The values that change between the count-rate acquisitions. necr_run.py writes one copy of this file per
+# activity and changes only these lines. Run directly, this file simulates the first measured Quad35 frame
+# (117.736 MBq, 1 s).
+# Measurement (PET-MR NEC curves NEMA Masar.xlsx, sheet 20220915 Quad35 Maus): 145 frames from 117.74 MBq
+# down to 0.013 MBq as the F-18 decays (average activity of each frame in column A).
+# No comments on the alias lines themselves: an alias takes the rest of its line as its value.
+#   activity : F-18 activity in the line source, Bq (decays per second at t = 0)
+#   duration : acquisition time, s (F-18 decays by 0.01 % within 1 s, which is negligible)
+#   seed     : random seed, different for every activity
+#   output   : ROOT file name without .root
+
+/control/alias activity 117736000
+/control/alias duration 1
+/control/alias seed 123456789
+/control/alias output output/NECR_001
+
+
+########################## SETUP (coil, bed, phantom) ########################
+#///////////////////////////////\\\\\\\\#
+# Three setups; exactly one block is active, the lines of the other two are commented out.
+# necr_run.py --setup q35 | q86 | q86rat activates the chosen block in the macros it writes. It takes the measured
+# sheet from 'coil=' and the default file names from 'tag='. Run directly with Gate, this file uses the block
+# that is active here. To switch by hand, remove the '#' in front of the five alias lines of one block, put it in
+# front of the alias lines of the other two blocks, and set the matching activity in RUN SETTINGS.
+# The '#@setup' and '#@end' lines mark the blocks for necr_run.py: keep them.
+# No comments on the alias lines: an alias takes the rest of its line as its value.
+#   coilMacro : the coil (coil_bed_real/, G10 cylinders on the axis, z -80 ... +80 mm)
+#   bedMacro  : the cradle (coil_bed_real/, static, z -80 ... +80 mm)
+#   cradleY   : height of the cradle in mm (see MOUSE / RAT CRADLE below)
+#   phantomY  : y of the phantom centre in mm (the line source is 10 mm below it)
+#   tubeEndY  : y of the two 5 mm tube ends outside the phantom = phantomY - 10 mm
+
+#@setup q35 coil=35 tag=std35v2
+# Quad35 coil + mouse cradle. The measured Quad35 sinograms showed the line source 5.5 mm from the scanner axis
+# (line-source fit 5.54-5.59 mm). The phantom centre is therefore placed 4.5 mm above the axis, with the line
+# source 5.5 mm below the axis, nearest to the cradle. The sinograms give only the distance of the line source
+# from the axis, not its direction.
+/control/alias coilMacro coil_bed_real/quad35_coil_cut80_uniform.mac
+/control/alias bedMacro coil_bed_real/mouse_cradle3mm_cut80.mac
+/control/alias cradleY -0.455
+/control/alias phantomY 4.5
+/control/alias tubeEndY -5.5
+#@end
+
+#@setup q86 coil=86 tag=std86v2
+# Quad86 coil + mouse cradle. Phantom centred, resting on the cradle (0.01 mm gap), line source y -10 mm.
+# The phantom position of the Quad86 measurement is not known.
+#/control/alias coilMacro coil_bed_real/quad86_coil_cut80_uniform.mac
+#/control/alias bedMacro coil_bed_real/mouse_cradle3mm_cut80.mac
+#/control/alias cradleY -0.455
+#/control/alias phantomY 0
+#/control/alias tubeEndY -10
+#@end
+
+#@setup q86rat coil=86 tag=std86ratv2
+# Quad86 coil + rat cradle raised by 12.240 mm, so the centred phantom rests on it (0.01 mm gap).
+# Line source y -10 mm. The measurement used the rat cradle with the Quad86 coil; its height there is not known.
+#/control/alias coilMacro coil_bed_real/quad86_coil_cut80_uniform.mac
+#/control/alias bedMacro coil_bed_real/rat_cradle_hdpe_cut80.mac
+#/control/alias cradleY 12.240
+#/control/alias phantomY 0
+#/control/alias tubeEndY -10
+#@end
+
+
+########################## MATERIALS ########################
+#///////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\#
+# The GATE material database in Material/. The coil, cradle and phantom materials are loaded further below.
+
+/gate/geometry/setMaterialDatabase Material/GateMaterials.db
+
+
+
+########################## VERBOSITY ########################
+#//////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\#
+# How much GATE prints while it runs (0 = minimal, higher numbers = more detail).
+
+/gate/verbose Physic    5
+/gate/verbose Cuts      0
+/gate/verbose SD        0
+/gate/verbose Actions   0
+/gate/verbose Actor     0
+/gate/verbose Step      0
+/gate/verbose Error                               1	# print errors
+/gate/verbose Warning                             1	# print navigation, physics and sorter warnings
+/gate/verbose Output    0
+/gate/verbose Volume    0
+/gate/verbose Image     0
+/gate/verbose Geometry  0
+/gate/verbose Core      0
+
+/run/verbose 0
+/event/verbose 0 
+/tracking/verbose 0
+
+
+
+########################## WORLD ########################
+#////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\#
+
+# The world: a 1 m air cube that holds the scanner and all other volumes.
+
+/gate/world/setMaterial Air
+/gate/world/geometry/setXLength 100 cm
+/gate/world/geometry/setYLength 100 cm
+/gate/world/geometry/setZLength 100 cm
+/gate/world/vis/setVisible 0
+
+
+
+########################## PET MODEL ########################
+#///////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\#
+
+### PET SYSTEM ###
+# The GATE system PETscanner (it allows trapezoidal crystals), a daughter of the world. The name must be
+# PETscanner, as in the GATE documentation.
+
+/gate/world/daughters/name                 PETscanner	# GATE system name
+/gate/world/daughters/insert               cylinder	# cylindrical envelope
+/gate/PETscanner/setMaterial               Air		# air
+/gate/PETscanner/geometry/setRmin                 56.9 mm	# inner radius of the air envelope (113.8 mm bore), just inside the front pad
+/gate/PETscanner/geometry/setRmax                 99 mm	# outer radius of the air envelope
+/gate/PETscanner/geometry/setHeight               155 mm	# envelope length; the crystals reach +-76 mm (entrance faces) to +-77 mm (exit faces)
+/gate/PETscanner/placement/setTranslation  0 0 0 cm	# at the centre of the world
+/gate/PETscanner/vis/setColor              red		# colour in the viewer
+/gate/PETscanner/vis/setVisible            0			# 0 = do not visualise, 1 = visualise
+#/gate/PETscanner/vis/forceWireframe
+
+
+### HEAD ###
+# A head holds one detector column: 3 modules (one per ring), 3 copper sheets and one front pad. The ring
+# repeater below makes 8 heads. Each head is a 45 degree air sector of a cylinder (r 56.9-75 mm) around the
+# scanner origin, so neighbouring heads do not overlap; the translations of its daughters place the crystal,
+# the copper sheet and the pad.
+
+/gate/PETscanner/daughters/name      head
+/gate/PETscanner/daughters/insert    cylinder
+/gate/head/setMaterial              Air
+/gate/head/geometry/setRmin          56.9 mm
+/gate/head/geometry/setRmax          75 mm
+/gate/head/geometry/setHeight        155 mm
+/gate/head/geometry/setPhiStart      67.5 deg
+/gate/head/geometry/setDeltaPhi      45 deg
+/gate/head/placement/setTranslation  0 0 0 mm
+/gate/head/vis/setVisible            0			# 0 = do not visualise, 1 = visualise
+#/gate/head/vis/forceWireframe
+
+
+### MODULE ###
+# The module holds one crystal. It is an air trapezoid of the same shape as the crystal (a 50 x 50 x 10 mm box
+# would cross the sector boundary near the entrance face).
+
+/gate/head/daughters/name                module
+/gate/head/daughters/insert              trap
+/gate/module/setMaterial                Air
+/gate/module/geometry/setDx1             25 mm
+/gate/module/geometry/setDx2             25 mm
+/gate/module/geometry/setDx3             24 mm
+/gate/module/geometry/setDx4             24 mm
+/gate/module/geometry/setDy1             25 mm
+/gate/module/geometry/setDy2             24 mm
+/gate/module/geometry/setDz              5 mm
+/gate/module/geometry/setTheta           0 deg
+/gate/module/geometry/setPhi             0 deg
+/gate/module/geometry/setAlp1            0 deg
+/gate/module/geometry/setAlp2            0 deg
+/gate/module/placement/setTranslation    0 63.5 0 mm	# entrance face at r 58.5 mm: 117 mm ring diameter
+/gate/module/placement/setRotationAxis   1 0 0	# rotate around the x axis only
+/gate/module/placement/setRotationAngle  90 deg	# by 90 degrees
+/gate/module/vis/setVisible              0		# 0 = do not visualise, 1 = visualise
+/gate/module/vis/forceWireframe
+
+
+### CRYSTAL ###
+# The crystal: one monolithic trapezoidal LYSO block. The LYSO material itself is not radioactive in GATE;
+# the intrinsic Lu-176 activity is a separate source (Intrinsic Activity Source below).
+
+/gate/module/daughters/name             crystal	# name of the crystal volume
+/gate/module/daughters/insert           trap		# trapezoid
+/gate/crystal/setMaterial               LYSO 	# scintillator, defined in GateMaterials.db
+/gate/crystal/geometry/setDx1           25 mm	# half-width at the exit face (50 mm)
+/gate/crystal/geometry/setDx2           25 mm	# half-width at the exit face (50 mm)
+/gate/crystal/geometry/setDx3           24 mm	# half-width at the entrance face (48 mm)
+/gate/crystal/geometry/setDx4           24 mm	# half-width at the entrance face (48 mm)
+/gate/crystal/geometry/setDy1           25 mm	# half-length at the exit face (50 mm)
+/gate/crystal/geometry/setDy2           24 mm	# half-length at the entrance face (48 mm)
+/gate/crystal/geometry/setDz            5 mm		# half-thickness (10 mm)
+/gate/crystal/geometry/setTheta         0 deg	
+/gate/crystal/geometry/setPhi           0 deg
+/gate/crystal/geometry/setAlp1          0 deg	
+/gate/crystal/geometry/setAlp2          0 deg	
+/gate/crystal/placement/setTranslation  0 0 0 mm	# at the centre of the module
+/gate/crystal/vis/setColor              white	# colour in the viewer
+/gate/crystal/vis/setVisible            1		# 0 = do not visualise, 1 = visualise
+/gate/crystal/vis/forceSolid					# drawn solid in the viewer
+
+
+### COPPER SHIELDING ###
+# A thin copper sheet in front of each crystal: the RF shielding of the detectors (not a shield against the
+# static 9.4 T field). The 0.0351 mm thickness is the value given by Thiessen et al.
+# (https://doi.org/10.1088/0031-9155/61/22/7934) for another PET insert; I kept it as an assumption for this
+# insert. Like all passive material in the bore, it attenuates and scatters some of the photons.
+
+/gate/head/daughters/name                   shielding			# name of the copper sheet
+/gate/head/daughters/insert                 box				# thin box
+/gate/shielding/setMaterial                 Copper			# copper
+/gate/shielding/geometry/setXLength         48 mm				# 48 mm, the size of the entrance face
+/gate/shielding/geometry/setYLength         48 mm				# 48 mm, the size of the entrance face
+/gate/shielding/geometry/setZLength         0.0351 mm			# 0.0351 mm (Thiessen et al., see above)
+/gate/shielding/placement/setTranslation          0. 57.98145 0. mm	# r 57.964-57.999 mm, 0.5 mm in front of the crystal entrance face (r 58.5 mm)
+/gate/shielding/placement/setRotationAxis   1 0 0				# rotated like the module
+/gate/shielding/placement/setRotationAngle  90 deg			# by 90 degrees
+/gate/shielding/vis/setColor                red				# colour in the viewer
+/gate/shielding/vis/setVisible              1 				# 0 = do not visualise, 1 = visualise
+/gate/shielding/vis/forceSolid							# drawn solid in the viewer
+
+
+### Front Pad ###
+# The nylon front pad on the entrance side of the detectors; the RF coils sit inside it without touching the
+# crystals. It is modelled as one flat 1 mm plate per head (8 plates in all).
+
+/gate/head/daughters/name                  FrontPad		# name of the front pad
+/gate/head/daughters/insert                box			
+/gate/FrontPad/setMaterial                 Nylon			# nylon, the material of the real pad
+/gate/FrontPad/geometry/setXLength         47.00 mm		# width; the 8 plates form a faceted ring
+/gate/FrontPad/geometry/setYLength         154 mm			# axial length
+/gate/FrontPad/geometry/setZLength         1 mm			# thickness
+/gate/FrontPad/placement/setTranslation           0. 57.4629 0. mm	# r 56.963-57.963 mm, 0.001 mm inside the copper sheet
+/gate/FrontPad/placement/setRotationAxis   1 0 0			# rotated like the module
+/gate/FrontPad/placement/setRotationAngle  90 deg			# by 90 degrees
+/gate/FrontPad/vis/setColor                blue			# colour in the viewer
+/gate/FrontPad/vis/setVisible              1				# 0 = do not visualise, 1 = visualise
+/gate/FrontPad/vis/forceSolid							# drawn solid in the viewer
+
+
+
+########################## VOLUMES REPETITION ########################
+# The crystal, the copper sheet and the front pad above exist once; the repeaters below build the full detector.
+
+
+### REPEAT CRYSTAL ###
+# One crystal per module (no repetition).
+
+/gate/crystal/repeaters/insert             cubicArray		# cubic array repeater
+/gate/crystal/cubicArray/setRepeatNumberX  1				# 1 in x
+/gate/crystal/cubicArray/setRepeatNumberY  1				# 1 in y
+/gate/crystal/cubicArray/setRepeatNumberZ  1				# 1 in z
+/gate/crystal/cubicArray/setRepeatVector   0.0 0 0.0 mm	# no offset
+
+
+### REPEAT MODULE ###
+# Three modules along z in each head: the 3 rings, 52 mm apart. I fitted the 52 mm ring pitch to the measured
+# Quad86 sensitivity profile; it is not a measured size.
+
+/gate/module/repeaters/insert             cubicArray		# cubic array repeater
+/gate/module/cubicArray/setRepeatNumberX  1				# 1 in x
+/gate/module/cubicArray/setRepeatNumberY  1				# 1 in y
+/gate/module/cubicArray/setRepeatNumberZ  3				# 3 in z: the 3 rings
+/gate/module/cubicArray/setRepeatVector   0. 0. 52 mm		# ring pitch 52 mm: 4 mm gap between rings at the entrance faces, 2 mm at the exit faces
+
+
+### REPEAT SHIELDING ###
+# Three copper sheets along z in each head, one per ring.
+
+/gate/shielding/repeaters/insert             cubicArray	# cubic array repeater
+/gate/shielding/cubicArray/setRepeatNumberX  1			# 1 in x
+/gate/shielding/cubicArray/setRepeatNumberY  1			# 1 in y
+/gate/shielding/cubicArray/setRepeatNumberZ  3			# 3 in z, one per ring
+/gate/shielding/cubicArray/setRepeatVector   0. 0. 52 mm	# same 52 mm pitch as the modules, so each copper sheet stays on its crystal
+
+
+### REPEAT HEAD ###
+# Eight heads in a ring around the z axis. Each head holds 3 modules along z, so the scanner has 3 rings of
+# 8 crystals.
+
+/gate/head/repeaters/insert      ring		# repeat in a ring
+/gate/head/ring/setRepeatNumber  8			# 8 heads
+/gate/head/ring/setPoint1        0. 0. 1.	# the ring axis is the z axis
+/gate/head/ring/setPoint2        0. 0. 0.
+/gate/head/ring/enableAutoRotation      # rotate each sector and its contents around the ring
+
+
+### REPEAT FRONTPAD ###
+# One front pad per head (no repetition); the ring repeater above makes 8 of them.
+
+/gate/FrontPad/repeaters/insert             cubicArray		# cubic array repeater
+/gate/FrontPad/cubicArray/setRepeatNumberX  1			# 1 in x
+/gate/FrontPad/cubicArray/setRepeatNumberY  1			# 1 in y
+/gate/FrontPad/cubicArray/setRepeatNumberZ  1			# 1 in z
+/gate/FrontPad/cubicArray/setRepeatVector   0. 0. 0. mm	# no offset
+
+
+### ATTACH SYSTEM ###
+# The levels of the PETscanner system, from the outside in: head, module, crystal.
+
+/gate/systems/PETscanner/level1/attach  head
+/gate/systems/PETscanner/level2/attach  module
+/gate/systems/PETscanner/level3/attach  crystal
+
+
+### ATTACH CRYSTALSD ###
+# The crystal is the sensitive detector (CrystalSD): the hits are recorded in it.
+
+/gate/crystal/attachCrystalSD
+
+
+### DESCRIBE SYSTEM ###
+
+/gate/systems/PETscanner/describe
+
+
+
+##################### Coil Configuration ####################
+#///////////////////////////////\\\\\\\#
+# The RF coil of the active setup ({coilMacro} from SETUP): G10 cylinders on the axis, cut at z = +-80 mm.
+# The coil, the cradle and the phantom use materials of coil_bed_real/Coil3Bed.db (AC_G10 1.79 g/cm3,
+# Bed_HDPE 0.95 g/cm3, Phantom_HDPE 0.96 g/cm3), loaded here in addition to Material/GateMaterials.db. The file
+# also holds mu-map plastics that these runs do not use. The coil macros attach their parts to the PhantomSD.
+
+/gate/geometry/setMaterialDatabase coil_bed_real/Coil3Bed.db
+/control/execute {coilMacro}
+
+
+
+####################### Magnetic Field ######################
+#///////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\#
+# The static 9.4 T field of the MR scanner, along the scanner axis (z).
+
+/gate/geometry/setMagField  0  0  9.4 T
+
+
+
+###################### MOUSE / RAT CRADLE ####################
+#//////////////////////////////\\\\\\\\#
+# The cradle of the active setup ({bedMacro} from SETUP), material Bed_HDPE, cut at z = +-80 mm. It does not
+# move in this test: its parts are world daughters placed at (0, {cradleY}, 0).
+#  * mouse cradle (q35, q86): mouse_cradle3mm_cut80.mac, the rat cradle with its cross-section scaled by 0.487
+#    and solid side walls about 3 mm thick. With cradleY = -0.455 mm the centred phantom (r 12.5 mm) rests on
+#    the floor with a 0.01 mm gap; the rounded walls stay 0.96 mm from the phantom and the tube ends. The cradle
+#    reaches r 17.35 mm (Quad35 coil from 17.5 mm). In q35 the cradle stays at -0.455 mm under the raised
+#    phantom, which leaves 4.5 mm of air below the phantom and 2.15 mm at the sides.
+#  * rat cradle (q86rat): rat_cradle_hdpe_cut80.mac, at real size. With cradleY = 12.240 mm the centred phantom
+#    rests on it with a 0.01 mm gap; it reaches r 36.16 mm (Quad86 coil from 43.0 mm).
+# I computed both heights from the STL surfaces under the 70 mm length of the phantom.
+
+/control/execute {bedMacro}
+
+
+
+########################### PHANTOM #########################
+#///////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\#
+# The mouse-like phantom of NEMA NU 4-2008 Sec. 4: a solid cylinder, 25 mm diameter and 70 mm long, with a
+# 3.2 mm hole 10 mm off its axis for the line-source tube.
+# Material Phantom_HDPE (C2H4, 0.96 g/cm3, coil_bed_real/Coil3Bed.db): NEMA NU 4-2008 Sec. 4.3 asks for high
+# density polyethylene of 0.96 +/- 0.1 g/cm3 (Polyethylene of GateMaterials.db is 1.06 g/cm3, the top of that
+# range). At 0.96 g/cm3 the phantom weighs 32.4 g (35.8 g at 1.06 g/cm3).
+# The line-source tube (sourceTube, sourceTubeEnd1/2) is Polyethylene of GateMaterials.db: NEMA gives it only as
+# clear flexible tubing, and its effect is negligible.
+# The phantom must be defined before the initialization, the source after it.
+
+/gate/world/daughters/name                   mousePhantom	# name of the phantom
+/gate/world/daughters/insert                 cylinder		# cylinder
+/gate/mousePhantom/setMaterial               Phantom_HDPE	# HDPE 0.96 g/cm3 as in NEMA NU 4-2008, from coil_bed_real/Coil3Bed.db
+/gate/mousePhantom/geometry/setRmin          0. mm		# solid
+/gate/mousePhantom/geometry/setRmax          12.5 mm		# 25 mm diameter (NEMA)
+/gate/mousePhantom/geometry/setHeight        70. mm		# 70 mm long (NEMA)
+/gate/mousePhantom/placement/setTranslation  0. {phantomY} 0. mm	# phantomY from SETUP (q35: 4.5 mm, measured position; q86, q86rat: 0, centred)
+/gate/mousePhantom/vis/setColor              gray
+/gate/mousePhantom/vis/setVisible            1
+/gate/mousePhantom/vis/forceSolid
+
+# The hole for the line-source tube: 3.2 mm diameter, through the whole phantom, 10 mm off its axis (NEMA).
+
+/gate/mousePhantom/daughters/name          	sourceHole	# name of the hole
+/gate/mousePhantom/daughters/insert        	cylinder		# cylinder
+/gate/sourceHole/setMaterial               	Air			# air; the tube and the water are placed inside it
+/gate/sourceHole/geometry/setRmin          	0. mm		# no inner radius
+/gate/sourceHole/geometry/setRmax          	1.6 mm		# 3.2 mm diameter (NEMA)
+/gate/sourceHole/geometry/setHeight        	70. mm		# through the whole 70 mm phantom
+/gate/sourceHole/placement/setTranslation  	0. -10. 0. mm	# 10 mm off the phantom axis (NEMA), below it
+/gate/sourceHole/vis/setColor              	red
+/gate/sourceHole/vis/setVisible            	1
+/gate/sourceHole/vis/forceSolid
+
+# The line-source tube inside the hole: inner radius 1.0 mm, outer radius 1.55 mm, so 0.05 mm of air are left
+# between the tube and the hole wall.
+
+/gate/sourceHole/daughters/name    	   	sourceTube	# name of the tube
+/gate/sourceHole/daughters/insert  	   	cylinder		# cylinder
+/gate/sourceTube/setMaterial               	Polyethylene	# Polyethylene of GateMaterials.db (see PHANTOM above)
+/gate/sourceTube/geometry/setRmin          	1.0 mm		# inner radius
+/gate/sourceTube/geometry/setRmax          	1.55 mm		# outer radius
+/gate/sourceTube/geometry/setHeight               70. mm	# the 70 mm inside the phantom; the 5 mm ends outside are separate volumes
+/gate/sourceTube/vis/setColor              	blue
+/gate/sourceTube/vis/setVisible            	1
+/gate/sourceTube/vis/forceSolid
+
+
+### TUBE ENDS ###
+# The tube is 80 mm long: 70 mm inside the phantom and a 5 mm end on each side. The ends lie outside the 70 mm
+# hole, so they are world daughters.
+
+/gate/world/daughters/name                 sourceTubeEnd1
+/gate/world/daughters/insert               cylinder
+/gate/sourceTubeEnd1/setMaterial           Polyethylene
+/gate/sourceTubeEnd1/geometry/setRmin       1.0 mm
+/gate/sourceTubeEnd1/geometry/setRmax       1.55 mm
+/gate/sourceTubeEnd1/geometry/setHeight     5. mm
+/gate/sourceTubeEnd1/placement/setTranslation 0. {tubeEndY} -37.5 mm	# tubeEndY from SETUP = phantomY - 10 mm, in line with the sourceHole
+/gate/sourceTubeEnd1/vis/setColor           blue
+/gate/sourceTubeEnd1/vis/setVisible         1
+
+/gate/world/daughters/name                 sourceTubeEnd2
+/gate/world/daughters/insert               cylinder
+/gate/sourceTubeEnd2/setMaterial           Polyethylene
+/gate/sourceTubeEnd2/geometry/setRmin       1.0 mm
+/gate/sourceTubeEnd2/geometry/setRmax       1.55 mm
+/gate/sourceTubeEnd2/geometry/setHeight     5. mm
+/gate/sourceTubeEnd2/placement/setTranslation 0. {tubeEndY} 37.5 mm	# tubeEndY from SETUP = phantomY - 10 mm, in line with the sourceHole
+/gate/sourceTubeEnd2/vis/setColor           blue
+/gate/sourceTubeEnd2/vis/setVisible         1
+
+
+### WATER INSIDE THE TUBE ###
+# The F-18 solution fills the central 60 mm of the tube lumen (r 1.0 mm); the last 10 mm at each end of the
+# 80 mm tube are empty (air). The water is a sibling of sourceTube inside sourceHole: the tube is an annulus and
+# does not contain its own lumen. Liquid volume: pi x (1 mm)^2 x 60 mm = 0.18850 mL.
+# The F-18 source (SOURCE below) fills this same volume.
+
+/gate/sourceHole/daughters/name            sourceWater
+/gate/sourceHole/daughters/insert          cylinder
+/gate/sourceWater/setMaterial              Water
+/gate/sourceWater/geometry/setRmin          0. mm
+/gate/sourceWater/geometry/setRmax          1.0 mm
+/gate/sourceWater/geometry/setHeight        60. mm
+/gate/sourceWater/placement/setTranslation  0. 0. 0. mm
+/gate/sourceWater/vis/setColor              cyan
+/gate/sourceWater/vis/setVisible            1
+
+####################### ATTACH PhantomSD ####################
+#////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\#
+# The PhantomSD records the Compton and Rayleigh interactions in these passive volumes. The analysis uses them
+# as truth labels (scatter in the phantom, coil, cradle or front pad). Leaving a volume out does not stop the
+# scatter in it; it only hides that scatter from the labels. The truth-labelled scatter is not the NEMA scatter
+# fraction: necr_analysis.py uses the NEMA projection method for that.
+
+/gate/FrontPad/attachPhantomSD
+/gate/shielding/attachPhantomSD
+
+
+/gate/mousePhantom/attachPhantomSD
+/gate/sourceHole/attachPhantomSD
+/gate/sourceTube/attachPhantomSD
+/gate/sourceTubeEnd1/attachPhantomSD
+/gate/sourceTubeEnd2/attachPhantomSD
+/gate/sourceWater/attachPhantomSD
+# The coil parts (q35_*, q86_*) and the cradle parts (mbed3mm_*, ratbed_*) are attached in their
+# own macros in coil_bed_real/.
+
+
+
+
+########################### PHYSICS #########################
+#////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\#
+# Penelope electromagnetic models, radioactive decay and atomic deexcitation.
+
+
+/gate/physics/addPhysicsList empenelope
+
+/gate/physics/addProcess RadioactiveDecay
+/gate/physics/addAtomDeexcitation
+# empenelope already includes positron annihilation, so the separate GATE process PositronAnnihilation is not
+# added (it would annihilate twice). With this GATE 8.2 / Geant4 10.5 Penelope model, annihilation at rest gives
+# exactly opposite photons: the positron range is modelled, the photon acollinearity is not.
+#/gate/physics/addProcess PositronAnnihilation
+
+# Production cut of 0.1 mm in the world volume. A production cut limits the creation of secondaries; it does
+# not stop the primary positron. Daughter volumes take the cuts of their region.
+/gate/physics/Gamma/SetCutInRegion          world 0.1 mm
+/gate/physics/Electron/SetCutInRegion       world 0.1 mm
+/gate/physics/Positron/SetCutInRegion       world 0.1 mm
+# Production cut of 0.01 mm in the phantom (its daughters, the line source, inherit it).
+/gate/physics/Gamma/SetCutInRegion          mousePhantom 0.01 mm
+/gate/physics/Electron/SetCutInRegion       mousePhantom 0.01 mm
+/gate/physics/Positron/SetCutInRegion       mousePhantom 0.01 mm
+
+# The step length of positrons in the phantom (its daughters, the line source, inherit it) is limited to 0.05 mm (also in the line source), so that their curved paths in the
+# 9.4 T magnetic field are followed accurately.
+/gate/physics/ActivateStepLimiter          e+
+/gate/physics/SetMaxStepSizeInRegion        mousePhantom 0.05 mm
+
+
+
+
+####################### INITIALIZATION ######################
+#////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\#
+# All volumes are defined above this line; the sources are defined after it.
+
+/gate/run/initialize
+
+# Geant4 overlap check of the geometry before the run. Touching surfaces are intended, overlaps are not.
+/geometry/test/verbosity true
+/geometry/test/resolution 10000
+/geometry/test/tolerance 0. mm
+/geometry/test/run
+
+
+
+########################## SOURCE ##########################
+#////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+# F-18 ions at rest in the water of the line source, followed by radioactive decay. The activity is the total
+# activity of the line source in nuclear decays per second at t = 0, not photon pairs per second:
+# RadioactiveDecay gives the decay branches and the positron spectrum, so the activity is not multiplied by the
+# positron fraction. GATE schedules the decays with the F-18 half-life of the ion data (useDefaultHalfLife).
+# The active length is 60 mm, 10 mm shorter than the phantom.
+
+/gate/source/addSource F18CylinderSource
+/gate/source/F18CylinderSource/setActivity {activity} becquerel	# set in RUN SETTINGS
+
+/gate/source/F18CylinderSource/setType            	gps
+/gate/source/F18CylinderSource/gps/particle       	ion
+/gate/source/F18CylinderSource/gps/ion       		9 18 0 0	# Z, A, charge, excitation energy
+/gate/source/F18CylinderSource/gps/monoenergy     	0. eV	# the parent ion at rest (this is not the positron energy)
+/gate/source/F18CylinderSource/setForcedUnstableFlag 	true
+/gate/source/F18CylinderSource/useDefaultHalfLife
+
+/gate/source/F18CylinderSource/gps/type 		Volume
+/gate/source/F18CylinderSource/gps/shape 		Cylinder
+/gate/source/F18CylinderSource/gps/radius         1.0 mm	# the solution fills the 1.0 mm lumen of the tube
+/gate/source/F18CylinderSource/gps/halfz 		30 mm
+
+/gate/source/F18CylinderSource/gps/angtype 		iso
+
+/gate/source/F18CylinderSource/attachTo           sourceWater	# coordinates local to sourceWater, on the line-source axis
+
+
+
+# A back-to-back 511 keV source, not used. For runs with back-to-back photon pairs, use necr_run.py --b2b: it
+# turns the F-18 source above into a back-to-back source in the same volume.
+
+#/gate/source/addSource F18CylinderSource
+#/gate/source/F18CylinderSource/setActivity 125000000 becquerel
+
+#/gate/source/F18CylinderSource/setType backtoback
+#/gate/source/F18CylinderSource/gps/particle gamma
+#/gate/source/F18CylinderSource/gps/monoenergy 511. keV
+#/gate/source/F18CylinderSource/setForcedUnstableFlag true
+#/gate/source/F18CylinderSource/setForcedHalfLife 6586 s
+
+#/gate/source/F18CylinderSource/gps/type Volume
+#/gate/source/F18CylinderSource/gps/shape Cylinder
+#/gate/source/F18CylinderSource/gps/radius 0.95 mm
+#/gate/source/F18CylinderSource/gps/halfz 30 mm
+
+#/gate/source/F18CylinderSource/gps/angtype iso
+
+#/gate/source/F18CylinderSource/attachTo sourceTube
+
+
+
+
+########################## Intrinsic Activity Source ##########################
+#////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\
+# The intrinsic Lu-176 activity of the LYSO crystals, 152 kBq (calculated, not measured). It is still in the
+# macro; all results in the paper were run with it switched off (necr_run.py --no-lu176) and with the measured
+# blank-scan background added in the analysis (necr_analysis.py --add-measured-bg).
+
+/gate/source/addSource Lu176CrystalSource
+/gate/source/Lu176CrystalSource/setActivity 152000 becquerel
+
+/gate/source/Lu176CrystalSource/setType gps
+/gate/source/Lu176CrystalSource/gps/particle ion
+/gate/source/Lu176CrystalSource/gps/ion 71 176 0 0
+/gate/source/Lu176CrystalSource/gps/monoenergy 0. eV
+/gate/source/Lu176CrystalSource/setForcedUnstableFlag true
+/gate/source/Lu176CrystalSource/useDefaultHalfLife
+
+# The decays are sampled in a cylinder around the detector (world coordinates) and kept only inside the LYSO
+# volumes (confine crystal_phys). All crystal copies share the name crystal_phys, so this one source covers all
+# 8 heads and 3 rings. The cylinder is only a sampling region; it adds no material.
+
+/gate/source/Lu176CrystalSource/gps/type Volume
+/gate/source/Lu176CrystalSource/gps/shape Cylinder
+/gate/source/Lu176CrystalSource/gps/radius 75. mm
+/gate/source/Lu176CrystalSource/gps/halfz 78. mm	# encloses the crystals (z up to +-77 mm)
+/gate/source/Lu176CrystalSource/gps/centre 0. 0. 0. mm
+/gate/source/Lu176CrystalSource/gps/angtype iso
+/gate/source/Lu176CrystalSource/gps/confine crystal_phys
+
+
+
+####################### VISUALIZATION ######################
+#/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\#
+# The viewer commands are commented out: the runs use GATE without a display. To look at the model, use
+# view_model.py.
+
+#/vis/open 						OGLI		# to look at the model, use view_model.py instead
+#/vis/viewer/zoom 					18		# zoom in/out
+#/vis/viewer/set/viewpointThetaPhi 	60 60	# rotate
+#/vis/drawVolume                        
+#/vis/viewer/update
+#/gate/geometry/rebuild
+
+
+
+######################## DIGITIZER #########################
+#/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\#
+# The digitizer turns the hits in the crystals into singles and then into coincidences, like the detector
+# electronics. Order of the singles chain: adder, readout, energy blurring and QE, zero-energy filter, pile-up,
+# deadtime, energy window.
+
+
+### ADDER ####
+# Sums the hits of one event in the same crystal into one pulse, at the energy-weighted position.
+
+/gate/digitizer/Singles/insert adder
+
+
+### READOUT ###
+# One pulse per block: depth 3 is the crystal level of this PETscanner (24 monolithic blocks).
+
+/gate/digitizer/Singles/insert 		  	readout
+/gate/digitizer/Singles/readout/setPolicy    TakeEnergyWinner	# keeps the energy-weighted position within the monolithic block
+/gate/digitizer/Singles/readout/setDepth  	3 
+
+# The position is the energy-weighted centroid of the interactions. No light sharing, position blurring,
+# depth-of-interaction estimate or 0.48 mm pixel grid is simulated here; necr_analysis.py --detector-blur can
+# add a detector position response in the analysis.
+
+
+### ENERGY RESOLUTION ###
+# A second blurring stage, not used: crystalblurring below is the only energy blurring. Do not switch on both.
+
+#/gate/digitizer/Singles/insert 				    		blurring
+#/gate/digitizer/Singles/blurring/setResolution	    		0.15
+#/gate/digitizer/Singles/blurring/setEnergyOfReference 	511. keV
+
+
+### CRYSTAL RESOLUTION ###
+# Energy resolution 18 % FWHM at 511 keV, scaled with sqrt(E) by GATE 8.2, the same for every crystal (Min = Max).
+# QE 0.90: in this GATE module a pulse is kept with probability QE, otherwise its energy is set to zero. It is a
+# per-pulse acceptance, not an optical photon detection efficiency; no optical photons are simulated.
+
+/gate/digitizer/Singles/insert							   	crystalblurring
+/gate/digitizer/Singles/crystalblurring/setCrystalResolutionMin 	   	0.18
+/gate/digitizer/Singles/crystalblurring/setCrystalResolutionMax 		0.18
+/gate/digitizer/Singles/crystalblurring/setCrystalQE 			   	0.90
+/gate/digitizer/Singles/crystalblurring/setCrystalEnergyOfReference 	511. keV
+
+
+# Removes the pulses that the QE step set to zero energy, so they cannot cause pile-up or deadtime. The 0.001 keV
+# threshold is only a zero filter, not the energy window.
+/gate/digitizer/Singles/name                    zeroEnergyFilter
+/gate/digitizer/Singles/insert                  thresholder
+/gate/digitizer/Singles/zeroEnergyFilter/setThreshold 0.001 keV
+
+
+### PILE-UP ###
+# Pile-up within 100 ns per block (depth 3): the energies of pulses closer in time are summed, and the pulse keeps
+# the position and event label of one of them. 100 ns is an electronics parameter of the model, not the LYSO
+# decay time. Pulses outside the final energy window can still cause pile-up and deadtime.
+
+/gate/digitizer/Singles/insert		 pileup
+/gate/digitizer/Singles/pileup/setDepth  3
+/gate/digitizer/Singles/pileup/setPileup 100 ns
+
+
+### DEAD-TIME ###
+# Two deadtime stages for each of the 24 crystals: 200 ns paralysable, then 600 ns nonparalysable. Both act
+# before the energy window.
+
+/gate/digitizer/Singles/insert 				deadtime
+/gate/digitizer/Singles/deadtime/setDeadTime 	200. ns
+/gate/digitizer/Singles/deadtime/setMode 		paralysable
+/gate/digitizer/Singles/deadtime/chooseDTVolume	crystal
+
+/gate/digitizer/Singles/name 					deadtime2
+/gate/digitizer/Singles/insert 				deadtime
+/gate/digitizer/Singles/deadtime2/setDeadTime 	600. ns
+/gate/digitizer/Singles/deadtime2/setMode 		nonparalysable
+/gate/digitizer/Singles/deadtime2/chooseDTVolume 	crystal
+
+
+### THRESHOLDER ###
+# Energy window 255.55-766.5 keV, the window of the measured data.
+
+/gate/digitizer/Singles/insert 				thresholder
+/gate/digitizer/Singles/thresholder/setThreshold  255.55 keV
+/gate/digitizer/Singles/insert 				upholder
+/gate/digitizer/Singles/upholder/setUphold 		766.5 keV
+
+
+### COINCIDENCE SORTER ###
+# Prompt coincidences between singles at least 3 heads (sectors) apart, with the 7 ns coincidence window of the
+# measured data. In GATE the window opens at the first single and lasts 7 ns. No timing blur is applied.
+
+/gate/digitizer/Coincidences/setInputName       Singles
+/gate/digitizer/Coincidences/setDepth           1
+/gate/digitizer/Coincidences/minSectorDifference 3
+/gate/digitizer/Coincidences/allPulseOpenCoincGate false
+/gate/digitizer/Coincidences/setPresortBufferSize 256
+
+/gate/digitizer/Coincidences/setWindow            7 ns	# 7 ns, as in the measured data
+/gate/digitizer/Coincidences/MultiplesPolicy    takeAllGoods	# gave the best match with the measured rates
+# Other policies I tried: killAll lowered the randoms; takeWinnerIfIsGood raised the trues and the randoms and
+# changed the scatter slightly.
+
+/gate/digitizer/name                            delay
+/gate/digitizer/insert                          coincidenceSorter
+# Delayed coincidences for the randoms: the same settings as the prompt sorter, with the window shifted by 10 us.
+# The offset is far beyond the 600 ns deadtime, so a delayed window is not correlated with the deadtime of the
+# prompt partner.
+/gate/digitizer/delay/setOffset                 10000. ns
+/gate/digitizer/delay/setWindow                 7 ns				# same as the prompt window
+/gate/digitizer/delay/setInputName              Singles
+/gate/digitizer/delay/setDepth                  1
+/gate/digitizer/delay/minSectorDifference       3
+/gate/digitizer/delay/allPulseOpenCoincGate     false
+/gate/digitizer/delay/setPresortBufferSize      256
+/gate/digitizer/delay/MultiplesPolicy           takeAllGoods
+
+# Both sorters use the same multiples policy. The delayed sorter only pairs the single that opened the window,
+# so at high multiplicity it is not a perfect randoms estimate; the GATE truth randoms are in the details table
+# of necr_analysis.py.
+# GATE 8.2 does not flush the presort buffer of the sorters at the end of a run, so the last singles of a run form
+# no coincidences; necr_analysis.py corrects the time for this. Very short runs (smoke tests) are not rate tests.
+
+
+
+######################### OUTPUT ###########################
+#////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\#
+# A ROOT file with the prompt (Coincidences) and delayed (delay) coincidences; its name is set in RUN SETTINGS
+# (e.g. output/NECR_001.root).
+
+/gate/output/root/enable
+/gate/output/root/setFileName {output}				# set in RUN SETTINGS, e.g. output/NECR_001
+/gate/output/root/setRootHitFlag 			0		# 0 = do not store the hits, 1 = store them
+/gate/output/root/setRootSinglesFlag 		0		# 0 = do not store the singles (necr_run.py --save-singles stores them)
+/gate/output/root/setRootCoincidencesFlag 	1		# prompt coincidences, needed by necr_analysis.py
+/gate/output/root/setRootdelayFlag 		1		# delayed coincidences, needed by necr_analysis.py
+
+
+
+################ RANDOM NUMBER GENERATOR ###################
+#////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\#
+
+# Engines: JamesRandom, Ranlux64 or MersenneTwister.
+/gate/random/setEngineName JamesRandom
+/gate/random/setEngineSeed {seed}	# set in RUN SETTINGS; different for every activity
+/gate/random/verbose 1
+
+#/gate/random/setEngineSeed default
+#/gate/random/resetEngineFrom fileName
+#/gate/random/setEngineSeed default
+#/gate/random/setEngineSeed auto
+
+
+
+#################### SIMULATION TIME #######################
+#////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\#
+
+/gate/application/setTimeSlice {duration} s	# one slice covering the whole acquisition
+/gate/application/setTimeStart 0.0 s
+/gate/application/setTimeStop  {duration} s
+
+# The duration is set in RUN SETTINGS at the top of this file (default 1 s, about 118 million F-18 decays at the
+# highest activity). necr_analysis.py reads it from the run macro, so the rates are divided by the right time.
+# Every activity has its own random seed: the same seed with the same settings would give correlated events.
+
+
+
+####################
+# Start simulation #
+####################
+
+/gate/application/startDAQ
+

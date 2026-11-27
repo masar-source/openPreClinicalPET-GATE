@@ -1,0 +1,5 @@
+# Same as vis_all.mac without a screen: writes g4_00.wrl (VRML) in the project folder.
+#     docker run --rm -v "$PWD:/APP" opengatecollaboration/gate:8.2-docker mouse_bed/vis_all_file.mac
+/control/alias bedParts all
+/control/alias visDriver VRML2FILE
+/control/execute mouse_bed/vis_common.mac

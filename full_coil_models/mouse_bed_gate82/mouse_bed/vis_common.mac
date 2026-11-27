@@ -1,0 +1,39 @@
+#####################################################################################
+# Visualisation of the mouse bed only: no sources, no acquisition (no startDAQ).
+# Do not run this file directly: run vis_bore.mac, vis_all.mac, vis_bore_file.mac or
+# vis_all_file.mac (they set bedParts and visDriver) from a GATE project folder that holds
+# Material/GateMaterials.db and mouse_bed/.
+#####################################################################################
+
+/gate/geometry/setMaterialDatabase Material/GateMaterials.db
+
+/gate/world/geometry/setXLength 100 cm
+/gate/world/geometry/setYLength 100 cm
+/gate/world/geometry/setZLength 100 cm
+/gate/world/setMaterial Air
+/gate/world/vis/setVisible 0
+
+# Simple stand-in for the inner wall of the Quad35 coil (Glass, r 17.5-19 mm, 155 mm long), to show where the coil starts
+/gate/world/daughters/name   quad35InnerLayer
+/gate/world/daughters/insert cylinder
+/gate/quad35InnerLayer/setMaterial         Glass
+/gate/quad35InnerLayer/geometry/setRmin    17.5 mm
+/gate/quad35InnerLayer/geometry/setRmax    19 mm
+/gate/quad35InnerLayer/geometry/setHeight  155 mm
+/gate/quad35InnerLayer/vis/setColor        magenta
+/gate/quad35InnerLayer/vis/forceWireframe
+
+/control/execute mouse_bed/mouse_bed_{bedParts}.mac
+
+/gate/physics/addPhysicsList empenelope
+/gate/run/initialize
+
+/vis/open {visDriver}
+/vis/viewer/set/autoRefresh false
+/vis/drawVolume
+/vis/viewer/set/style surface
+/vis/viewer/set/hiddenMarker true
+/vis/viewer/set/viewpointThetaPhi 60 60
+/vis/viewer/zoom 3
+/vis/viewer/set/autoRefresh true
+/vis/viewer/flush

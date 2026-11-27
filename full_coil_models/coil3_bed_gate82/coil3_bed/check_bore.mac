@@ -1,0 +1,5 @@
+# Overlap check of the "bore" set, without viewer and without acquisition. From the GATE project folder:
+#     Gate coil3_bed/check_bore.mac > check_bore.log 2>&1
+#     grep -c "OK!" check_bore.log ; grep -i overlap check_bore.log | grep -v -i "checking overlaps"
+/control/alias coilParts bore
+/control/execute coil3_bed/check_common.mac

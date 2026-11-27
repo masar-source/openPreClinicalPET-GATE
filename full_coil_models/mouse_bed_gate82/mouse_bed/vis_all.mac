@@ -1,0 +1,6 @@
+# Look at the mouse bed (all parts) in a window, without any acquisition. From the GATE project folder:
+#     Gate --qt mouse_bed/vis_all.mac
+# If your GATE has no OGLSQt viewer, change OGLSQt to OGLI on the visDriver line below.
+/control/alias bedParts all
+/control/alias visDriver OGLSQt
+/control/execute mouse_bed/vis_common.mac

@@ -1,0 +1,29 @@
+# Quad86 coil for the count-rate runs (setups q86 and q86rat of NECR_main_std.mac).
+# A 511 keV attenuation map (mu-map) of the Quad86 coil with the rat cradle was available. The coil tubes are
+# coaxial G10 cylinders (AC_G10, 1.79 g/cm3, coil_bed_real/Coil3Bed.db) at the radii of the mu-map, with uniform
+# walls:
+#   inner tube r 43.000-44.800 mm (1.8 mm)
+#   outer tube r 54.690-56.890 mm (2.2 mm)
+# The wall thicknesses agree with my caliper measurements.
+# The outer tube ends 0.01 mm inside the PET bore (r 56.9 mm, 113.8 mm diameter), so it also clears the inner
+# faces of the nylon front pad (r 56.963 mm).
+# Both tubes are on the scanner axis and cut at z = -80 ... +80 mm (beyond the detectors) to save time; the full
+# model is in full_coil_models/. Both are attached to the PhantomSD, so scatter in the coil is recorded.
+/gate/world/daughters/name q86_inner_tube
+/gate/world/daughters/insert cylinder
+/gate/q86_inner_tube/setMaterial AC_G10
+/gate/q86_inner_tube/geometry/setRmin 43.000 mm
+/gate/q86_inner_tube/geometry/setRmax 44.800 mm
+/gate/q86_inner_tube/geometry/setHeight 160.000 mm
+/gate/q86_inner_tube/placement/setTranslation 0 0 0.000 mm
+/gate/q86_inner_tube/vis/setColor red
+/gate/q86_inner_tube/attachPhantomSD
+/gate/world/daughters/name q86_outer_tube
+/gate/world/daughters/insert cylinder
+/gate/q86_outer_tube/setMaterial AC_G10
+/gate/q86_outer_tube/geometry/setRmin 54.690 mm
+/gate/q86_outer_tube/geometry/setRmax 56.890 mm
+/gate/q86_outer_tube/geometry/setHeight 160.000 mm
+/gate/q86_outer_tube/placement/setTranslation 0 0 0.000 mm
+/gate/q86_outer_tube/vis/setColor red
+/gate/q86_outer_tube/attachPhantomSD

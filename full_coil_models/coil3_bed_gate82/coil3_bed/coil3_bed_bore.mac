@@ -1,0 +1,38 @@
+#####################################################################################
+# Quad86 RF coil and rat bed, full model. I built it from the 511 keV attenuation map (mu-map)
+# of the Quad86 coil with the rat cradle (the egg in the map is left out).
+# Tessellated volumes, one per z-segment and material (mm). The coil axis is the scanner axis and
+# the bed lies below the axis (-y). z = 0 of the map is GATE z = 0, the centre of the PET FOV.
+# The bed is moved by +133.25 mm along z, so that the phantom's spot on the cradle (a plain
+# stretch without holes) is at the FOV centre.
+#   coil3_bed_all.mac  : every part (539 volumes)                               -> visualisation
+#   coil3_bed_bore.mac : the coil parts that reach into |z| <= 82.5 mm (the PET system
+#                        volume +-5 mm) and the cradle (53 volumes)            -> acquisitions
+# The cradle (the bed parts within +-152.25 mm of the phantom's spot) sits in ONE parent volume,
+# bedCradle. To move the whole cradle, change only its translation below, or repeat the command
+# with your values after executing this file, e.g.  /gate/bedCradle/placement/setTranslation 0 0 25 mm
+# Limits: |dz| <= 77.25 mm keeps the axial FOV filled with cradle (the whole bore up to 69.75 mm).
+# Sideways, |dx| and |dy| <= 5.7 mm before the parent reaches the coil (r 42.7 mm).
+# A phantom centred on the axis must have r < 24 mm.
+# The rest of the bed (head holder, far end; coil3_bed_all.mac only) does not follow the parent.
+# To use the model in another macro, copy the folder coil3_bed/ next to it and, where the coil is
+# defined, execute one of the two files, or switch between them with an alias:
+#     /control/alias coilParts bore          # bore = acquisition, all = visualisation
+#     /control/execute coil3_bed/coil3_bed_{coilParts}.mac
+#####################################################################################
+
+/gate/geometry/setMaterialDatabase coil3_bed/Coil3Bed.db
+
+# parent of the cradle: air half-shell below the axis (y <= 0)
+/gate/world/daughters/name bedCradle
+/gate/world/daughters/insert cylinder
+/gate/bedCradle/setMaterial Air
+/gate/bedCradle/geometry/setRmin 24 mm
+/gate/bedCradle/geometry/setRmax 37 mm
+/gate/bedCradle/geometry/setHeight 304.5 mm
+/gate/bedCradle/geometry/setPhiStart 180 deg
+/gate/bedCradle/geometry/setDeltaPhi 180 deg
+/gate/bedCradle/placement/setTranslation 0 0 0 mm
+/gate/bedCradle/vis/setVisible 0
+
+/control/execute coil3_bed/coil3_bed_parts_bore.mac

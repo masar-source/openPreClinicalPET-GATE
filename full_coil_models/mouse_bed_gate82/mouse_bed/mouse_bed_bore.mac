@@ -1,0 +1,34 @@
+#####################################################################################
+# Mouse bed, full model: the rat bed of coil3_bed (from the 511 keV mu-map of the Quad86 coil with
+# the rat cradle) with its cross-section scaled by 0.48707 in x and y, so that the outer edge of
+# the cradle is at r = 17 mm. z is not scaled. Bed only, no coil: it fits inside the Quad35 coil,
+# whose inner wall starts at r = 17.5 mm.
+#   mouse_bed_all.mac  : every part (246 volumes)                    -> visualisation
+#   mouse_bed_bore.mac : the cradle in its parent mouseCradle (52 volumes) -> acquisitions
+# To use it in another macro, copy the folder mouse_bed/ next to the macro and, where the bed is
+# defined, execute one of the two files.
+# The cradle is ONE block: to move it, change only the translation of mouseCradle below, or repeat the
+# command with your values after executing this file, e.g.  /gate/mouseCradle/placement/setTranslation 0 0 25 mm
+# Limits: |dz| <= 77.25 mm keeps the axial FOV filled with cradle (whole bore up to 69.75 mm), so a
+# sensitivity scan can move it +-75 mm with the source; sideways only 0.30 mm before the parent
+# reaches the Quad35 coil (r 17.5 mm). The NECR mouse phantom (r 12.5 mm, 4.5 mm above the axis)
+# clears the cradle by 1.71 mm and the parent by 0.09 mm.
+# The cut run models in the test folders use a changed mouse cradle: solid side walls about 3 mm
+# thick and polyethylene (HDPE) as material (see full_coil_models/README.md).
+#####################################################################################
+
+/gate/geometry/setMaterialDatabase mouse_bed/MouseBed.db
+
+# parent of the cradle: air half-shell below the axis (y <= 0)
+/gate/world/daughters/name mouseCradle
+/gate/world/daughters/insert cylinder
+/gate/mouseCradle/setMaterial Air
+/gate/mouseCradle/geometry/setRmin 11.75 mm
+/gate/mouseCradle/geometry/setRmax 17.20 mm
+/gate/mouseCradle/geometry/setHeight 304.5 mm
+/gate/mouseCradle/geometry/setPhiStart 180 deg
+/gate/mouseCradle/geometry/setDeltaPhi 180 deg
+/gate/mouseCradle/placement/setTranslation 0 0 0 mm
+/gate/mouseCradle/vis/setVisible 0
+
+/control/execute mouse_bed/mouse_bed_parts_bore.mac
